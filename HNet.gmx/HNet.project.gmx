@@ -5,9 +5,26 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\sprEnemy</sprite>
+    <sprite>sprites\sprite3</sprite>
+    <sprite>sprites\sprMain</sprite>
+    <sprite>sprites\sprMain2</sprite>
+    <sprite>sprites\sprWall</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\MovePlayer.gml</script>
+  </scripts>
+  <objects name="objects">
+    <object>objects\objEnemy</object>
+    <object>objects\objMain</object>
+    <object>objects\objWall</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rmTestLevel</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
