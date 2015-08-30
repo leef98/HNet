@@ -1,5 +1,4 @@
 ///MovePlayer()
-self.speed = 5
 var cVDir = 0
 if keyboard_check(ord('A')) {
     self.direction = 180
@@ -11,20 +10,24 @@ if keyboard_check(ord('A')) {
     if keyboard_check(ord('D')) {
         self.speed = 0
     }
+    self.speed = 5
 }else if keyboard_check(ord('D')) {
     self.direction = 0
     if keyboard_check(ord('W')) {
         self.direction += 45
     }else if keyboard_check(ord('S')) {
-        self.direction -w= 45
+        self.direction -= 45
     }
+    self.speed = 5
 }else if keyboard_check(ord('W')) {
     self.direction = 90
     if keyboard_check(ord('S')) {
         self.speed = 0
     }
+    self.speed = 5
 }else if keyboard_check(ord('S')) {
     self.direction = 270
+    self.speed = 5
 }
 /*
 if keyboard_check(ord('W')) {

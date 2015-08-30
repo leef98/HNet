@@ -11,16 +11,25 @@
     <sprite>sprites\sprMain</sprite>
     <sprite>sprites\sprMain2</sprite>
     <sprite>sprites\sprWall</sprite>
+    <sprite>sprites\sprBullet</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\MovePlayer.gml</script>
+    <script>scripts\createBullet.gml</script>
+    <script>scripts\bulletColliding.gml</script>
+    <script>scripts\entityCollision.gml</script>
+    <script>scripts\stepPlayer.gml</script>
+    <script>scripts\bulletDestroy.gml</script>
   </scripts>
   <objects name="objects">
+    <object>objects\basLiving</object>
     <object>objects\objEnemy</object>
     <object>objects\objMain</object>
     <object>objects\objWall</object>
+    <object>objects\objBullet</object>
+    <object>objects\basEntity</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmTestLevel</room>
