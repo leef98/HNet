@@ -1,3 +1,3 @@
 if destroy == true {
-    instance_destroy()
+    //instance_destroy()
 }

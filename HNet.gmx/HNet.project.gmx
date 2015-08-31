@@ -18,10 +18,12 @@
   <scripts name="scripts">
     <script>scripts\MovePlayer.gml</script>
     <script>scripts\createBullet.gml</script>
-    <script>scripts\bulletColliding.gml</script>
     <script>scripts\entityCollision.gml</script>
     <script>scripts\stepPlayer.gml</script>
-    <script>scripts\bulletDestroy.gml</script>
+    <scripts name="objBullet">
+      <script>scripts\bulletColliding.gml</script>
+      <script>scripts\bulletDestroy.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\basLiving</object>
