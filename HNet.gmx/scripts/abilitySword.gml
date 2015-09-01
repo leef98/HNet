@@ -1,5 +1,5 @@
-///Createbullet
-//Om cooldownen har gått ut: skapa en bullet
+///swing sword
+//Om cooldownen har gått ut: swing
 if lCoolDown <= 0 {
     var inst;
     //Rikta mot musen
@@ -10,7 +10,7 @@ if lCoolDown <= 0 {
     with (inst) {
         //Fixa variablerna för bulleten
         direction = dir
-        speed = 10
+        speed = 15
         image_angle = dir
         dmg = 5
     }

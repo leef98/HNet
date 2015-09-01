@@ -41,3 +41,4 @@ if keyboard_check(ord('A')) {
 } else{
     self.speed = 0
 }
+
