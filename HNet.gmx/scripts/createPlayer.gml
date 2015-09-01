@@ -9,9 +9,10 @@ inventory - map
 available abilities - map
 current abilities - map (ability1, ability2, ability3, ability4, lAbility, rAbility)
 */
+//Allokerar Current ability mapen
 cAbility = ds_map_create()
-
-cAbility[? "ability1"] = createBullet()
-cAbility[? "lAbility"] = createBullet()
-
+//Lägger till abilities på 1 och left button (test)
+cAbility[? "ability1"] = createBullet
+cAbility[? "lAbility"] = createBullet
+//Lägger till speed
 cSpeed = 5
