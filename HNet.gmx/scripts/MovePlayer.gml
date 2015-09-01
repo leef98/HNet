@@ -1,5 +1,6 @@
 ///MovePlayer()
 var cVDir = 0
+//Flytta vänster och up/ner
 if keyboard_check(ord('A')) {
     self.direction = 180
     if keyboard_check(ord('W')) {
@@ -11,6 +12,7 @@ if keyboard_check(ord('A')) {
         self.speed = 0
     }
     self.speed = 5
+//Flytta höger och up/ner
 }else if keyboard_check(ord('D')) {
     self.direction = 0
     if keyboard_check(ord('W')) {
@@ -19,34 +21,16 @@ if keyboard_check(ord('A')) {
         self.direction -= 45
     }
     self.speed = 5
+//Flytta upp
 }else if keyboard_check(ord('W')) {
     self.direction = 90
     if keyboard_check(ord('S')) {
         self.speed = 0
     }
     self.speed = 5
+//Flytta ner
 }else if keyboard_check(ord('S')) {
     self.direction = 270
     self.speed = 5
 }
-/*
-if keyboard_check(ord('W')) {
-    vspeed = vspeed - 5
-    vDir = 1
-}
-if keyboard_check(ord('S')) {
-    vspeed = vspeed + 5
-    vDir = 1   
-}
-if vDir > 0 && hDir > 0 {
-    if hspeed < 0 {
-        hspeed = -sqrt(5^2)
-    }else {
-        hspeed = sqrt(5^2)
-    }
-    if vspeed < 0 {
-        vspeed = -sqrt(5^2)
-    }else {
-        vspeed = sqrt(5^2)
-    }
-}*/
+
