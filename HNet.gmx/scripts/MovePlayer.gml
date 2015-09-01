@@ -33,4 +33,3 @@ if keyboard_check(ord('A')) {
     self.direction = 270
     self.speed = 5
 }
-

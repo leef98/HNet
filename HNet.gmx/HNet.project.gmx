@@ -14,21 +14,28 @@
     <sprite>sprites\sprBullet</sprite>
     <sprite>sprites\sprite6</sprite>
     <sprite>sprites\sprFloor2</sprite>
+    <sprite>sprites\sprsword</sprite>
+    <sprite>sprites\sprite9</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background2</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\createBullet.gml</script>
     <script>scripts\entityCollision.gml</script>
     <scripts name="objBullet">
       <script>scripts\bulletColliding.gml</script>
-      <script>scripts\bulletDestroy.gml</script>
+      <script>scripts\createBullet.gml</script>
     </scripts>
     <scripts name="objMain">
       <script>scripts\useAbility.gml</script>
       <script>scripts\MovePlayer.gml</script>
       <script>scripts\stepPlayer.gml</script>
       <script>scripts\createPlayer.gml</script>
+    </scripts>
+    <scripts name="objSwordStab">
+      <script>scripts\abilitySwordStab.gml</script>
+      <script>scripts\swordColliding.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -39,6 +46,7 @@
     <object>objects\objBullet</object>
     <object>objects\basEntity</object>
     <object>objects\objFloor2</object>
+    <object>objects\objSword</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmTestLevel</room>
