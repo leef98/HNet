@@ -30,6 +30,7 @@
       <script>scripts\useAbility.gml</script>
       <script>scripts\MovePlayer.gml</script>
       <script>scripts\stepPlayer.gml</script>
+      <script>scripts\createPlayer.gml</script>
     </scripts>
     <script>scripts\abilitySwing.gml</script>
   </scripts>
