@@ -14,6 +14,7 @@
     <sprite>sprites\sprBullet</sprite>
     <sprite>sprites\sprite6</sprite>
     <sprite>sprites\sprFloor2</sprite>
+    <sprite>sprites\sprsword</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -24,7 +25,6 @@
     <script>scripts\entityCollision.gml</script>
     <scripts name="objBullet">
       <script>scripts\bulletColliding.gml</script>
-      <script>scripts\bulletDestroy.gml</script>
     </scripts>
     <scripts name="objMain">
       <script>scripts\useAbility.gml</script>
@@ -32,7 +32,10 @@
       <script>scripts\stepPlayer.gml</script>
       <script>scripts\createPlayer.gml</script>
     </scripts>
-    <script>scripts\abilitySwing.gml</script>
+    <scripts name="objSwordStab">
+      <script>scripts\abilitySwordStab.gml</script>
+      <script>scripts\swordCollide.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\basLiving</object>
@@ -42,6 +45,7 @@
     <object>objects\objBullet</object>
     <object>objects\basEntity</object>
     <object>objects\objFloor2</object>
+    <object>objects\ObjSword</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmTestLevel</room>
