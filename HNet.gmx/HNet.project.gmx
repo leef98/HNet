@@ -12,6 +12,8 @@
     <sprite>sprites\sprMain2</sprite>
     <sprite>sprites\sprWall</sprite>
     <sprite>sprites\sprBullet</sprite>
+    <sprite>sprites\sprite6</sprite>
+    <sprite>sprites\sprFloor2</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -35,6 +37,7 @@
     <object>objects\objWall</object>
     <object>objects\objBullet</object>
     <object>objects\basEntity</object>
+    <object>objects\objFloor2</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmTestLevel</room>
