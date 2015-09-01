@@ -1,3 +1,4 @@
+// gå till createPlayer
 switch (keyboard_key) {
     case ord('1'):
         script_execute(cAbility[? "ability1"])

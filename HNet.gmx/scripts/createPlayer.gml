@@ -1,4 +1,3 @@
-
 //Variabler
 /*
 Stats (Strength, Agility, Inteligence) - map
@@ -11,7 +10,11 @@ current abilities - map (ability1, ability2, ability3, ability4, lAbility, rAbil
 */
 cAbility = ds_map_create()
 
+
+cAbility[? "lAbility"] = abilitySwordStab()
+
 cAbility[? "ability1"] = createBullet()
-cAbility[? "lAbility"] = createBullet()
+cAbility[? "ability2"] = createBullet()
+
 
 cSpeed = 5

@@ -1,5 +1,5 @@
-///swing sword
-//Om cooldownen har gått ut: swing
+///Createbullet
+//Om cooldownen har gått ut: skapa en bullet
 if lCoolDown <= 0 {
     var inst;
     //Rikta mot musen
@@ -8,18 +8,16 @@ if lCoolDown <= 0 {
     inst = instance_create(self.x, self.y, objSword);
     
     with (inst) {
-        //Fixa variablerna för stab
+        //Fixa variablerna för svärd
         direction = dir
-        maxDistance = 10;
-        speed = 15;
-        image_angle = dir+45;
-        dmg = 5;
+        speed = 2
+        image_angle = dir-135
+        dmg = 10
         
-     
-        
-        
-        
+  
     }
     //Fixa cooldown
     lCoolDown = 30
+
+    
 }
