@@ -1,0 +1,6 @@
+Dag 0:
+Jag prövade SDL, men det var för avancerat så jag bestämmde mig för att använda gamemaker.
+Började att sätta upp Git och lära mig gamemaker.
+Gjorde grunderna
+Dag 1:
+Albin och Daniel började programmera, det gick bra. Men vi fick konflikter i versionshanteringen, lyckades lösa det till slut

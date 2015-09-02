@@ -37,6 +37,9 @@
       <script>scripts\abilitySwordStab.gml</script>
       <script>scripts\swordColliding.gml</script>
     </scripts>
+    <scripts name="basItem">
+      <script>scripts\pickup.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\basLiving</object>
@@ -47,6 +50,7 @@
     <object>objects\basEntity</object>
     <object>objects\objFloor2</object>
     <object>objects\objSword</object>
+    <object>objects\basItem</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmTestLevel</room>
