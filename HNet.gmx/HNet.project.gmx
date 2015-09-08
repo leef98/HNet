@@ -40,6 +40,13 @@
       <script>scripts\MovePlayer.gml</script>
       <script>scripts\stepPlayer.gml</script>
       <script>scripts\createPlayer.gml</script>
+      <script>scripts\equipItemInventory.gml</script>
+      <script>scripts\equipItem.gml</script>
+      <script>scripts\updateStats.gml</script>
+      <script>scripts\removeItem.gml</script>
+      <script>scripts\updateModifiers.gml</script>
+      <script>scripts\deequipItem.gml</script>
+      <script>scripts\test.gml</script>
     </scripts>
     <scripts name="objSwordStab">
       <script>scripts\abilitySwordStab.gml</script>

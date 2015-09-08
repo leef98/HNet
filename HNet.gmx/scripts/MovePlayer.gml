@@ -84,13 +84,3 @@ if keyboard_check(ord('A')) {
     sprite_index = sprMainDown;
     }
 }
-//Sprint Animation
-/*if keyboard_check(vk_shift){
-    image_speed = imgSpeed*2;
-} else{
-    image_speed =imgSpeed;
-}*/
-
-
-
-
