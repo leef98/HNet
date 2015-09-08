@@ -28,7 +28,6 @@ if keyboard_check(ord('A')) {
         sprite_index = sprWalkleft;
         //image_speed = imgSpeed;
     }
-    cVDir = 3;
 //Flytta höger och up/ner
 }else if keyboard_check(ord('D')) {
     self.speed = lSpeed
@@ -56,7 +55,6 @@ if keyboard_check(ord('A')) {
         sprite_index=sprWalkUp;
         //image_speed = imgSpeed;
     }
-    cVDir = 1;
 //Flytta ner
 }else if keyboard_check(ord('S')) {
     self.speed = lSpeed
@@ -66,13 +64,12 @@ if keyboard_check(ord('A')) {
         sprite_index=sprWalkDown;
         //image_speed = imgSpeed;
     }
-    cVDir = 0;
 //stå Still
 }else{
     self.speed = 0
     //Stående still håll
     if (cVDir == 180){
-    sprite_index = sprMainLeft;
+        sprite_index = sprMainLeft;
     }
     else if (cVDir == 0){
     sprite_index = sprMainRight;
