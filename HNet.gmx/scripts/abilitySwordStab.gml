@@ -1,5 +1,7 @@
 ///Createbullet
 //Om cooldownen har gått ut: skapa en bullet
+
+
 if lCoolDown <= 0 {
     var inst;
     //Rikta mot musen
@@ -13,11 +15,14 @@ if lCoolDown <= 0 {
         speed = 2
         image_angle = dir-135
         dmg = 10
+        follow = false
         
   
     }
     //Fixa cooldown
     lCoolDown = 30
-
     
+    
+
 }
+

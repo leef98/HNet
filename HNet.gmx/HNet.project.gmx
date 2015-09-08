@@ -36,6 +36,7 @@
     <scripts name="objSwordStab">
       <script>scripts\abilitySwordStab.gml</script>
       <script>scripts\swordColliding.gml</script>
+      <script>scripts\moveStab.gml</script>
     </scripts>
     <scripts name="basItem">
       <script>scripts\pickup.gml</script>
