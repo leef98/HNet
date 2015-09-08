@@ -11,11 +11,18 @@ if lCoolDown <= 0 {
     
     with (inst) {
         //Fixa variablerna för svärd
+        
         direction = dir
-        speed = 2
         image_angle = dir-135
+        destroyOnRetract = false
+        
+        
+        //stab attributes
+        speed = 10
         dmg = 10
         follow = false 
+        maxDistance = 50
+        
     }
     //Fixa cooldown
     lCoolDown = 30

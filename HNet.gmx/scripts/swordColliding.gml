@@ -2,6 +2,7 @@
 if other.object_index != objMain {
     if object_is_ancestor(other.object_index, basLiving) {
         other.hp -= dmg
-    }
-    //instance_destroy()
+   
+       
+   }
 }
