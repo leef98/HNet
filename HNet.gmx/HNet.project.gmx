@@ -24,6 +24,10 @@
     <sprite>sprites\sprMainLeft</sprite>
     <sprite>sprites\sprMainDown</sprite>
     <sprite>sprites\sprMainRight</sprite>
+    <sprite>sprites\sprStabLeft</sprite>
+    <sprite>sprites\sprStabUp</sprite>
+    <sprite>sprites\sprStabDown</sprite>
+    <sprite>sprites\sprStabRight</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -45,7 +49,6 @@
       <script>scripts\updateStats.gml</script>
       <script>scripts\removeItem.gml</script>
       <script>scripts\updateModifiers.gml</script>
-      <script>scripts\deequipItem.gml</script>
       <script>scripts\test.gml</script>
     </scripts>
     <scripts name="objSwordStab">
