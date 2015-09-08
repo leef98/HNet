@@ -16,6 +16,14 @@
     <sprite>sprites\sprFloor2</sprite>
     <sprite>sprites\sprsword</sprite>
     <sprite>sprites\sprite9</sprite>
+    <sprite>sprites\sprWalkUp</sprite>
+    <sprite>sprites\sprWalkleft</sprite>
+    <sprite>sprites\sprWalkRight</sprite>
+    <sprite>sprites\sprWalkDown</sprite>
+    <sprite>sprites\sprMainUp</sprite>
+    <sprite>sprites\sprMainLeft</sprite>
+    <sprite>sprites\sprMainDown</sprite>
+    <sprite>sprites\sprMainRight</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>

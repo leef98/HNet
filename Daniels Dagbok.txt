@@ -1,0 +1,37 @@
+Daniels Dagbok, gymnasiearbete.
+
+1 September, 1 timme:
+Under denna dag så gjorde jag en kod för att få karaktären att sprinta.
+Det var lite problem i början, orsaken var att jag råkade sätta fel variabel bland farten.
+Jag ändrade snabbt vriabel namn på höger och vänster led. Det ordnade problemet.
+Problemet var då att karaktären inte sprintade när man tröck ner shift, utan han fortsatte gå så länge man höll ner skift.
+Men när jag ändrade variabel namn så gick sprinten igång, då ökar karaktären fart vid shift intryckt.
+
+3 September, 5 timmar:
+Jag har styrt animationen, gjort så att karaktären rör sig när han går åt ett specifikt håll.
+Detta så att det ska se mer realistiskt ut. Vi har tagit karaktär formen från opengameart.org
+Jag har också sett till att farten blir realistisk. och att animations farten ska ökas när karaktären sprintar.
+samt att karaktären är still när den ska stå still.
+Att få karaktären att öka animations fart var rätt simpelt. Tanken var först dock att sätta in funktionen, self.speed, in i en variabel som skulle ökas när shift knappen hölls ner.
+Så visade det sig att man inte kunde göra dock när det blev error när man skulle pröva koden.
+krukset var att man var tvungen att göra så att man angav ett värde till en variabel som man sedan angav som self.speed.
+Efter det var det bara att ange med hur mycket denna variabel skulle öka med när man tröck ner shift knappen.
+Att få karaktären att ändra till en stillastående animation när man inte trycker in något visade sig vara svårare.
+Försök med att sätta en vilkors funktion för att säga att om self.speed = 0 misslyckades.
+Karaktären byter istället till en stillastående karaktär när man trycker ner skift och står still.
+Försök fortsätter nästa gång.
+
+5 September,  3 timmar:
+Lyckades inte riktigt hitta en lösning på problemet. Prövade med att sätta in olika vilkors satser, men de fungerar ej som tänkt.
+Får prata med resten efter helgen.
+
+7 September, 2 timmar:
+Ludvig såg problemet, ett enkelt fel jag hade missat. Av misstag hade en vilkors sats blivit borttagen.
+Så med den vilkors satsen så fungerade shift sprinten fint. Gubben stannade när man även fortsatte hålla ner skift men inte gå tangenterna.
+Efter det funkade alla mina andra koder för animationen, gubben slutade med gå animationen så fort han stod still och ökar takt jämt med shift.
+Det hade funkat tidigare om jag tänkte på att lägga till den tidigare vilkors satsen som försvann, men ibland upptäcker man inte allt.
+Nu kommer problemet med att få honom att titta åt rätt håll när han stannar.
+Jag har försökt med att sätta en variabel som ska ändra värde när du går ett håll, men det kanske går bättre med att sätta den som riktning.
+Ska försöka med det.
+
+8 September, timmar:
