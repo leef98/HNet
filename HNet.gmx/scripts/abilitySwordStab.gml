@@ -21,7 +21,7 @@ if lCoolDown <= 0 {
         speed = 10
         dmg = 10
         follow = false 
-        maxDistance = 50
+        maxDistance = 25
         
     }
     //Fixa cooldown

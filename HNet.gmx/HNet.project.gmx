@@ -24,6 +24,7 @@
     <sprite>sprites\sprMainLeft</sprite>
     <sprite>sprites\sprMainDown</sprite>
     <sprite>sprites\sprMainRight</sprite>
+    <sprite>sprites\sprNextRoom</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -67,9 +68,11 @@
     <object>objects\objFloor2</object>
     <object>objects\objSword</object>
     <object>objects\basItem</object>
+    <object>objects\objNextRoom</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rmTestLevel</room>
+    <room>rooms\rmRoom1</room>
+    <room>rooms\rmRoom2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
