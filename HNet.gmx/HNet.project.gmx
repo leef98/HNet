@@ -16,6 +16,14 @@
     <sprite>sprites\sprFloor2</sprite>
     <sprite>sprites\sprsword</sprite>
     <sprite>sprites\sprite9</sprite>
+    <sprite>sprites\sprWalkUp</sprite>
+    <sprite>sprites\sprWalkleft</sprite>
+    <sprite>sprites\sprWalkRight</sprite>
+    <sprite>sprites\sprWalkDown</sprite>
+    <sprite>sprites\sprMainUp</sprite>
+    <sprite>sprites\sprMainLeft</sprite>
+    <sprite>sprites\sprMainDown</sprite>
+    <sprite>sprites\sprMainRight</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -32,6 +40,12 @@
       <script>scripts\MovePlayer.gml</script>
       <script>scripts\stepPlayer.gml</script>
       <script>scripts\createPlayer.gml</script>
+      <script>scripts\equipItemInventory.gml</script>
+      <script>scripts\equipItem.gml</script>
+      <script>scripts\updateStats.gml</script>
+      <script>scripts\removeItem.gml</script>
+      <script>scripts\updateModifiers.gml</script>
+      <script>scripts\test.gml</script>
     </scripts>
     <scripts name="objSwordStab">
       <script>scripts\abilitySwordStab.gml</script>

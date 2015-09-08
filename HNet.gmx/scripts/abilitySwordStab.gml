@@ -15,14 +15,8 @@ if lCoolDown <= 0 {
         speed = 2
         image_angle = dir-135
         dmg = 10
-        follow = false
-        
-  
+        follow = false 
     }
     //Fixa cooldown
     lCoolDown = 30
-    
-    
-
 }
-
