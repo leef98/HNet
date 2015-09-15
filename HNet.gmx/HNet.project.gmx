@@ -24,7 +24,13 @@
     <sprite>sprites\sprMainLeft</sprite>
     <sprite>sprites\sprMainDown</sprite>
     <sprite>sprites\sprMainRight</sprite>
+
     <sprite>sprites\sprNextRoom</sprite>
+
+    <sprite>sprites\sprStabLeft</sprite>
+    <sprite>sprites\sprStabUp</sprite>
+    <sprite>sprites\sprStabDown</sprite>
+    <sprite>sprites\sprStabRight</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
