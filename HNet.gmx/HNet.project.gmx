@@ -56,6 +56,7 @@
       <script>scripts\swordColliding.gml</script>
       <script>scripts\moveStab.gml</script>
       <script>scripts\swordDestroy.gml</script>
+      <script>scripts\swordStabAnimation.gml</script>
     </scripts>
     <scripts name="basItem">
       <script>scripts\pickup.gml</script>
