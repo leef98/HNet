@@ -1,5 +1,7 @@
 ///Createbullet
 //Om cooldownen har gått ut: skapa en bullet
+
+
 if lCoolDown <= 0 {
     var inst;
     //Rikta mot musen
@@ -9,15 +11,19 @@ if lCoolDown <= 0 {
     
     with (inst) {
         //Fixa variablerna för svärd
-        direction = dir
-        speed = 2
-        image_angle = dir-135
-        dmg = 10
         
-  
+        direction = dir
+        image_angle = dir-135
+        destroyOnRetract = false
+        
+        
+        //stab attributes
+        speed = 10
+        dmg = 10
+        follow = false 
+        maxDistance = 50
+        
     }
     //Fixa cooldown
     lCoolDown = 30
-
-    
 }

@@ -8,3 +8,5 @@ Albin och Daniel började programmera, det gick bra. Men vi fick konflikter i ve
 Programmerade mer började på Stats och Drops
 2015-09-03
 Fortsatte lite på stats och började på equipments
+2015-09-08
+Avslutade equipments bas-stödet. Och satte igång William på Storybuilding
