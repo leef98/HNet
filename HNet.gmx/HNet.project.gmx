@@ -3,6 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="2" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
@@ -24,6 +25,9 @@
     <sprite>sprites\sprMainLeft</sprite>
     <sprite>sprites\sprMainDown</sprite>
     <sprite>sprites\sprMainRight</sprite>
+
+    <sprite>sprites\sprNextRoom</sprite>
+
     <sprite>sprites\sprStabLeft</sprite>
     <sprite>sprites\sprStabUp</sprite>
     <sprite>sprites\sprStabDown</sprite>
@@ -72,9 +76,11 @@
     <object>objects\objFloor2</object>
     <object>objects\objSword</object>
     <object>objects\basItem</object>
+    <object>objects\objNextRoom</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rmTestLevel</room>
+    <room>rooms\rmRoom1</room>
+    <room>rooms\rmRoom2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
