@@ -60,6 +60,9 @@
     <sprite>sprites\sprMainLeft</sprite>
     <sprite>sprites\sprMainDown</sprite>
     <sprite>sprites\sprMainRight</sprite>
+
+    <sprite>sprites\sprNextRoom</sprite>
+
     <sprite>sprites\sprStabLeft</sprite>
     <sprite>sprites\sprStabUp</sprite>
     <sprite>sprites\sprStabDown</sprite>
@@ -94,6 +97,7 @@
       <script>scripts\swordColliding.gml</script>
       <script>scripts\moveStab.gml</script>
       <script>scripts\swordDestroy.gml</script>
+      <script>scripts\swordStabAnimation.gml</script>
     </scripts>
     <scripts name="basItem">
       <script>scripts\pickup.gml</script>
@@ -111,9 +115,11 @@
     <object>objects\objFloor2</object>
     <object>objects\objSword</object>
     <object>objects\basItem</object>
+    <object>objects\objNextRoom</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rmTestLevel</room>
+    <room>rooms\rmRoom1</room>
+    <room>rooms\rmRoom2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
