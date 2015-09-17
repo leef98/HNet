@@ -1,6 +1,6 @@
 ///Createbullet
 //Om cooldownen har gått ut: skapa en bullet
-if lCoolDown <= 0 {
+if cooldown[? argument0] <= 0 {
     var inst;
     //Rikta mot musen
     var dir = point_direction(x, y, mouse_x, mouse_y);
@@ -15,5 +15,5 @@ if lCoolDown <= 0 {
         dmg = 5
     }
     //Fixa cooldown
-    lCoolDown = 30
+    cooldown[? argument0] = 30
 }

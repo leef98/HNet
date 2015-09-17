@@ -53,6 +53,14 @@ eHealth = 0
 eStamina = 0
 mStamina = 100
 //Definition av stats
+//Cooldown
+cooldown = ds_map_create()
+cooldown[? "ability1"] = 0
+cooldown[? "ability2"] = 0
+cooldown[? "ability3"] = 0
+cooldown[? "ability4"] = 0
+cooldown[? "lAbility"] = 0
+cooldown[? "rAbility"] = 0
 //Lägger till speed
 bSpeed = 2
 cSpeed = stats[? "agi"] * 0.3
