@@ -19,10 +19,12 @@ if lCoolDown <= 0 {
         
         
         //stab attributes
-        speed = 10
+        speed = 5
         dmg = 10
         follow = false 
         maxDistance = 25
+        
+ 
         
     }
     //Fixa cooldown

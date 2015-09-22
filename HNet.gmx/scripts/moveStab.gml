@@ -8,9 +8,9 @@ if(distance_to_object(objMain) > maxDistance){
 }
 
 
-if(follow){
+if(follow = true){
 
-    destroyOnRetract = true;
+   destroyOnRetract = true;
     direction = point_direction(x,y,objMain.x,objMain.y)
 
 }

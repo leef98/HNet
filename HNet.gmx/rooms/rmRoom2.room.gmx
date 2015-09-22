@@ -174,7 +174,6 @@
     <instance objName="objFloor2" x="640" y="128" name="inst_94050194" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="0" y="192" name="inst_6263EF6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="32" y="192" name="inst_04D2362A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objNextRoom" x="32" y="32" name="inst_7B17263A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="672" y="320" name="inst_E0C94A29" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="704" y="320" name="inst_E6E555BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="704" y="192" name="inst_319816FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
