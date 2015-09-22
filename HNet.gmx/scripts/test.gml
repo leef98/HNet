@@ -9,4 +9,7 @@ switch (keyboard_key) {
     case ord("8"):
         load()
     break;
+    case ord("9"):
+        equipItem(loadItem("gloves"))
+    break;
 }

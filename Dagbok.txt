@@ -10,3 +10,5 @@ Programmerade mer började på Stats och Drops
 Fortsatte lite på stats och började på equipments
 2015-09-08
 Avslutade equipments bas-stödet. Och satte igång William på Storybuilding
+2015-09-15
+Påbörjade save/load funktion. Kom fram till en grundläggande story med william. Hjälpte Daniel och Albin med några buggar

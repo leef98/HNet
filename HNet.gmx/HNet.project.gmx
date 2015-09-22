@@ -33,7 +33,7 @@
       <store>0</store>
       <ConfigOptions>
         <Config name="Default">
-          <CopyToMask>9223372036854775807</CopyToMask>
+          <CopyToMask>17593040736494</CopyToMask>
         </Config>
       </ConfigOptions>
       <filename>save.ini</filename>
@@ -60,9 +60,7 @@
     <sprite>sprites\sprMainLeft</sprite>
     <sprite>sprites\sprMainDown</sprite>
     <sprite>sprites\sprMainRight</sprite>
-
     <sprite>sprites\sprNextRoom</sprite>
-
     <sprite>sprites\sprStabLeft</sprite>
     <sprite>sprites\sprStabUp</sprite>
     <sprite>sprites\sprStabDown</sprite>
@@ -97,13 +95,13 @@
       <script>scripts\swordColliding.gml</script>
       <script>scripts\moveStab.gml</script>
       <script>scripts\swordDestroy.gml</script>
-      <script>scripts\swordStabAnimation.gml</script>
     </scripts>
     <scripts name="basItem">
       <script>scripts\pickup.gml</script>
     </scripts>
     <script>scripts\save.gml</script>
     <script>scripts\load.gml</script>
+    <script>scripts\loadItem.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\basLiving</object>
