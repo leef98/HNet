@@ -7,18 +7,18 @@
   <coltolerance>0</coltolerance>
   <sepmasks>-1</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>-1</bbox_left>
-  <bbox_right>0</bbox_right>
-  <bbox_top>-1</bbox_top>
-  <bbox_bottom>0</bbox_bottom>
+  <bbox_left>1</bbox_left>
+  <bbox_right>28</bbox_right>
+  <bbox_top>0</bbox_top>
+  <bbox_bottom>30</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>0</width>
-  <height>0</height>
+  <width>31</width>
+  <height>31</height>
   <frames>
     <frame index="0">images\sprStabUp_0.png</frame>
     <frame index="1">images\sprStabUp_1.png</frame>
