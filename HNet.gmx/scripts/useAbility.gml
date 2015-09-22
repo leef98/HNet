@@ -6,28 +6,28 @@ switch (keyboard_key) {
         //Kollar om det är rätt data för funktionen
         if (is_real(cAbility[? "ability1"])) {
             //Utför funktionen
-            script_execute(cAbility[? "ability1"])
+            script_execute(cAbility[? "ability1"], "ability1")
         }
     break;
     case ord('2'):
         //Kollar om det är rätt data för funktionen
         if (is_real(cAbility[? "ability2"])) {
             //Utför funktionen
-            script_execute(cAbility[? "ability2"])
+            script_execute(cAbility[? "ability2"], "ability2")
         }
     break;
     case ord('3'):
         //Kollar om det är rätt data för funktionen
         if (is_real(cAbility[? "ability3"])) {
             //Utför funktionen
-            script_execute(cAbility[? "ability3"])
+            script_execute(cAbility[? "ability3"], "ability3")
         }
     break;
     case ord('4'):
         //Kollar om det är rätt data för funktionen
         if (is_real(cAbility[? "ability4"])) {
             //Utför funktionen
-            script_execute(cAbility[? "ability4"])
+            script_execute(cAbility[? "ability4"], "ability4")
         }
     break;  
 }
@@ -37,14 +37,14 @@ switch (mouse_button) {
         //Kollar om det är rätt data för funktionen
         if (is_real(cAbility[? "lAbility"])) {
             //Utför funktionen
-            script_execute(cAbility[? "lAbility"])
+            script_execute(cAbility[? "lAbility"], "lAbility")
         }
     break;
     case mb_right:
         //Kollar om det är rätt data för funktionen
         if (is_real(cAbility[? "rAbility"])) {
             //Utför funktionen
-            script_execute(cAbility[? "rAbility"])
+            script_execute(cAbility[? "rAbility"], "rAbility")
         }
     break;
 }
