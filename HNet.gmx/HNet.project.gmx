@@ -25,13 +25,15 @@
     <sprite>sprites\sprMainLeft</sprite>
     <sprite>sprites\sprMainDown</sprite>
     <sprite>sprites\sprMainRight</sprite>
-
     <sprite>sprites\sprNextRoom</sprite>
-
+    <sprite>sprites\sprPrevRoom</sprite>
     <sprite>sprites\sprStabLeft</sprite>
     <sprite>sprites\sprStabUp</sprite>
     <sprite>sprites\sprStabDown</sprite>
     <sprite>sprites\sprStabRight</sprite>
+    <sprites name="menu">
+      <sprite>sprites\sprTest</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -64,6 +66,9 @@
     <scripts name="basItem">
       <script>scripts\pickup.gml</script>
     </scripts>
+    <scripts name="objMenu">
+      <script>scripts\script18.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\basLiving</object>
@@ -76,8 +81,13 @@
     <object>objects\objSword</object>
     <object>objects\basItem</object>
     <object>objects\objNextRoom</object>
+    <object>objects\objPrevRoom</object>
+    <objects name="menu">
+      <object>objects\objTest</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rmTest</room>
     <room>rooms\rmRoom1</room>
     <room>rooms\rmRoom2</room>
   </rooms>
