@@ -12,3 +12,9 @@ Fortsatte lite på stats och började på equipments
 Avslutade equipments bas-stödet. Och satte igång William på Storybuilding
 2015-09-15
 Påbörjade save/load funktion. Kom fram till en grundläggande story med william. Hjälpte Daniel och Albin med några buggar
+2015-09-16
+Gjorde klart save/load funktion
+2015-09-22
+Gjorde klart equipment load funktionen
+Pratade med william om rum och hur de skall respawna
+Påbörjade Drops.
