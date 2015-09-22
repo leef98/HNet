@@ -120,6 +120,7 @@
     <object>objects\objSword</object>
     <object>objects\basItem</object>
     <object>objects\objNextRoom</object>
+    <object>objects\objBar</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmRoom1</room>

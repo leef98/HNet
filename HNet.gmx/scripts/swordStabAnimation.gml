@@ -26,5 +26,8 @@ if (is_real(cAbility[? "lAbility"])) {
         //Kollar spriten
             sprite_index = sprStabRight;
     }
+    
+    self.speed = 0;
+    
 }
 }
