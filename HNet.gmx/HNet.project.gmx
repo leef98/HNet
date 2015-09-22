@@ -70,7 +70,6 @@
       <sprite>sprites\sprStabDown</sprite>
       <sprite>sprites\sprStabRight</sprite>
     </sprites>
-    <sprite>sprites\sprQuest</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -109,10 +108,6 @@
     </scripts>
     <script>scripts\save.gml</script>
     <script>scripts\load.gml</script>
-    <scripts name="questScripts">
-      <script>scripts\questScript.gml</script>
-      <script>scripts\questBubble.gml</script>
-    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\basLiving</object>
@@ -125,7 +120,7 @@
     <object>objects\objSword</object>
     <object>objects\basItem</object>
     <object>objects\objNextRoom</object>
-    <object>objects\objQuest</object>
+    <object>objects\objBar</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmRoom1</room>
