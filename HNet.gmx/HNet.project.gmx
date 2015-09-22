@@ -3,7 +3,42 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="2" name="datafiles"/>
+  <datafiles number="4" name="datafiles">
+    <datafile>
+      <name>equipment.ini</name>
+      <exists>-1</exists>
+      <size>3</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>equipment.ini</filename>
+    </datafile>
+    <datafile>
+      <name>save.ini</name>
+      <exists>-1</exists>
+      <size>3</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>save.ini</filename>
+    </datafile>
+  </datafiles>
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
@@ -13,26 +48,27 @@
     <sprite>sprites\sprMain2</sprite>
     <sprite>sprites\sprWall</sprite>
     <sprite>sprites\sprBullet</sprite>
-    <sprite>sprites\sprite6</sprite>
     <sprite>sprites\sprFloor2</sprite>
     <sprite>sprites\sprsword</sprite>
     <sprite>sprites\sprite9</sprite>
-    <sprite>sprites\sprWalkUp</sprite>
-    <sprite>sprites\sprWalkleft</sprite>
-    <sprite>sprites\sprWalkRight</sprite>
-    <sprite>sprites\sprWalkDown</sprite>
-    <sprite>sprites\sprMainUp</sprite>
-    <sprite>sprites\sprMainLeft</sprite>
-    <sprite>sprites\sprMainDown</sprite>
-    <sprite>sprites\sprMainRight</sprite>
     <sprite>sprites\sprNextRoom</sprite>
-    <sprite>sprites\sprPrevRoom</sprite>
-    <sprite>sprites\sprStabLeft</sprite>
-    <sprite>sprites\sprStabUp</sprite>
-    <sprite>sprites\sprStabDown</sprite>
-    <sprite>sprites\sprStabRight</sprite>
-    <sprites name="menu">
-      <sprite>sprites\sprTest</sprite>
+    <sprites name="spriteStandMain">
+      <sprite>sprites\sprMainUp</sprite>
+      <sprite>sprites\sprMainLeft</sprite>
+      <sprite>sprites\sprMainDown</sprite>
+      <sprite>sprites\sprMainRight</sprite>
+    </sprites>
+    <sprites name="sprMainWalk">
+      <sprite>sprites\sprWalkleft</sprite>
+      <sprite>sprites\sprWalkUp</sprite>
+      <sprite>sprites\sprWalkRight</sprite>
+      <sprite>sprites\sprWalkDown</sprite>
+    </sprites>
+    <sprites name="sprStab">
+      <sprite>sprites\sprStabUp</sprite>
+      <sprite>sprites\sprStabLeft</sprite>
+      <sprite>sprites\sprStabDown</sprite>
+      <sprite>sprites\sprStabRight</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -56,19 +92,22 @@
       <script>scripts\removeItem.gml</script>
       <script>scripts\updateModifiers.gml</script>
       <script>scripts\test.gml</script>
+      <script>scripts\savePlayer.gml</script>
+      <script>scripts\loadPlayer.gml</script>
     </scripts>
     <scripts name="objSwordStab">
       <script>scripts\abilitySwordStab.gml</script>
       <script>scripts\swordColliding.gml</script>
       <script>scripts\moveStab.gml</script>
       <script>scripts\swordDestroy.gml</script>
+      <script>scripts\swordStabAnimation.gml</script>
+      <script>scripts\swordStabAnimationEnd.gml</script>
     </scripts>
     <scripts name="basItem">
       <script>scripts\pickup.gml</script>
     </scripts>
-    <scripts name="objMenu">
-      <script>scripts\script18.gml</script>
-    </scripts>
+    <script>scripts\save.gml</script>
+    <script>scripts\load.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\basLiving</object>
@@ -81,13 +120,8 @@
     <object>objects\objSword</object>
     <object>objects\basItem</object>
     <object>objects\objNextRoom</object>
-    <object>objects\objPrevRoom</object>
-    <objects name="menu">
-      <object>objects\objTest</object>
-    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rmTest</room>
     <room>rooms\rmRoom1</room>
     <room>rooms\rmRoom2</room>
   </rooms>

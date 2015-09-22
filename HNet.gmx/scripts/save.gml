@@ -1,0 +1,7 @@
+ini_open("save.ini")
+savePlayer()
+ini_write_real('player','test2', 25)
+ini_close()
+ini_open("save.ini")
+show_message(ini_read_real('player', 'test', 0))
+ini_close()
