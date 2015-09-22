@@ -1,3 +1,5 @@
+//Animations variabel
+swordStab = false;
 //Variabler
 /*
 Stats (Strength, Agility, Inteligence) - map

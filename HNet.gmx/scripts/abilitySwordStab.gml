@@ -3,6 +3,7 @@
 
 
 if lCoolDown <= 0 {
+    
     var inst;
     //Rikta mot musen
     var dir = point_direction(x, y, mouse_x, mouse_y);
