@@ -34,4 +34,16 @@ Nu kommer problemet med att få honom att titta åt rätt håll när han stannar.
 Jag har försökt med att sätta en variabel som ska ändra värde när du går ett håll, men det kanske går bättre med att sätta den som riktning.
 Ska försöka med det.
 
-8 September, timmar:
+8 September, 4 timmar:
+Jag försökte med att sätta sistnämnda riktnings varibeln som den riktning gubben sist gick, det funkade nästan. han gör så om man håller ned skift.
+så halvt lyckat än så länge.
+Jag diskuterade med Ludvig, han tog en titt och kollade med hur det blev att ta av vissa saker. Efter ett tag kom han på vad det var.
+Min kod var det inget fel på. Det var en funktion som låg  fel i själva objektet för karaktären. En tidig bug i de tidiga stegen.
+Men min kod fungerade där den berättar att när gubben står still ska den stå i det håll han sist gick.
+I detta skede ska jag samarbeta med Albin, han skriver kod för en stab funktion där det går ut på att han hugger med en kniv åt det håll musen pekar.
+Min animations kod har ej fungerat än. Jag gjorde ett nytt skript som jag ska aplicera till karaktären.
+Kan börja med att aplicera den till karaktären.
+Jag provade med att göra en animation som skulle utföras varje gång jag tröck på musknappen.
+Men den funktionen skapade konflikt med ett annat script där musknappen redan har den funktionen.
+
+11 september, 2 timmar:

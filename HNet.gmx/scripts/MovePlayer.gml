@@ -1,16 +1,17 @@
 //local speed
 var lSpeed = cSpeed;
-//animation speed
 //Sprint
 if keyboard_check(vk_shift){
     lSpeed = cSpeed*2;
 } else{
     lSpeed = cSpeed;
 }
+//image_speed = imgSpeed;
 var imgSpeed = lSpeed * 0.1;
 image_speed = imgSpeed;
-///MovePlayer()
-var cVDir = self.direction;
+//MovePlayer()
+cVDir = self.direction;
+if (swordStab == false) {
 //Flytta vänster och up/ner
 if keyboard_check(ord('A')) {
     self.speed = lSpeed
@@ -67,17 +68,21 @@ if keyboard_check(ord('A')) {
 //stå Still
 }else{
     self.speed = 0
-    //Stående still håll
-    if (cVDir == 180){
-        sprite_index = sprMainLeft;
+    if (self.speed == 0){
+        //Stående still håll
+        if (cVDir <= 225 && cVDir >= 135){
+            sprite_index = sprMainLeft;
+        }
+        else if (cVDir <= 315 && cVDir >= 225){
+            sprite_index = sprMainDown;
+        }
+        else if (cVDir <= 135 && cVDir >= 45){
+            sprite_index = sprMainUp;
+        }
+        else {
+            sprite_index = sprMainRight;
+        }
     }
-    else if (cVDir == 0){
-    sprite_index = sprMainRight;
-    }
-    else if (cVDir == 90){
-    sprite_index = sprMainUp;
-    }
-    else if (cVDir == 270){
-    sprite_index = sprMainDown;
-    }
+}
+
 }

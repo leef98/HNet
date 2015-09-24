@@ -3,6 +3,7 @@
 
 
 if lCoolDown <= 0 {
+    
     var inst;
     //Rikta mot musen
     var dir = point_direction(x, y, mouse_x, mouse_y);
@@ -18,10 +19,12 @@ if lCoolDown <= 0 {
         
         
         //stab attributes
-        speed = 10
+        speed = 5
         dmg = 10
         follow = false 
         maxDistance = 25
+        
+ 
         
     }
     //Fixa cooldown
