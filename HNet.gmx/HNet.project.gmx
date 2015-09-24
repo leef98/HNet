@@ -100,11 +100,8 @@
       <script>scripts\swordColliding.gml</script>
       <script>scripts\moveStab.gml</script>
       <script>scripts\swordDestroy.gml</script>
-<<<<<<< HEAD
-=======
       <script>scripts\swordStabAnimation.gml</script>
       <script>scripts\swordStabAnimationEnd.gml</script>
->>>>>>> eac51d126e7d68204a945896a461ab3b49e55780
     </scripts>
     <scripts name="basItem">
       <script>scripts\pickup.gml</script>
