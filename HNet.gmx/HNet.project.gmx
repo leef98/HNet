@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="4" name="datafiles">
+  <datafiles number="5" name="datafiles">
     <datafile>
       <name>equipment.ini</name>
       <exists>-1</exists>
@@ -33,10 +33,27 @@
       <store>0</store>
       <ConfigOptions>
         <Config name="Default">
-          <CopyToMask>9223372036854775807</CopyToMask>
+          <CopyToMask>17593040736494</CopyToMask>
         </Config>
       </ConfigOptions>
       <filename>save.ini</filename>
+    </datafile>
+    <datafile>
+      <name>dropTables.ini</name>
+      <exists>-1</exists>
+      <size>3</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>dropTables.ini</filename>
     </datafile>
   </datafiles>
   <NewExtensions/>
@@ -70,6 +87,7 @@
       <sprite>sprites\sprStabDown</sprite>
       <sprite>sprites\sprStabRight</sprite>
     </sprites>
+    <sprite>sprites\sprGloves</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -92,8 +110,6 @@
       <script>scripts\removeItem.gml</script>
       <script>scripts\updateModifiers.gml</script>
       <script>scripts\test.gml</script>
-      <script>scripts\savePlayer.gml</script>
-      <script>scripts\loadPlayer.gml</script>
     </scripts>
     <scripts name="objSwordStab">
       <script>scripts\abilitySwordStab.gml</script>
@@ -104,10 +120,35 @@
       <script>scripts\swordStabAnimationEnd.gml</script>
     </scripts>
     <scripts name="basItem">
+      <script>scripts\create.gml</script>
+    </scripts>
+    <scripts name="objEnemy">
+      <script>scripts\objEnemyDrop.gml</script>
+    </scripts>
+    <scripts name="GlobalInits">
+      <script>scripts\Init.gml</script>
+      <script>scripts\CreateItems.gml</script>
+      <script>scripts\CreateDrop.gml</script>
+    </scripts>
+    <script>scripts\DropFromTable.gml</script>
+    <scripts name="Depricated">
+      <script>scripts\loadItem.gml</script>
+    </scripts>
+    <scripts name="SaveLoad">
+      <script>scripts\load.gml</script>
+      <script>scripts\save.gml</script>
+      <script>scripts\loadPlayer.gml</script>
+      <script>scripts\savePlayer.gml</script>
+      <script>scripts\saveRoom.gml</script>
+      <script>scripts\saveInstance.gml</script>
+    </scripts>
+    <scripts name="basEntity">
+      <script>scripts\entityCreate.gml</script>
+    </scripts>
+    <scripts name="objItem">
       <script>scripts\pickup.gml</script>
     </scripts>
-    <script>scripts\save.gml</script>
-    <script>scripts\load.gml</script>
+    <script>scripts\dropItem.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\basLiving</object>
@@ -121,8 +162,13 @@
     <object>objects\basItem</object>
     <object>objects\objNextRoom</object>
     <object>objects\objHPBar</object>
+    <object>objects\objBar</object>
+    <object>objects\objInit</object>
+    <object>objects\treasureClass</object>
+    <object>objects\objItem</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rmInit</room>
     <room>rooms\rmRoom1</room>
     <room>rooms\rmRoom2</room>
   </rooms>
