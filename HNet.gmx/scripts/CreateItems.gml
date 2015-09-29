@@ -7,6 +7,7 @@ with (global.items) {
     with (lGloves) {
         agi = 10
         type = "gloves"
+        sprite = sprGloves
         
     }
     gloves = lGloves

@@ -6,7 +6,7 @@ if (instance_number(objEnemy) <= 0) {
     var count = instance_number(all);
     for (var i = 0; i < count; i++) {
         var inst = instance_find(all, i);
-        saveInstance(inst);
+        script_execute(inst.fSave, inst);
         
     }
 }

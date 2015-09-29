@@ -87,6 +87,7 @@
       <sprite>sprites\sprStabDown</sprite>
       <sprite>sprites\sprStabRight</sprite>
     </sprites>
+    <sprite>sprites\sprGloves</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -119,7 +120,6 @@
       <script>scripts\swordStabAnimationEnd.gml</script>
     </scripts>
     <scripts name="basItem">
-      <script>scripts\pickup.gml</script>
       <script>scripts\create.gml</script>
     </scripts>
     <scripts name="objEnemy">
@@ -142,6 +142,13 @@
       <script>scripts\saveRoom.gml</script>
       <script>scripts\saveInstance.gml</script>
     </scripts>
+    <scripts name="basEntity">
+      <script>scripts\entityCreate.gml</script>
+    </scripts>
+    <scripts name="objItem">
+      <script>scripts\pickup.gml</script>
+    </scripts>
+    <script>scripts\dropItem.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\basLiving</object>
@@ -157,6 +164,7 @@
     <object>objects\objBar</object>
     <object>objects\objInit</object>
     <object>objects\treasureClass</object>
+    <object>objects\objItem</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>
