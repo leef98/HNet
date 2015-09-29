@@ -1,9 +1,9 @@
 ///removeItem(item)
 //Removes equipment
 var item = argument0
-if (!is_undefined(item)) {
+if (!is_undefined(item) && item.object_index == basItem) {
     with (global.player) {
-        switch (item[? "type"]) {
+        switch (item.type) {
             case "lWeapon":
                 lWeapon = 0
             break;
@@ -34,24 +34,24 @@ if (!is_undefined(item)) {
         }
         
         //Kollar om det finns agi på itemet och uppdaterar den
-        if is_real(item[? "agi"]) {
-            stats[? "eAgi"] -= item[? "agi"]
+        if is_real(item.agi) {
+            stats[? "eAgi"] -= item.agi
         }
         //Kollar om det finns str på itemet och uppdaterar den
-        if is_real(item[? "str"]) {
-            stats[? "eStr"] -= item[? "str"]
+        if is_real(item.str) {
+            stats[? "eStr"] -= item.str
         }
         //Kollar om det finns int på itemet och uppdaterar den
-        if is_real(item[? "int"]) {
-            stats[? "eInt"] -= item[? "int"]
+        if is_real(item.int) {
+            stats[? "eInt"] -= item.int
         }
         //Kollar om det finns mana på itemet och uppdaterar den
-        if is_real(item[? "mana"]) {
-            stats[? "eMana"] -= item[? "mana"]
+        if is_real(item.spi) {
+            stats[? "eMana"] -= item.spi
         }
         //Kollar om det finns health på itemet och uppdaterar den
-        if is_real(item[? "health"]) {
-            stats[? "eHealth"] -= item[? "health"]
+        if is_real(item.health) {
+            stats[? "eHealth"] -= item.health
         }
         updateStats()
     }
