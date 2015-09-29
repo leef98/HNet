@@ -1,3 +1,4 @@
+//Ludvig
 ini_open("save.ini")
 createPlayer()
 loadPlayer()

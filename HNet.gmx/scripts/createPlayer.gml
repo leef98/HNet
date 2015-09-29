@@ -24,13 +24,12 @@ cAbility[? "ability2"] = createBullet
 //Lägger till inventory som håller alla items (Inte equipade)
 inventory = ds_list_create()
 
-//Equipment (lWeapon, rWeapon, head, shoulder, chest, arms, gloves, pants, boots)
+//Equipment (lWeapon, rWeapon, head, shoulder, chest, gloves, pants, boots)
 lWeapon = 0
 rWeapon = 0
 head = 0
 shoulder = 0
 chest = 0
-arms = 0
 gloves = 0
 pants = 0
 boots = 0
@@ -66,8 +65,11 @@ cooldown[? "rAbility"] = 0
 //Lägger till speed
 bSpeed = 2
 cSpeed = stats[? "agi"] * 0.3
-
-//Exempelitem (type, agi, str, int, mana, health, stamina, function)
+//agi(Speed, AttackSpeed)
+//str(Damage, Resistance)
+//int(SpellDamage, ProjectileSpeed)
+//spi(Mana, CooldownReduction)
+//Exempelitem (type, agi, str, int, spi, hp, sta, function)
 tItem = ds_map_create()
 tItem[? "type"] = "chest"
 tItem[? "agi"] = 100
