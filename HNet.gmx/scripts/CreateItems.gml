@@ -3,20 +3,25 @@
 //Måste kallas efter globala Init
 with (global.items) {
     //Gloves
-    var lGloves = instance_create(0, 0, basItem)
-    with (lGloves) {
+    gloves = instance_create(0, 0, basItem)
+    with (gloves) {
         agi = 10
         type = "gloves"
         sprite = sprGloves
         
     }
-    gloves = lGloves
     
     //Chainmail
-    var lChainmail = instance_create(0, 0, basItem)
-    with (lChainmail) {
+    chainmail = instance_create(0, 0, basItem)
+    with (chainmail) {
         str = 15
         type = "chest"
     }
-    chainmail = lChainmail
+    
+    //Legplates
+    Legplates = instance_create (0, 0, basItem)
+    with (Legplates) {
+        str = 15
+        type = "legs"
+    }
 }
