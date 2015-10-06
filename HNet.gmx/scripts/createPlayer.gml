@@ -24,7 +24,7 @@ cAbility[? "ability2"] = createBullet
 //Lägger till inventory som håller alla items (Inte equipade)
 inventory = ds_list_create()
 
-//Equipment (lWeapon, rWeapon, head, shoulder, chest, gloves, pants, boots)
+//Equipment (lWeapon, rWeapon, head, shoulder, chest, hands, legs, feet)
 lWeapon = 0
 rWeapon = 0
 head = 0
