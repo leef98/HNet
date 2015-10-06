@@ -90,6 +90,8 @@
     <sprite>sprites\sprGloves</sprite>
     <sprite>sprites\sprDead</sprite>
     <sprite>sprites\bag</sprite>
+    <sprite>sprites\sprShoes</sprite>
+    <sprite>sprites\sprChainmail</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>

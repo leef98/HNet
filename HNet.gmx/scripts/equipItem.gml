@@ -25,21 +25,17 @@ if (item.object_index == basItem) {
                 removeItem(chest)
                 chest = item
             break;
-            case "arms":
-                removeItem(arms)
-                arms = item
+            case "hands":
+                removeItem(hands)
+                hands = item
             break;
-            case "gloves":
-                removeItem(gloves)
-                gloves = item
+            case "legs":
+                removeItem(legs)
+                legs = item
             break;
-            case "pants":
-                removeItem(pants)
-                pants = item
-            break;
-            case "boots":
-                removeItem(boots)
-                boots = item
+            case "feet":
+                removeItem(feet)
+                feet = item
             break;
         }
         //Kollar om det finns agi på itemet och uppdaterar den
