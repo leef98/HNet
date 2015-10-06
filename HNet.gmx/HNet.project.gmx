@@ -88,6 +88,8 @@
       <sprite>sprites\sprStabRight</sprite>
     </sprites>
     <sprite>sprites\sprGloves</sprite>
+    <sprite>sprites\sprShoes</sprite>
+    <sprite>sprites\sprChainmail</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
