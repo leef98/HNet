@@ -8,7 +8,7 @@ with (global.player) {
     equipItem(ini_read_real('player', 'shoulder', 0))
     equipItem(ini_read_real('player', 'chest', 0))
     equipItem(ini_read_real('player', 'arms', 0))
-    equipItem(ini_read_real('player', 'gloves', 0))
+    equipItem(ini_read_real('player', 'hands', 0))
     equipItem(ini_read_real('player', 'pants', 0))
     equipItem(ini_read_real('player', 'boots', 0))
     //Position
