@@ -31,8 +31,8 @@ head = 0
 shoulder = 0
 chest = 0
 hands = 0
-pgants = 0
-boots = 0
+legs = 0
+feet = 0
 //Stats 3 sets av stats
 //baseStats, equipStats, currentStats b*Stat* e*Stat* *Stat*
 //Definition av stats

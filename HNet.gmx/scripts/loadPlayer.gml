@@ -7,10 +7,9 @@ with (global.player) {
     equipItem(ini_read_real('player', 'head', 0))
     equipItem(ini_read_real('player', 'shoulder', 0))
     equipItem(ini_read_real('player', 'chest', 0))
-    equipItem(ini_read_real('player', 'arms', 0))
     equipItem(ini_read_real('player', 'hands', 0))
-    equipItem(ini_read_real('player', 'pants', 0))
-    equipItem(ini_read_real('player', 'boots', 0))
+    equipItem(ini_read_real('player', 'legs', 0))
+    equipItem(ini_read_real('player', 'feet', 0))
     //Position
     x = ini_read_real('player', 'x', 0)
     y = ini_read_real('player', 'y', 0)

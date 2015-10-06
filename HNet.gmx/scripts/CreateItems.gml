@@ -27,7 +27,7 @@ with (global.items) {
     gloves = instance_create(0, 0, basItem)
     with (gloves) {
         agi = 10
-        type = "gloves"
+        type = "hands"
         sprite = sprGloves 
     }
     

@@ -19,17 +19,14 @@ if (!is_undefined(item) && item.object_index == basItem) {
             case "chest":
                 chest = 0
             break;
-            case "arms":
-                arms = 0
-            break;
             case "hands":
                 hands = 0
             break;
-            case "pants":
-                pants = 0
+            case "legs":
+                legs = 0
             break;
-            case "boots":
-                boots = 0
+            case "feet":
+                feet = 0
             break;
         }
         
