@@ -1,4 +1,8 @@
 ///pickup()
 //Lägger till itemet i players inventory
-ds_list_add(player.inventory, self.item)
+var item = self.item;
+with (global.player) {
+    ds_list_add(inventory, item);
+}
+
 instance_destroy();
