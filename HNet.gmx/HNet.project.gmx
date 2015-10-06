@@ -88,6 +88,8 @@
       <sprite>sprites\sprStabRight</sprite>
     </sprites>
     <sprite>sprites\sprGloves</sprite>
+    <sprite>sprites\sprDead</sprite>
+    <sprite>sprites\bag</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -147,8 +149,15 @@
     </scripts>
     <scripts name="objItem">
       <script>scripts\pickup.gml</script>
+      <script>scripts\drawBag.gml</script>
+      <script>scripts\backpack.gml</script>
     </scripts>
     <script>scripts\dropItem.gml</script>
+    <scripts name="Bar">
+      <script>scripts\barVariabel.gml</script>
+      <script>scripts\valueChange.gml</script>
+      <script>scripts\dead.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\basLiving</object>
@@ -162,10 +171,10 @@
     <object>objects\basItem</object>
     <object>objects\objNextRoom</object>
     <object>objects\objHPBar</object>
-    <object>objects\objBar</object>
     <object>objects\objInit</object>
     <object>objects\treasureClass</object>
     <object>objects\objItem</object>
+    <object>objects\objBackpack</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>
