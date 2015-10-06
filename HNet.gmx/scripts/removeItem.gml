@@ -22,8 +22,8 @@ if (!is_undefined(item) && item.object_index == basItem) {
             case "arms":
                 arms = 0
             break;
-            case "gloves":
-                gloves = 0
+            case "hands":
+                hands = 0
             break;
             case "pants":
                 pants = 0

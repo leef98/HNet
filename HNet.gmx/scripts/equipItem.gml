@@ -29,9 +29,9 @@ if (item.object_index == basItem) {
                 removeItem(arms)
                 arms = item
             break;
-            case "gloves":
-                removeItem(gloves)
-                gloves = item
+            case "hands":
+                removeItem(hands)
+                hands = item
             break;
             case "pants":
                 removeItem(pants)
