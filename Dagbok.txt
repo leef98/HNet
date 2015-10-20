@@ -21,6 +21,9 @@ Påbörjade Drops.
 2015-09-24
 Ändrade hur drops skall fungera. Items skall lagras som objekt istället för en .ini fil.
 Drops skall lagras som ett objekt som initieras genom ett skript.
-2015-09-28
+2015-09-29
 Gjorde klart exemplerna för items. Fixade Droptables med skript. Kommenterade koden då William behöver använda detta som exempel.
 Hade lite problem då vissa objekt inte var persistent.
+2015-09-06
+Fixade pickups, var fel med self istället för id i createplayer. Ändrade namn på en itemslot. Hjälpte william att fixa lite items.
+Daniel konsulterade mig om inventory, sade hur jag hade lagt upp variabeln. Sade till Daniel att vi skall ha all kod i script
