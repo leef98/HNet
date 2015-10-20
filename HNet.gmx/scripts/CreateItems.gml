@@ -21,6 +21,7 @@ with (global.items) {
     with (chainmail) {
         str = 15
         type = "chest"
+        sprite = sprChainmail
     }
     
         //Gloves
@@ -43,5 +44,6 @@ with (global.items) {
     with (shoes) {
         agi = 5
         type = "feet"
+        sprite = sprShoes
     }
 }

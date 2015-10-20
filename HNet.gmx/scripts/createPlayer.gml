@@ -1,4 +1,4 @@
-//Animations variabel
+//Animations variabler
 swordStab = false;
 //Variabler
 /*
