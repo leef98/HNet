@@ -1,6 +1,7 @@
 ///equipItem(item)
 //e*Stat* blir den equipade statsen som adderas med b*Stat* och blir *Stat*
 var item = argument0
+if (item == 0){exit;}
 //Kollar villken typ och assignar till den typen
 if (item.object_index == basItem) {
     with (global.player) {
