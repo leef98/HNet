@@ -53,6 +53,8 @@ eMana = 0
 eHealth = 0
 eStamina = 0
 mStamina = 100
+mana = 0
+stamina = 0
 //Definition av stats
 //Cooldown
 cooldown = ds_map_create()

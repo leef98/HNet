@@ -153,13 +153,19 @@
     </scripts>
     <scripts name="objItem">
       <script>scripts\pickup.gml</script>
+      <script>scripts\createObjItem.gml</script>
+      <script>scripts\saveObjItem.gml</script>
     </scripts>
     <script>scripts\dropItem.gml</script>
+    <script>scripts\backpack.gml</script>
+    <script>scripts\drawBag.gml</script>
     <scripts name="Bar">
       <script>scripts\barVariabel.gml</script>
       <script>scripts\valueChange.gml</script>
       <script>scripts\dead.gml</script>
     </scripts>
+    <script>scripts\pause.gml</script>
+    <script>scripts\unpause.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\basLiving</object>
@@ -177,6 +183,8 @@
     <object>objects\treasureClass</object>
     <object>objects\objItem</object>
     <object>objects\objBag</object>
+    <object>objects\objBackpack</object>
+    <object>objects\objPrevRoom</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>

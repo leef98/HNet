@@ -17,4 +17,6 @@ with (global.player) {
     ini_write_real('player', 'stats', stats)
     //Spara current abilities
     ini_write_real('player', 'cAbility', cAbility)
+    //Spara rum
+    ini_write_real('player', 'room', room);
 }

@@ -6,7 +6,10 @@ if (instance_number(objEnemy) <= 0) {
     var count = instance_number(all);
     for (var i = 0; i < count; i++) {
         var inst = instance_find(all, i);
-        script_execute(inst.fSave, inst);
-        
+        if (inst.object_index != objMain) {
+            script_execute(inst.fSave, inst);
+        }
     }
+}else {//Visa att man inte får spara
+
 }
