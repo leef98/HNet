@@ -162,6 +162,8 @@
       <script>scripts\valueChange.gml</script>
       <script>scripts\dead.gml</script>
     </scripts>
+    <script>scripts\pause.gml</script>
+    <script>scripts\unpause.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\basLiving</object>
@@ -179,6 +181,7 @@
     <object>objects\treasureClass</object>
     <object>objects\objItem</object>
     <object>objects\objBackpack</object>
+    <object>objects\objPrevRoom</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>

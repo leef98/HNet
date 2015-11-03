@@ -1,4 +1,4 @@
-
+if (paused){exit;} //Exitar då spelet är pausat
 if cooldown[? "ability1"] > 0 { cooldown[? "ability1"] -= 1}
 if cooldown[? "ability2"] > 0 { cooldown[? "ability2"] -= 1}
 if cooldown[? "ability3"] > 0 { cooldown[? "ability3"] -= 1}

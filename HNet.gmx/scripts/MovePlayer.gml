@@ -1,4 +1,5 @@
 //local speed
+if (global.paused){exit;} //Exitar då spelet är pausat
 var lSpeed = cSpeed;
 //Sprint
 if keyboard_check(vk_shift){
