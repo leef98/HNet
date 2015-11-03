@@ -88,6 +88,7 @@
       <sprite>sprites\sprStabRight</sprite>
     </sprites>
     <sprite>sprites\sprGloves</sprite>
+    <sprite>sprites\sprQuest</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -149,6 +150,10 @@
       <script>scripts\pickup.gml</script>
     </scripts>
     <script>scripts\dropItem.gml</script>
+    <scripts name="questScripts">
+      <script>scripts\questScript.gml</script>
+      <script>scripts\playerIsNear.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\basLiving</object>
@@ -166,6 +171,7 @@
     <object>objects\objInit</object>
     <object>objects\treasureClass</object>
     <object>objects\objItem</object>
+    <object>objects\objQuest</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>

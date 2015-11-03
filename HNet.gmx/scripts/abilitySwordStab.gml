@@ -28,5 +28,5 @@ if lCoolDown <= 0 {
         
     }
     //Fixa cooldown
-    lCoolDown = 30
+    lCoolDown[? argument0] = 30
 }

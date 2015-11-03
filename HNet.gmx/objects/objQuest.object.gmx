@@ -25,16 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>questNumber</string>
+            <string>questComplete</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>1</string>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="0">
+    <event eventtype="7" enumb="4">
       <action>
         <libid>1</libid>
         <id>601</id>
@@ -51,7 +51,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>questBubble</script>
+            <script>playerIsNear</script>
           </argument>
           <argument>
             <kind>0</kind>
