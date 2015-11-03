@@ -88,7 +88,10 @@
       <sprite>sprites\sprStabRight</sprite>
     </sprites>
     <sprite>sprites\sprGloves</sprite>
-    <sprite>sprites\sprQuest</sprite>
+    <sprite>sprites\sprDead</sprite>
+    <sprite>sprites\bag</sprite>
+    <sprite>sprites\sprShoes</sprite>
+    <sprite>sprites\sprChainmail</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -148,11 +151,16 @@
     </scripts>
     <scripts name="objItem">
       <script>scripts\pickup.gml</script>
+      <script>scripts\createObjItem.gml</script>
+      <script>scripts\saveObjItem.gml</script>
     </scripts>
     <script>scripts\dropItem.gml</script>
-    <scripts name="questScripts">
-      <script>scripts\questScript.gml</script>
-      <script>scripts\playerIsNear.gml</script>
+    <script>scripts\backpack.gml</script>
+    <script>scripts\drawBag.gml</script>
+    <scripts name="Bar">
+      <script>scripts\barVariabel.gml</script>
+      <script>scripts\valueChange.gml</script>
+      <script>scripts\dead.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -167,11 +175,10 @@
     <object>objects\basItem</object>
     <object>objects\objNextRoom</object>
     <object>objects\objHPBar</object>
-    <object>objects\objBar</object>
     <object>objects\objInit</object>
     <object>objects\treasureClass</object>
     <object>objects\objItem</object>
-    <object>objects\objQuest</object>
+    <object>objects\objBackpack</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>
