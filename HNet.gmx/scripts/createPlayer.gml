@@ -24,7 +24,7 @@ cAbility[? "ability2"] = createBullet
 //Lägger till inventory som håller alla items (Inte equipade)
 inventory = ds_list_create()
 
-//Equipment (lWeapon, rWeapon, head, shoulder, chest, hands, legs, feet)
+//Equipment (lWeapon, rWeapon, head, shoulder, chest, hands, l  egs, feet)
 lWeapon = 0
 rWeapon = 0
 head = 0
@@ -78,5 +78,6 @@ tItem[? "agi"] = 100
 
 ds_list_add(inventory, tItem)
 ds_list_mark_as_map(inventory, 0)
+ds_list_add(inventory, global.items.gloves)
 
 global.player = id;
