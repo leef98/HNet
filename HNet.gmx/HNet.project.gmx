@@ -89,7 +89,7 @@
     </sprites>
     <sprite>sprites\sprGloves</sprite>
     <sprite>sprites\sprDead</sprite>
-    <sprite>sprites\bag</sprite>
+    <sprite>sprites\sprBag</sprite>
     <sprite>sprites\sprShoes</sprite>
     <sprite>sprites\sprChainmail</sprite>
   </sprites>
@@ -114,6 +114,8 @@
       <script>scripts\removeItem.gml</script>
       <script>scripts\updateModifiers.gml</script>
       <script>scripts\test.gml</script>
+      <script>scripts\drawBag.gml</script>
+      <script>scripts\backpack.gml</script>
     </scripts>
     <scripts name="objSwordStab">
       <script>scripts\abilitySwordStab.gml</script>
@@ -151,8 +153,6 @@
     </scripts>
     <scripts name="objItem">
       <script>scripts\pickup.gml</script>
-      <script>scripts\drawBag.gml</script>
-      <script>scripts\backpack.gml</script>
     </scripts>
     <script>scripts\dropItem.gml</script>
     <scripts name="Bar">
@@ -176,7 +176,7 @@
     <object>objects\objInit</object>
     <object>objects\treasureClass</object>
     <object>objects\objItem</object>
-    <object>objects\objBackpack</object>
+    <object>objects\objBag</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>
