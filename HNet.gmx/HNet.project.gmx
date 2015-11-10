@@ -152,10 +152,11 @@
     </scripts>
     <scripts name="objItem">
       <script>scripts\pickup.gml</script>
-      <script>scripts\createObjItem.gml</script>
-      <script>scripts\saveObjItem.gml</script>
     </scripts>
     <script>scripts\dropItem.gml</script>
+    <scripts name="Quests">
+      <script>scripts\Quests.gml</script>
+    </scripts>
     <script>scripts\backpack.gml</script>
     <script>scripts\drawBag.gml</script>
     <scripts name="Bar">
