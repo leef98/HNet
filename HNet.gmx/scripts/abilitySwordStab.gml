@@ -3,6 +3,7 @@
 
 
 if lCoolDown <= 0 {
+//blir fel någonstans, hitta det senare
     
     var inst;
     //Rikta mot musen
