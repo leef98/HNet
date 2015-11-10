@@ -113,8 +113,6 @@
       <script>scripts\removeItem.gml</script>
       <script>scripts\updateModifiers.gml</script>
       <script>scripts\test.gml</script>
-      <script>scripts\drawBag.gml</script>
-      <script>scripts\backpack.gml</script>
     </scripts>
     <scripts name="objSwordStab">
       <script>scripts\abilitySwordStab.gml</script>
