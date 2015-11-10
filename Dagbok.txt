@@ -29,6 +29,8 @@ Fixade pickups, var fel med self istället för id i createplayer. Ändrade namn
 Daniel konsulterade mig om inventory, sade hur jag hade lagt upp variabeln. Sade till Daniel att vi skall ha all kod i script
 2015-10-20
 Diskuterade lite om spelet, förklarade att vi följde tidsplanen och förklarade hela idéen med spelet. Att man skall kombinera Combaten i The binding of isaac
-med RPG elementen från Diablo. Sedan gör man att alla stats har direkt påverkan. Så att man känner att det blir skillnad.
+med RPG elementen från Diablo. Sedan gör man att alla stats har direkt påverkan. Så att man känner att det blir skillnad när man blir starkare
 
 Fixade lite av daniels kod, som hade buggar. Försöker fixa så att rum-sparningssystemet fungerar.
+2015-11-03
+Lade till funktion för att pausa spelet, fixade lite på spara funktionen. Hjälpte daniel med inventory. Diskuterade lite med william om items. Skall ha flera olika nivåer. med prefix

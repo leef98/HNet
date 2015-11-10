@@ -89,7 +89,6 @@
     </sprites>
     <sprite>sprites\sprGloves</sprite>
     <sprite>sprites\sprDead</sprite>
-    <sprite>sprites\sprBag</sprite>
     <sprite>sprites\sprShoes</sprite>
     <sprite>sprites\sprChainmail</sprite>
   </sprites>
@@ -182,7 +181,6 @@
     <object>objects\objInit</object>
     <object>objects\treasureClass</object>
     <object>objects\objItem</object>
-    <object>objects\objBag</object>
     <object>objects\objBackpack</object>
     <object>objects\objPrevRoom</object>
   </objects>
