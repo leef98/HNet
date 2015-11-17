@@ -164,6 +164,26 @@
     </scripts>
     <script>scripts\pause.gml</script>
     <script>scripts\unpause.gml</script>
+    <scripts name="Items">
+      <scripts name="Head">
+        <script>scripts\Hood.gml</script>
+      </scripts>
+      <scripts name="Shoulder">
+        <script>scripts\Amice.gml</script>
+      </scripts>
+      <scripts name="Chest">
+        <script>scripts\Robe.gml</script>
+      </scripts>
+      <scripts name="Hands">
+        <script>scripts\Mittens.gml</script>
+      </scripts>
+      <scripts name="Legs">
+        <script>scripts\Leggings.gml</script>
+      </scripts>
+      <scripts name="Feet">
+        <script>scripts\Slippers.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\basLiving</object>
