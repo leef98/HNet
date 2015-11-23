@@ -2,12 +2,17 @@
 // något som sparar vilka quests som är aktiva
 // minimun requirement för vissa quests?
 
-//quest = om quest är aktivt
+//quest = quest type
 quest=argument0;
-//questType = vad för sorts quest det är
-questType=argument1
+
+//quest aktiveras
+active=argument1;
+
+//värde
+value=argument2
+
 //complete = om questet är redo att lämnas in
-complete=argument2;
+complete=argument3;
 
 
 {
@@ -15,14 +20,14 @@ complete=argument2;
     {
     case 1:
     
-        quest1(quest,questType ,complete);
+        quest1(active, value, complete);
     
     break;
     
  
        case 2:
   
-        quest2(quest,questType ,complete);
+        quest2(questType , active ,complete);
               
        break;
        
