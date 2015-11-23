@@ -133,7 +133,11 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>Quests</script>
+            <script>questMain</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -142,10 +146,6 @@
           <argument>
             <kind>0</kind>
             <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
           </argument>
           <argument>
             <kind>0</kind>
