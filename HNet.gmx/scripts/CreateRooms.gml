@@ -1,8 +1,9 @@
 ///CreateRooms()
 //Ludvig
 //Skapar alla rum i en grid
-global.rooms = ds_grid_create(10, 10);
+global.rooms = ds_grid_create(100, 100);
 //Lägger till rum
+//För att lägga till rum [xposition, yposition] = rummet
 global.rooms[# 1, 1] = rmRoom1;
 global.rooms[# 2, 1] = rmRoom2;
 global.rooms[# 2, 1] = room3;

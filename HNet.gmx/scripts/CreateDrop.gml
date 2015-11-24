@@ -3,12 +3,12 @@
 var inst = instance_create(0, 0, treasureClass);
 
 with (inst) {
-    items[0] = global.items.gloves;
-    items[1] = global.items.chainmail;
-    items[2] = global.items.cowl;
-    items[3] = global.items.leatherpads;
-    items[4] = global.items.shoes;
-    items[5] = global.items.legplates;
+    items[0] = global.items.mittens1;
+    items[1] = global.items.mittens2;
+    items[2] = global.items.slippers1;
+    items[3] = global.items.slippers2;
+    items[4] = global.items.leggings1;
+    items[5] = global.items.amice1;
     
     prob[0] = 20;
     prob[1] = 20;
