@@ -1,5 +1,7 @@
 
-
+active = argument0;
+argument1 = 0;
+argument2 = 0;   
 
 
 if(active = 1){
@@ -8,9 +10,7 @@ if(active = 1){
     
     quest = active;
     
-argument0 = 0;
-argument1 = 0;
-argument2 = 0;   
+
     
         active = 0;   
          

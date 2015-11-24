@@ -91,6 +91,7 @@
     <sprite>sprites\sprDead</sprite>
     <sprite>sprites\sprShoes</sprite>
     <sprite>sprites\sprChainmail</sprite>
+    <sprite>sprites\sprBarrel</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -195,6 +196,7 @@
         <script>scripts\Slippers.gml</script>
       </scripts>
     </scripts>
+    <script>scripts\traveler.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\basLiving</object>
@@ -214,6 +216,7 @@
     <object>objects\objBackpack</object>
     <object>objects\objPrevRoom</object>
     <object>objects\MainGame</object>
+    <object>objects\objBarrel</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>
