@@ -119,8 +119,7 @@
             <kind>1</kind>
             <string>//Check dead
 if hp &lt;= 0 {
-    instance_destroy();
-    quest1(0,0,1);   
+    instance_destroy(); 
 }
 </string>
           </argument>

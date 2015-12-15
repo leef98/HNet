@@ -92,6 +92,7 @@
     <sprite>sprites\sprShoes</sprite>
     <sprite>sprites\sprChainmail</sprite>
     <sprite>sprites\sprBarrel</sprite>
+    <sprite>sprites\sprMessage</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -217,6 +218,7 @@
     <object>objects\objPrevRoom</object>
     <object>objects\MainGame</object>
     <object>objects\objBarrel</object>
+    <object>objects\objMessage</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>
