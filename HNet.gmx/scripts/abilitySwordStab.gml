@@ -2,7 +2,7 @@
 //Om cooldownen har gått ut: skapa en bullet
 
 
-if lCoolDown <= 0 {
+if cooldown[? "lAbility"] <= 0 {
 //blir fel någonstans, hitta det senare
     
     var inst;
@@ -29,5 +29,5 @@ if lCoolDown <= 0 {
         
     }
     //Fixa cooldown
-    lCoolDown[? argument0] = 30
+    cooldown[? "lAbility"] = 30
 }

@@ -51,6 +51,21 @@ Fortsatte på rummen, försökte få att monstrerna skulle komma tillbaka om man
 Lyckades få till rummen, en standarniserad lösning, nu kommer rummen att återställas om man far för långt bort. Diskuterade med william om Armor och försvar.
 Kom fram till att vi bara skall ha % Physical reduction, inget magiskt skydd. Alla armor skall vara lite mycket värda. Ingen armor penetration. Skall börja med att programmera abilities.
 Pratade lite med albin om hur rummen skall fungera, med en grid som karta och hur man skall göra så att det fungerar.
+2015-11-24
+Började med att designa skills och spells för de olika "klasserna". Skapade även en definition av klass-spellsen. Diskuterade med hela gruppen. Diskuterade med william om olika namn för itemtyper.
+Började programmera en spell: Lightning Storm.
+Kom fram till att vi skall ha inga stuns eller knockbacks. Vi skall ha channeled abilities
+2015-12-01
+Gav lite tips till daniel om inventory koden.
+gjorde om useAbility så att den själv kollar om man kan använda en ability eller inte.
+Fortsatte programmera på Lightning storm, kom fram till att inga flyttande objekt skall vara solid, då blir det visst lite krångligt med kollissioner.
+Istället har jag egen kollissionskod.
+2015-12-08
+Föreläste om projektet för alla andra, gick bra. 
+2015-12-15
+Lyckades göra klart lightning storm med animationer och allt, gjorde den lite slumpmässig så att det känns som lightning.
+Den skapar 3 lightning clouds som strikar lite då och då.
+Nästa gång, möjligtvis lite UI saker eller någon till ability.
 
 Versionshantering: Programmet som vi använder för att vi alla skall kunna jobba på samma saker utan att någonting försvinner, typ som Google Drive För programmering.
 Stats: Värden på hur bra man är i spelet, till exempel hur snabb, stark och smart man är i spelet.

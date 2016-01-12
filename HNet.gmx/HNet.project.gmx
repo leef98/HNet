@@ -91,6 +91,11 @@
     <sprite>sprites\sprDead</sprite>
     <sprite>sprites\sprShoes</sprite>
     <sprite>sprites\sprChainmail</sprite>
+    <sprite>sprites\sprite26</sprite>
+    <sprite>sprites\sprLightningStart</sprite>
+    <sprite>sprites\sprLightningStrike</sprite>
+    <sprite>sprites\sprLightningCloud</sprite>
+    <sprite>sprites\sprLightningEnd</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -195,6 +200,14 @@
         <script>scripts\Slippers.gml</script>
       </scripts>
     </scripts>
+    <scripts name="Skills">
+      <scripts name="LightningStorm">
+        <script>scripts\LightningStorm.gml</script>
+        <script>scripts\LightningStormStep.gml</script>
+        <script>scripts\LightningStormCollision.gml</script>
+        <script>scripts\LightningStormCreate.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\basLiving</object>
@@ -214,6 +227,8 @@
     <object>objects\objBackpack</object>
     <object>objects\objPrevRoom</object>
     <object>objects\MainGame</object>
+    <object>objects\objLightningStorm</object>
+    <object>objects\mainUi</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>

@@ -2,7 +2,7 @@
 
 
 
-if(active = 1){
+/*if(active = 1){
 
     show_message("quest 1 aktivt");
     
@@ -20,4 +20,4 @@ argument2 = 0;
     
         
         show_message(value);
-    }
+    }*/

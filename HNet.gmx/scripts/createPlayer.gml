@@ -19,7 +19,7 @@ cAbility[? "lAbility"] = abilitySwordStab
 //Lägger till abilities på 1 och left button (test)
 
 cAbility[? "ability1"] = createBullet
-cAbility[? "ability2"] = createBullet
+cAbility[? "ability2"] = LightningStorm
 
 //Lägger till inventory som håller alla items (Inte equipade)
 inventory = ds_list_create()
@@ -75,7 +75,7 @@ cSpeed = stats[? "agi"] * 0.3
 tItem = ds_map_create()
 tItem[? "type"] = "chest"
 tItem[? "agi"] = 100
-
+hp = 100;
 ds_list_add(inventory, tItem)
 ds_list_mark_as_map(inventory, 0)
 
