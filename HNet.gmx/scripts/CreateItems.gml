@@ -4,3 +4,6 @@
 Hood();
 Robe();
 Mittens();
+Leggings();
+Slippers();
+Amice();

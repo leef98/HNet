@@ -91,6 +91,8 @@
     <sprite>sprites\sprDead</sprite>
     <sprite>sprites\sprShoes</sprite>
     <sprite>sprites\sprChainmail</sprite>
+    <sprite>sprites\sprBarrel</sprite>
+    <sprite>sprites\sprMessage</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -132,6 +134,7 @@
       <script>scripts\Init.gml</script>
       <script>scripts\CreateItems.gml</script>
       <script>scripts\CreateDrop.gml</script>
+      <script>scripts\CreateRooms.gml</script>
     </scripts>
     <script>scripts\DropFromTable.gml</script>
     <scripts name="Depricated">
@@ -166,6 +169,14 @@
     </scripts>
     <script>scripts\pause.gml</script>
     <script>scripts\unpause.gml</script>
+    <scripts name="Room">
+      <script>scripts\MoveRight.gml</script>
+      <script>scripts\MoveLeft.gml</script>
+      <script>scripts\MoveDown.gml</script>
+      <script>scripts\MoveUp.gml</script>
+      <script>scripts\GotoRoom.gml</script>
+      <script>scripts\CheckRoom.gml</script>
+    </scripts>
     <scripts name="Items">
       <scripts name="Head">
         <script>scripts\Hood.gml</script>
@@ -198,6 +209,7 @@
         <script>scripts\Boots.gml</script>
       </scripts>
     </scripts>
+    <script>scripts\traveler.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\basLiving</object>
@@ -216,13 +228,18 @@
     <object>objects\objItem</object>
     <object>objects\objBackpack</object>
     <object>objects\objPrevRoom</object>
+    <object>objects\MainGame</object>
+    <object>objects\objBarrel</object>
+    <object>objects\objMessage</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>
     <room>rooms\rmRoom1</room>
     <room>rooms\rmRoom2</room>
     <room>rooms\room3</room>
-  </rooms>
+    <room>rooms\room4</room>
+    <room>rooms\room5</room>
+ </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
