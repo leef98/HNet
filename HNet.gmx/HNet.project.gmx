@@ -91,16 +91,11 @@
     <sprite>sprites\sprDead</sprite>
     <sprite>sprites\sprShoes</sprite>
     <sprite>sprites\sprChainmail</sprite>
-<<<<<<< HEAD
     <sprite>sprites\sprite26</sprite>
     <sprite>sprites\sprLightningStart</sprite>
     <sprite>sprites\sprLightningStrike</sprite>
     <sprite>sprites\sprLightningCloud</sprite>
     <sprite>sprites\sprLightningEnd</sprite>
-=======
-    <sprite>sprites\sprBarrel</sprite>
-    <sprite>sprites\sprMessage</sprite>
->>>>>>> 103ac52647d9cac22f1c31eed18ae8dd9eb692b6
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -188,33 +183,21 @@
     <scripts name="Items">
       <scripts name="Head">
         <script>scripts\Hood.gml</script>
-        <script>scripts\Cap.gml</script>
-        <script>scripts\Helm.gml</script>
       </scripts>
       <scripts name="Shoulder">
         <script>scripts\Amice.gml</script>
-        <script>scripts\Spaulders.gml</script>
-        <script>scripts\Pauldrons.gml</script>
       </scripts>
       <scripts name="Chest">
         <script>scripts\Robe.gml</script>
-        <script>scripts\Tunic.gml</script>
-        <script>scripts\Chestplate.gml</script>
       </scripts>
       <scripts name="Hands">
         <script>scripts\Mittens.gml</script>
-        <script>scripts\Gloves.gml</script>
-        <script>scripts\Gauntlets.gml</script>
       </scripts>
       <scripts name="Legs">
         <script>scripts\Leggings.gml</script>
-        <script>scripts\Pants.gml</script>
-        <script>scripts\Greaves.gml</script>
       </scripts>
       <scripts name="Feet">
         <script>scripts\Slippers.gml</script>
-        <script>scripts\Threads.gml</script>
-        <script>scripts\Boots.gml</script>
       </scripts>
     </scripts>
     <scripts name="Skills">
@@ -224,8 +207,11 @@
         <script>scripts\LightningStormCollision.gml</script>
         <script>scripts\LightningStormCreate.gml</script>
       </scripts>
-    <script>scripts\traveler.gml</script>
     </scripts>
+    <scripts name="UI">
+      <script>scripts\openSkills.gml</script>
+    </scripts>
+  </scripts>
   <objects name="objects">
     <object>objects\basLiving</object>
     <object>objects\objEnemy</object>
@@ -244,13 +230,8 @@
     <object>objects\objBackpack</object>
     <object>objects\objPrevRoom</object>
     <object>objects\MainGame</object>
-<<<<<<< HEAD
     <object>objects\objLightningStorm</object>
     <object>objects\mainUi</object>
-=======
-    <object>objects\objBarrel</object>
-    <object>objects\objMessage</object>
->>>>>>> 103ac52647d9cac22f1c31eed18ae8dd9eb692b6
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>
@@ -259,7 +240,7 @@
     <room>rooms\room3</room>
     <room>rooms\room4</room>
     <room>rooms\room5</room>
- </rooms>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>

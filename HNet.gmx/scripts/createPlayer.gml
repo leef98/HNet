@@ -78,5 +78,6 @@ tItem[? "agi"] = 100
 hp = 100;
 ds_list_add(inventory, tItem)
 ds_list_mark_as_map(inventory, 0)
+cAbility[? "ability4"] = LightningStorm
 
 global.player = id;
