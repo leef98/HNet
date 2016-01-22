@@ -66,7 +66,6 @@
     <sprite>sprites\sprWall</sprite>
     <sprite>sprites\sprBullet</sprite>
     <sprite>sprites\sprBarrel</sprite>
-    <sprite>sprites\sprMessage</sprite>
     <sprite>sprites\sprFloor2</sprite>
     <sprite>sprites\sprsword</sprite>
     <sprite>sprites\sprite9</sprite>
@@ -235,7 +234,7 @@
     <object>objects\objBackpack</object>
     <object>objects\objPrevRoom</object>
     <object>objects\MainGame</object>
-    <object>objects\objMessage</object>
+	<object>objects\objMessage</object>
     <object>objects\objLightningStorm</object>
     <object>objects\mainUi</object>
   </objects>

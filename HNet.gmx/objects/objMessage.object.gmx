@@ -75,7 +75,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>PopBubble</script>
+            <script>popBubble</script>
           </argument>
           <argument>
             <kind>0</kind>
