@@ -221,12 +221,8 @@
         <script>scripts\LightningStormCollision.gml</script>
         <script>scripts\LightningStormCreate.gml</script>
       </scripts>
+    <script>scripts\traveler.gml</script>
     </scripts>
-    <scripts name="Npc">
-      <script>scripts\traveler.gml</script>
-      <script>scripts\PopBubble.gml</script>
-    </scripts>
-  </scripts>
   <objects name="objects">
     <object>objects\basLiving</object>
     <object>objects\objEnemy</object>
@@ -257,7 +253,7 @@
     <room>rooms\room3</room>
     <room>rooms\room4</room>
     <room>rooms\room5</room>
-  </rooms>
+ </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>

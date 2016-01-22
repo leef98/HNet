@@ -221,12 +221,8 @@
         <script>scripts\LightningStormCollision.gml</script>
         <script>scripts\LightningStormCreate.gml</script>
       </scripts>
+    <script>scripts\traveler.gml</script>
     </scripts>
-    <scripts name="Npc">
-      <script>scripts\traveler.gml</script>
-      <script>scripts\PopBubble.gml</script>
-    </scripts>
-  </scripts>
   <objects name="objects">
     <object>objects\basLiving</object>
     <object>objects\objEnemy</object>
@@ -245,10 +241,13 @@
     <object>objects\objBackpack</object>
     <object>objects\objPrevRoom</object>
     <object>objects\MainGame</object>
+<<<<<<< HEAD
     <object>objects\objLightningStorm</object>
     <object>objects\mainUi</object>
+=======
     <object>objects\objBarrel</object>
     <object>objects\objMessage</object>
+>>>>>>> 103ac52647d9cac22f1c31eed18ae8dd9eb692b6
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>
@@ -257,7 +256,7 @@
     <room>rooms\room3</room>
     <room>rooms\room4</room>
     <room>rooms\room5</room>
-  </rooms>
+ </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
