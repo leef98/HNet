@@ -120,7 +120,8 @@
             <string>//Check dead
 if (global.paused){exit;}
 if hp &lt;= 0 {
-    instance_destroy(); 
+    instance_destroy();
+    quest1(0,0,1);   
 }
 //Fixa movement vid kollision
 if (speed == 0 &amp;&amp; !place_meeting(x,y, objMain)) {
@@ -164,7 +165,7 @@ if (speed == 0 &amp;&amp; !place_meeting(x,y, objMain)) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//global.player.hp -= 10;
+            <string>global.player.hp -= 2;
 </string>
           </argument>
         </arguments>
