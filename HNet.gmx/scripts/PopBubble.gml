@@ -1,5 +1,5 @@
 
-    maxDistance = 25;
+    maxDistance = 60;
 
     // sin(timer*pi/speed)*distans
     y = ystart + sin(timer*pi/30)*5;
