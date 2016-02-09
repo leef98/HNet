@@ -98,6 +98,8 @@
     <sprite>sprites\sprLightningStrike</sprite>
     <sprite>sprites\sprLightningCloud</sprite>
     <sprite>sprites\sprLightningEnd</sprite>
+    <sprite>sprites\SprMsgBox</sprite>
+    <sprite>sprites\sprite34</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -242,6 +244,7 @@
     <object>objects\objMessage</object>
     <object>objects\objLightningStorm</object>
     <object>objects\mainUi</object>
+    <object>objects\ObjMsgBox</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>
