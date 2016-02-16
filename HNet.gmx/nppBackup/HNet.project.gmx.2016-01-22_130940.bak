@@ -66,7 +66,6 @@
     <sprite>sprites\sprWall</sprite>
     <sprite>sprites\sprBullet</sprite>
     <sprite>sprites\sprBarrel</sprite>
-    <sprite>sprites\sprMessage</sprite>
     <sprite>sprites\sprFloor2</sprite>
     <sprite>sprites\sprsword</sprite>
     <sprite>sprites\sprite9</sprite>
@@ -98,14 +97,6 @@
     <sprite>sprites\sprLightningStrike</sprite>
     <sprite>sprites\sprLightningCloud</sprite>
     <sprite>sprites\sprLightningEnd</sprite>
-    <sprites name="UI">
-      <sprite>sprites\uiSword</sprite>
-      <sprite>sprites\uiSkill</sprite>
-      <sprite>sprites\uiSkillBackground</sprite>
-      <sprite>sprites\uiSkillBackgroundL</sprite>
-    </sprites>
-    <sprite>sprites\SprMsgBox</sprite>
-    <sprite>sprites\sprite34</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -172,6 +163,8 @@
       <script>scripts\questMain.gml</script>
       <script>scripts\quest1.gml</script>
       <script>scripts\quest2.gml</script>
+      <script>scripts\traveler.gml</script>
+      <script>scripts\popBubble.gml</script>
     </scripts>
     <script>scripts\backpack.gml</script>
     <script>scripts\drawBag.gml</script>
@@ -220,16 +213,6 @@
     </scripts>
     <scripts name="UI">
       <script>scripts\openSkills.gml</script>
-      <script>scripts\uiClick.gml</script>
-      <script>scripts\clickSkill.gml</script>
-      <script>scripts\moveUi.gml</script>
-      <script>scripts\moveUiAbility.gml</script>
-    </scripts>
-    <scripts name="NPC">
-      <script>scripts\popBubble.gml</script>
-      <script>scripts\NpcBehavior.gml</script>
-      <script>scripts\NpcOptions.gml</script>
-      <script>scripts\NpcDialogue.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -251,14 +234,8 @@
     <object>objects\objBackpack</object>
     <object>objects\objPrevRoom</object>
     <object>objects\MainGame</object>
-    <object>objects\objMessage</object>
     <object>objects\objLightningStorm</object>
     <object>objects\mainUi</object>
-<<<<<<< HEAD
-    <object>objects\objUiAbility</object>
-=======
-    <object>objects\ObjMsgBox</object>
->>>>>>> 23d694931f3cbf931c00c3339b033d6fda169b3b
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>
