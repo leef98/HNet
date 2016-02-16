@@ -96,6 +96,12 @@
     <sprite>sprites\sprLightningStrike</sprite>
     <sprite>sprites\sprLightningCloud</sprite>
     <sprite>sprites\sprLightningEnd</sprite>
+    <sprites name="UI">
+      <sprite>sprites\uiSword</sprite>
+      <sprite>sprites\uiSkill</sprite>
+      <sprite>sprites\uiSkillBackground</sprite>
+      <sprite>sprites\uiSkillBackgroundL</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -210,6 +216,10 @@
     </scripts>
     <scripts name="UI">
       <script>scripts\openSkills.gml</script>
+      <script>scripts\uiClick.gml</script>
+      <script>scripts\clickSkill.gml</script>
+      <script>scripts\moveUi.gml</script>
+      <script>scripts\moveUiAbility.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -232,6 +242,7 @@
     <object>objects\MainGame</object>
     <object>objects\objLightningStorm</object>
     <object>objects\mainUi</object>
+    <object>objects\objUiAbility</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>

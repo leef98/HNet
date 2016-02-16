@@ -70,6 +70,11 @@ Nästa gång, möjligtvis lite UI saker eller någon till ability.
 påbörjade lite på skills Menyerna. Hittade jättebra art. för detta. Skall fortsätta med detta nästa lektion
 2016-01-15
 Hjälpte albin med en flytande pratbubbla, när han håller på med npcs. Förklarade också vad jag gjorde. Hjälpte daniel lite med inventory, vad han kunde göra för att spara itemet han håller i samt lite buggar med variabler som inte är initsierade
+2016-01-19
+Gjorde spellboken nästan klar i photoshop. Pratade lite med william om skills och hur spellboken skall se ut.
+
+2016-02-09
+Fortsatte på spells, lyckades få till så att den följde med karaktären
 Versionshantering: Programmet som vi använder för att vi alla skall kunna jobba på samma saker utan att någonting försvinner, typ som Google Drive För programmering.
 Stats: Värden på hur bra man är i spelet, till exempel hur snabb, stark och smart man är i spelet.
 Drops: Saker man får när man dödar fiender.
