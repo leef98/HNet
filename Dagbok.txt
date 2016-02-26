@@ -74,7 +74,18 @@ Hjälpte albin med en flytande pratbubbla, när han håller på med npcs. Förkl
 Gjorde spellboken nästan klar i photoshop. Pratade lite med william om skills och hur spellboken skall se ut.
 
 2016-02-09
-Fortsatte på spells, lyckades få till så att den följde med karaktären
+Fortsatte på spells, lyckades få till så att den följde med karaktären.
+2016-02-16
+Lyckades få till så att UI't följer efter karaktären bra. Satte igång william med mapbuildingen, hjälpte albin med hans quest ui. 
+Tipsade daniel om att anvvända grid istället för list för att lagra data. Skall påbörja arbetet på dokumentationen
+Fixade en sak som gjorde att spelet skalades om på fel sätt
+2016-02-19
+Lyckades rita ut ikonerna för skillsen, även då de är inaktiverade med hjälp av en grå bild som mask.
+Skall lägga till skills objekten i init, likt itemsobjekten.
+
+
+
+
 Versionshantering: Programmet som vi använder för att vi alla skall kunna jobba på samma saker utan att någonting försvinner, typ som Google Drive För programmering.
 Stats: Värden på hur bra man är i spelet, till exempel hur snabb, stark och smart man är i spelet.
 Drops: Saker man får när man dödar fiender.
