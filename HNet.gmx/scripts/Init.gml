@@ -14,5 +14,7 @@ randomize();
 CreateDrop();
 //Skapar rummen i en grid
 CreateRooms();
+//Skapar alla skills
+CreateSkills();
 
 GotoRoom(rmRoom1);
