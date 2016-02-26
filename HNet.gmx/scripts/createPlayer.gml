@@ -1,3 +1,13 @@
+//Inventory plats variabel
+holdItemTemp = ds_list_create();
+ryggaHoldPlats = ds_list_create();
+holdItemXMin = ds_list_create();
+holdItemXMax = ds_list_create();
+holdItemYMin = ds_list_create();
+holdItemYMax = ds_list_create();
+
+//rygga variabel
+rygga = false;
 //Animations variabler
 swordStab = false;
 //Variabler
@@ -22,7 +32,7 @@ cAbility[? "ability1"] = createBullet
 cAbility[? "ability2"] = createBullet
 
 //Lägger till inventory som håller alla items (Inte equipade)
-inventory = ds_list_create()
+inventory = ds_grid_create(4, 4);
 
 //Equipment (lWeapon, rWeapon, head, shoulder, chest, hands, l  egs, feet)
 lWeapon = 0
@@ -72,12 +82,6 @@ cSpeed = stats[? "agi"] * 0.3
 //int(SpellDamage, ProjectileSpeed)
 //spi(Mana, CooldownReduction)
 //Exempelitem (type, agi, str, int, spi, hp, sta, function)
-tItem = ds_map_create()
-tItem[? "type"] = "chest"
-tItem[? "agi"] = 100
-
-ds_list_add(inventory, tItem)
-ds_list_mark_as_map(inventory, 0)
-ds_list_add(inventory, global.items.gloves)
+ds_grid_add(inventory, 0, 0, global.items.gloves)
 
 global.player = id;

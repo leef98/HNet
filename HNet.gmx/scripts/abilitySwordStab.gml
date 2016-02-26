@@ -2,7 +2,7 @@
 //Om cooldownen har gått ut: skapa en bullet
 
 
-if lCoolDown <= 0 {
+if (lCoolDown <= 0 && rygga == false){
     
     var inst;
     //Rikta mot musen
