@@ -10,7 +10,7 @@ global.uiSkills = ds_list_create()
 //Y led
 var iLeft;
 with (global.skills) {
-    iLeft = array_length_1d(s);
+    iLeft = array_length_1d(arr);
     show_message(iLeft)
     for (var i = 0;i<ceil(iLeft/8);i++) {
         //x led
@@ -18,9 +18,7 @@ with (global.skills) {
         var lY = bY+oY;
         for (var j = 0;j<8 && j<iLeft;j++) {
             var skill;
-            with (global.skills) {
-                skill = s[i*8+j];
-            }
+            skill = arr[i*8+j];
             var oX = 20+j*100;
             var lX = bX+oX;
             var inst = instance_create(lX, lY ,objUiAbility);
