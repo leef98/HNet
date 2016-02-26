@@ -109,7 +109,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_healthbar(view_xview + 10, view_yview + 32, view_xview + 100, view_yview + 10, global.player.hp, c_black, c_red, c_lime, 0, true, true);
+            <string>draw_healthbar(view_xview + 10, view_yview + 32, view_xview + 100, view_yview + 10, health, c_black, c_red, c_lime, 0, true, true);
 draw_healthbar(view_xview + 10, view_yview + 62, view_xview + 50, view_yview + 40, global.player.mana, c_black, c_blue, c_blue, 0, true, true);
 draw_healthbar(view_xview + 10, view_yview + 92, view_xview + 80, view_yview + 70, global.player.stamina, c_black, c_yellow, c_orange, 0, true, true);
 </string>
