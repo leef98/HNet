@@ -1,3 +1,4 @@
+if (global.paused){exit;} //Exitar då spelet är pausat
 var imgSpeed = cSpeed * 0.1;
 image_speed = imgSpeed;
 

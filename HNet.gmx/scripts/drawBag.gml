@@ -133,25 +133,6 @@ with (global.player) {
             
             else{}
             
-                /*if(global.holdItemNo > -1){
-                
-                show_message(global.holdItemXArraySet);
-                show_message(holdItemXMin[| global.holdItemXArraySet]);
-                show_message(holdItemXMax[| global.holdItemXArraySet]);
-                show_message(mouse_x);
-                show_message(mouse_y);
-                show_message(global.holdItemYArraySet);
-                show_message(holdItemYMin[| global.holdItemYArraySet]);
-                show_message(holdItemYMax[| global.holdItemYArraySet]);
-                show_message(mouse_y);
-                if(mouse_x >= holdItemXMin[| global.holdItemXArraySet] && mouse_y >= holdItemYMin[| global.holdItemYArraySet] && mouse_x <= holdItemXMax[| global.holdItemXArraySet] && mouse_y <= mouseholdItemYMax[| global.holdItemYArraySet]){
-                
-                show_message(inventory[| global.holdItemXArraySet + ySlots*global.holdItemYArraySet]);
-                
-                }
-                
-                }*/
-        
                 ds_list_clear(ryggaHoldPlats);
                 
                 ds_list_clear(holdItemTemp);

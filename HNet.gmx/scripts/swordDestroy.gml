@@ -7,6 +7,9 @@ if(destroyOnRetract = true){
     instance_destroy()
  
     swordStab = false;
+    
+  
+ 
   
   }
     

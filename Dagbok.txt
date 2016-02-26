@@ -29,6 +29,61 @@ Fixade pickups, var fel med self istället för id i createplayer. Ändrade namn
 Daniel konsulterade mig om inventory, sade hur jag hade lagt upp variabeln. Sade till Daniel att vi skall ha all kod i script
 2015-10-20
 Diskuterade lite om spelet, förklarade att vi följde tidsplanen och förklarade hela idéen med spelet. Att man skall kombinera Combaten i The binding of isaac
-med RPG elementen från Diablo. Sedan gör man att alla stats har direkt påverkan. Så att man känner att det blir skillnad.
+med RPG elementen från Diablo. Sedan gör man att alla stats har direkt påverkan. Så att man känner att det blir skillnad när man blir starkare
 
 Fixade lite av daniels kod, som hade buggar. Försöker fixa så att rum-sparningssystemet fungerar.
+2015-11-03
+Lade till funktion för att pausa spelet, fixade lite på spara funktionen. Hjälpte daniel med inventory. Diskuterade lite med william om items. Skall ha flera olika nivåer. med prefix.
+
+(Fixar en felaktig variabel
+Lägger till pausfunktion, fixar lite inits för stamina, mana bar. Lägger till lite funktoner för sparningen av spelet,
+Fixar lite mer variabler, olika namn på equipmentslots. lite mer fix på pause)
+
+2015-11-10 
+Gruppen fungerar bra, det flyter på bra i gruppen, alla jobbar på sina områden. Hjälpte daniel med att inventoryt syns när man trycker på knappen I. 
+Hjälpte William litegrann med att dela upp items i olika skript så att det är lättare att läsa.
+Lyckades få till rummen, nu kan man på ett lätt sätt "Starta om" Olika rum när det behövs, men annars finns allting kvar i dem. Kan finnas problem med minne, då alla rum kan da för mycket minne.
+Rensade upp lite saker som hade duplicerats sig. Skall börja på att ansluta rum på ett effektivt sätt, skall avända Grids. 
+
+2015-11-17
+Fortsatte på rummen, försökte få att monstrerna skulle komma tillbaka om man gick för långt bort. diskuterade lite med william om exakt hur rummen skulle vara, blev inte riktigt klar.
+2015-11-23
+Lyckades få till rummen, en standarniserad lösning, nu kommer rummen att återställas om man far för långt bort. Diskuterade med william om Armor och försvar.
+Kom fram till att vi bara skall ha % Physical reduction, inget magiskt skydd. Alla armor skall vara lite mycket värda. Ingen armor penetration. Skall börja med att programmera abilities.
+Pratade lite med albin om hur rummen skall fungera, med en grid som karta och hur man skall göra så att det fungerar.
+2015-11-24
+Började med att designa skills och spells för de olika "klasserna". Skapade även en definition av klass-spellsen. Diskuterade med hela gruppen. Diskuterade med william om olika namn för itemtyper.
+Började programmera en spell: Lightning Storm.
+Kom fram till att vi skall ha inga stuns eller knockbacks. Vi skall ha channeled abilities
+2015-12-01
+Gav lite tips till daniel om inventory koden.
+gjorde om useAbility så att den själv kollar om man kan använda en ability eller inte.
+Fortsatte programmera på Lightning storm, kom fram till att inga flyttande objekt skall vara solid, då blir det visst lite krångligt med kollissioner.
+Istället har jag egen kollissionskod.
+2015-12-08
+Föreläste om projektet för alla andra, gick bra. 
+2015-12-15
+Lyckades göra klart lightning storm med animationer och allt, gjorde den lite slumpmässig så att det känns som lightning.
+Den skapar 3 lightning clouds som strikar lite då och då.
+Nästa gång, möjligtvis lite UI saker eller någon till ability.
+2016-01-12
+påbörjade lite på skills Menyerna. Hittade jättebra art. för detta. Skall fortsätta med detta nästa lektion
+2016-01-15
+Hjälpte albin med en flytande pratbubbla, när han håller på med npcs. Förklarade också vad jag gjorde. Hjälpte daniel lite med inventory, vad han kunde göra för att spara itemet han håller i samt lite buggar med variabler som inte är initsierade
+2016-01-19
+Gjorde spellboken nästan klar i photoshop. Pratade lite med william om skills och hur spellboken skall se ut.
+
+2016-02-09
+Fortsatte på spells, lyckades få till så att den följde med karaktären
+Versionshantering: Programmet som vi använder för att vi alla skall kunna jobba på samma saker utan att någonting försvinner, typ som Google Drive För programmering.
+Stats: Värden på hur bra man är i spelet, till exempel hur snabb, stark och smart man är i spelet.
+Drops: Saker man får när man dödar fiender.
+DropTables: Den bakomliggande mekaniken som bestämmer vad man får när man dödar en fiende.
+Equipments: Saker som mna kan ha på sig som gör en bättre, till exempel vapen och kläder
+Bas-funktioner: 
+Save/load: Funktioner så att man kan spara och ladda spelet, så att ens framsteg sparas
+Items: Saker som man kan ha i spelet.
+Itemslots: Olika typer av saker som man kan ha på sig, till exempel skor, byxor, tröja, hjälm.
+Inventory: Stället där alla saker man har lagras, ofta ens ryggsäck.
+Script: Huvudsakliga logiken i spelet, detta är "Hjärnan" av spelet.
+RPG: Role Playing Game, ett spel där man tar en roll som en karaktär. Ofta kan man bli mycket bättre i spelet desto mer man spelar spelet.

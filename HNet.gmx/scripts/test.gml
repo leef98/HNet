@@ -2,7 +2,7 @@
 switch (keyboard_key) {
     case ord("5"):
         //equipItemInventory(0)
-        equipItem(global.items.gloves);
+        equipItem(global.items.mittens1);
     break;
     case ord("6"):
         save()
@@ -12,5 +12,12 @@ switch (keyboard_key) {
     break;
     case ord("9"):
         pause()
+    break;
+    case ord("0"):
+        unpause();
+    break;
+    case ord("I"):
+        room_persistent = false;
+        room_restart();
     break;
 }

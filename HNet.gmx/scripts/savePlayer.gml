@@ -8,8 +8,8 @@ with (global.player) {
     ini_write_real('player', 'shoulder', shoulder)
     ini_write_real('player', 'chest', chest)
     ini_write_real('player', 'hands', hands)
-    ini_write_real('player', 'legs', pants)
-    ini_write_real('player', 'feet', boots)
+    ini_write_real('player', 'legs', legs)
+    ini_write_real('player', 'feet', feet)
     //Position
     ini_write_real('player', 'x', x)
     ini_write_real('player', 'y', y)
