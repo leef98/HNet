@@ -57,9 +57,11 @@ if (argument0 =1){
             if((mouse_y<ystart+mouseDistance)&&(mouse_y>ystart-mouseDistance)){
             
                 //om musen är i närheten av NPC
- 
-                script_execute(NpcDialogue,argument0);
                 
+                
+                instance_create(view_xview[0]+view_wview[0]/2,view_yview[0]+view_hview[0],ObjMsgBox);
+                
+                //script_execute(NpcDialogue(argument0));
             }
         }
    }
