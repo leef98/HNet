@@ -255,8 +255,9 @@
     <object>objects\objLightningStorm</object>
     <object>objects\mainUi</object>
     <object>objects\objUiAbility</object>
+=======
     <object>objects\ObjMsgBox</object>
-    <object>objects\basNpc</object>
+>>>>>>> 23d694931f3cbf931c00c3339b033d6fda169b3b
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>

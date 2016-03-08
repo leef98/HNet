@@ -1,5 +1,16 @@
 
 //argument0, 1 = friendly, 2 = interactive
+
+/*create:
+    set variable bubble to false
+    set variable maxDIstance to num
+    set variable timer to 0
+    set variable mouseDistance to 30
+    set variable onOff to 0
+*/
+
+if (object_is_ancestor(self.object_index, basNpc)) { 
+
 if (argument0 =1){
 
     //prata med NPC
@@ -17,13 +28,13 @@ if (argument0 =1){
         
         
         
-    }else if (bubble == false){
+    }else if ((bubble == false)&& !instance_exists(ObjMsgBox)){
    
         bubble = true;
         
         //pratbubbla?
             
-        inst = instance_create(x+27, y, objMessage);
+        inst = instance_create(x+11, y-16, objMessage);
             
         with(inst){
          
@@ -38,8 +49,8 @@ if (argument0 =1){
    
         with (inst) {
         
-            xstart = other.x+27
-            ystart = other.y
+            xstart = other.x+11
+            ystart = other.y-16
              x = xstart   
         }
    }
@@ -51,17 +62,20 @@ if (argument0 =1){
    }
         
     if keyboard_check_pressed(vk_tab){
-   
-        if((mouse_x<xstart+mouseDistance)&&(mouse_x>xstart-mouseDistance)){
+    
+        if((mouse_x<objBarrel.x+mouseDistance)&&(mouse_x>objBarrel.x-mouseDistance)){
         
-            if((mouse_y<ystart+mouseDistance)&&(mouse_y>ystart-mouseDistance)){
+            if((mouse_y<objBarrel.y+mouseDistance)&&(mouse_y>objBarrel.y-mouseDistance)){
+       
+                if(!instance_exists(ObjMsgBox)){
+                
+                    instance_create(-99999999,-9999999,ObjMsgBox);
+                    
+                
+                }else{
+                   
+                }
             
-                //om musen är i närheten av NPC
-                
-                
-                instance_create(view_xview[0]+view_wview[0]/2,view_yview[0]+view_hview[0],ObjMsgBox);
-                
-                //script_execute(NpcDialogue(argument0));
             }
         }
    }
@@ -69,7 +83,7 @@ if (argument0 =1){
 }else{
 //enemy npc
 }
-
+}
 
 
 
