@@ -59,7 +59,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\sprBarrel</sprite>
     <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprite3</sprite>
     <sprite>sprites\sprMain</sprite>
@@ -176,14 +175,9 @@
       <script>scripts\questMain.gml</script>
       <script>scripts\quest1.gml</script>
       <script>scripts\quest2.gml</script>
-      <script>scripts\traveler.gml</script>
-      <script>scripts\questScript.gml</script>
-      <script>scripts\questBubble.gml</script>
-      <script>scripts\popBubble.gml</script>
-      <script>scripts\playerIsNear.gml</script>
-      <script>scripts\NpcOptions.gml</script>
-      <script>scripts\NpcDialogue.gml</script>
-      <script>scripts\&lt;undefined&gt;.gml</script>
+	  <script>scripts\traveler.gml</script>
+	  <script>scripts\questScript.gml</script>
+	  <script>scripts\questBubble.gml</script>
     </scripts>
     <script>scripts\backpack.gml</script>
     <script>scripts\drawBag.gml</script>
@@ -252,7 +246,6 @@
     <script>scripts\createSkill.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\objBarrel</object>
     <object>objects\basLiving</object>
     <object>objects\objEnemy</object>
     <object>objects\objMain</object>
