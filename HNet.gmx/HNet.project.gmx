@@ -101,6 +101,9 @@
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
+    <background>background\Plains</background>
+    <background>background\Houses</background>
+    <background>background\Roads</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -250,6 +253,7 @@
     <room>rooms\room3</room>
     <room>rooms\room4</room>
     <room>rooms\room5</room>
+    <room>rooms\Starting_Zone</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

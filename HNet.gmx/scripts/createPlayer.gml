@@ -70,7 +70,6 @@ cSpeed = stats[? "agi"] * 0.3
 //agi(Speed, AttackSpeed)
 //str(Damage, Resistance)
 //int(SpellDamage, ProjectileSpeed)
-//spi(Mana, CooldownReduction)
 //Exempelitem (type, agi, str, int, spi, hp, sta, function)
 tItem = ds_map_create()
 tItem[? "type"] = "chest"
