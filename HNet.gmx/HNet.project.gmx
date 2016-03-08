@@ -89,9 +89,22 @@
     </sprites>
     <sprite>sprites\sprGloves</sprite>
     <sprite>sprites\sprDead</sprite>
-    <sprite>sprites\sprBag</sprite>
     <sprite>sprites\sprShoes</sprite>
     <sprite>sprites\sprChainmail</sprite>
+    <sprite>sprites\sprite26</sprite>
+    <sprite>sprites\sprLightningStart</sprite>
+    <sprite>sprites\sprLightningStrike</sprite>
+    <sprite>sprites\sprLightningCloud</sprite>
+    <sprite>sprites\sprLightningEnd</sprite>
+    <sprites name="UI">
+      <sprite>sprites\uiSword</sprite>
+      <sprite>sprites\uiSkill</sprite>
+      <sprite>sprites\uiSkillBackground</sprite>
+      <sprite>sprites\uiSkillBackgroundL</sprite>
+      <sprite>sprites\uiFireball</sprite>
+    </sprites>
+    <sprite>sprites\sprite35</sprite>
+    <sprite>sprites\greyMask</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -117,7 +130,6 @@
       <script>scripts\removeItem.gml</script>
       <script>scripts\updateModifiers.gml</script>
       <script>scripts\test.gml</script>
-      <script>scripts\drawBag.gml</script>
     </scripts>
     <scripts name="objSwordStab">
       <script>scripts\abilitySwordStab.gml</script>
@@ -137,6 +149,8 @@
       <script>scripts\Init.gml</script>
       <script>scripts\CreateItems.gml</script>
       <script>scripts\CreateDrop.gml</script>
+      <script>scripts\CreateRooms.gml</script>
+      <script>scripts\CreateSkills.gml</script>
     </scripts>
     <script>scripts\DropFromTable.gml</script>
     <scripts name="Depricated">
@@ -155,10 +169,15 @@
     </scripts>
     <scripts name="objItem">
       <script>scripts\pickup.gml</script>
-      <script>scripts\createObjItem.gml</script>
-      <script>scripts\saveObjItem.gml</script>
     </scripts>
     <script>scripts\dropItem.gml</script>
+    <scripts name="Quests">
+      <script>scripts\questMain.gml</script>
+      <script>scripts\quest1.gml</script>
+      <script>scripts\quest2.gml</script>
+    </scripts>
+    <script>scripts\backpack.gml</script>
+    <script>scripts\drawBag.gml</script>
     <scripts name="Bar">
       <script>scripts\barVariabel.gml</script>
       <script>scripts\valueChange.gml</script>
@@ -166,6 +185,50 @@
     </scripts>
     <script>scripts\pause.gml</script>
     <script>scripts\unpause.gml</script>
+    <scripts name="Room">
+      <script>scripts\MoveRight.gml</script>
+      <script>scripts\MoveLeft.gml</script>
+      <script>scripts\MoveDown.gml</script>
+      <script>scripts\MoveUp.gml</script>
+      <script>scripts\GotoRoom.gml</script>
+      <script>scripts\CheckRoom.gml</script>
+    </scripts>
+    <scripts name="Items">
+      <scripts name="Head">
+        <script>scripts\Hood.gml</script>
+      </scripts>
+      <scripts name="Shoulder">
+        <script>scripts\Amice.gml</script>
+      </scripts>
+      <scripts name="Chest">
+        <script>scripts\Robe.gml</script>
+      </scripts>
+      <scripts name="Hands">
+        <script>scripts\Mittens.gml</script>
+      </scripts>
+      <scripts name="Legs">
+        <script>scripts\Leggings.gml</script>
+      </scripts>
+      <scripts name="Feet">
+        <script>scripts\Slippers.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="Skills">
+      <scripts name="LightningStorm">
+        <script>scripts\LightningStorm.gml</script>
+        <script>scripts\LightningStormStep.gml</script>
+        <script>scripts\LightningStormCollision.gml</script>
+        <script>scripts\LightningStormCreate.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="UI">
+      <script>scripts\openSkills.gml</script>
+      <script>scripts\uiClick.gml</script>
+      <script>scripts\clickSkill.gml</script>
+      <script>scripts\moveUi.gml</script>
+      <script>scripts\moveUiAbility.gml</script>
+    </scripts>
+    <script>scripts\createSkill.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\basLiving</object>
@@ -182,8 +245,14 @@
     <object>objects\objInit</object>
     <object>objects\treasureClass</object>
     <object>objects\objItem</object>
-    <object>objects\objBag</object>
+    <object>objects\objBackpack</object>
     <object>objects\objPrevRoom</object>
+    <object>objects\MainGame</object>
+    <object>objects\objLightningStorm</object>
+    <object>objects\mainUi</object>
+    <object>objects\objUiAbility</object>
+    <object>objects\basSkill</object>
+    <object>objects\arrSkills</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>

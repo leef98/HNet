@@ -13,4 +13,11 @@ switch (keyboard_key) {
     case ord("9"):
         pause()
     break;
+    case ord("0"):
+        unpause();
+    break;
+    case ord("I"):
+        room_persistent = false;
+        room_restart();
+    break;
 }
