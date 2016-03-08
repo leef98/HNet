@@ -196,21 +196,33 @@
     <scripts name="Items">
       <scripts name="Head">
         <script>scripts\Hood.gml</script>
+        <script>scripts\Cap.gml</script>
+        <script>scripts\Helm.gml</script>
       </scripts>
       <scripts name="Shoulder">
         <script>scripts\Amice.gml</script>
+        <script>scripts\Pauldrons.gml</script>
+        <script>scripts\Spaulders.gml</script>
       </scripts>
       <scripts name="Chest">
         <script>scripts\Robe.gml</script>
+        <script>scripts\Chestplate.gml</script>
+        <script>scripts\Tunic.gml</script>
       </scripts>
       <scripts name="Hands">
         <script>scripts\Mittens.gml</script>
+        <script>scripts\Gauntlets.gml</script>
+        <script>scripts\Gloves.gml</script>
       </scripts>
       <scripts name="Legs">
         <script>scripts\Leggings.gml</script>
+        <script>scripts\Pants.gml</script>
+        <script>scripts\Greaves.gml</script>
       </scripts>
       <scripts name="Feet">
         <script>scripts\Slippers.gml</script>
+        <script>scripts\Boots.gml</script>
+        <script>scripts\Threads.gml</script>
       </scripts>
     </scripts>
     <scripts name="Skills">
