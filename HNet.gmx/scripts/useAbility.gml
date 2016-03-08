@@ -2,6 +2,7 @@
 //abilityn som är bindad till den knappen
 //Tangentbord
 if (global.paused){exit;}
+if (rygga == false){
 switch (keyboard_key) {
     case ord('1'):
         //Kollar om det är rätt data för funktionen
@@ -60,4 +61,5 @@ switch (mouse_button) {
             }
         }
     break;
+}
 }

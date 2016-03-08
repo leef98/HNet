@@ -65,8 +65,6 @@
     <sprite>sprites\sprMain2</sprite>
     <sprite>sprites\sprWall</sprite>
     <sprite>sprites\sprBullet</sprite>
-    <sprite>sprites\sprBarrel</sprite>
-    <sprite>sprites\sprMessage</sprite>
     <sprite>sprites\sprFloor2</sprite>
     <sprite>sprites\sprsword</sprite>
     <sprite>sprites\sprite9</sprite>
@@ -103,12 +101,16 @@
       <sprite>sprites\uiSkill</sprite>
       <sprite>sprites\uiSkillBackground</sprite>
       <sprite>sprites\uiSkillBackgroundL</sprite>
+      <sprite>sprites\uiFireball</sprite>
     </sprites>
-    <sprite>sprites\SprMsgBox</sprite>
-    <sprite>sprites\sprite34</sprite>
+    <sprite>sprites\sprite35</sprite>
+    <sprite>sprites\greyMask</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
+    <background>background\Plains</background>
+    <background>background\Houses</background>
+    <background>background\Roads</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -148,6 +150,7 @@
       <script>scripts\CreateItems.gml</script>
       <script>scripts\CreateDrop.gml</script>
       <script>scripts\CreateRooms.gml</script>
+      <script>scripts\CreateSkills.gml</script>
     </scripts>
     <script>scripts\DropFromTable.gml</script>
     <scripts name="Depricated">
@@ -193,21 +196,33 @@
     <scripts name="Items">
       <scripts name="Head">
         <script>scripts\Hood.gml</script>
+        <script>scripts\Cap.gml</script>
+        <script>scripts\Helm.gml</script>
       </scripts>
       <scripts name="Shoulder">
         <script>scripts\Amice.gml</script>
+        <script>scripts\Pauldrons.gml</script>
+        <script>scripts\Spaulders.gml</script>
       </scripts>
       <scripts name="Chest">
         <script>scripts\Robe.gml</script>
+        <script>scripts\Chestplate.gml</script>
+        <script>scripts\Tunic.gml</script>
       </scripts>
       <scripts name="Hands">
         <script>scripts\Mittens.gml</script>
+        <script>scripts\Gauntlets.gml</script>
+        <script>scripts\Gloves.gml</script>
       </scripts>
       <scripts name="Legs">
         <script>scripts\Leggings.gml</script>
+        <script>scripts\Pants.gml</script>
+        <script>scripts\Greaves.gml</script>
       </scripts>
       <scripts name="Feet">
         <script>scripts\Slippers.gml</script>
+        <script>scripts\Boots.gml</script>
+        <script>scripts\Threads.gml</script>
       </scripts>
     </scripts>
     <scripts name="Skills">
@@ -225,19 +240,13 @@
       <script>scripts\moveUi.gml</script>
       <script>scripts\moveUiAbility.gml</script>
     </scripts>
-    <scripts name="NPC">
-      <script>scripts\popBubble.gml</script>
-      <script>scripts\NpcBehavior.gml</script>
-      <script>scripts\NpcOptions.gml</script>
-      <script>scripts\NpcDialogue.gml</script>
-    </scripts>
+    <script>scripts\createSkill.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\basLiving</object>
     <object>objects\objEnemy</object>
     <object>objects\objMain</object>
     <object>objects\objWall</object>
-    <object>objects\objBarrel</object>
     <object>objects\objBullet</object>
     <object>objects\basEntity</object>
     <object>objects\objFloor2</object>
@@ -251,12 +260,11 @@
     <object>objects\objBackpack</object>
     <object>objects\objPrevRoom</object>
     <object>objects\MainGame</object>
-    <object>objects\objMessage</object>
     <object>objects\objLightningStorm</object>
     <object>objects\mainUi</object>
     <object>objects\objUiAbility</object>
-    <object>objects\ObjMsgBox</object>
-    <object>objects\basNpc</object>
+    <object>objects\basSkill</object>
+    <object>objects\arrSkills</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>
@@ -265,6 +273,7 @@
     <room>rooms\room3</room>
     <room>rooms\room4</room>
     <room>rooms\room5</room>
+    <room>rooms\Starting_Zone</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
