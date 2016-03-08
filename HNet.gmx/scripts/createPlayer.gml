@@ -65,6 +65,7 @@ eStamina = 0
 mStamina = 100
 mana = 0
 stamina = 0
+hp = 0
 //Definition av stats
 //Cooldown
 cooldown = ds_map_create()
@@ -82,6 +83,6 @@ cSpeed = stats[? "agi"] * 0.3
 //int(SpellDamage, ProjectileSpeed)
 //spi(Mana, CooldownReduction)
 //Exempelitem (type, agi, str, int, spi, hp, sta, function)
-ds_grid_add(inventory, 0, 0, global.items.gloves)
+ds_grid_add(inventory, 0, 0, global.items.hood1)
 
 global.player = id;
