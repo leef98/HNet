@@ -59,6 +59,7 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\sprBarrel</sprite>
     <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprite3</sprite>
     <sprite>sprites\sprMain</sprite>
@@ -108,6 +109,9 @@
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
+    <background>background\Plains</background>
+    <background>background\Houses</background>
+    <background>background\Roads</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -172,6 +176,14 @@
       <script>scripts\questMain.gml</script>
       <script>scripts\quest1.gml</script>
       <script>scripts\quest2.gml</script>
+      <script>scripts\traveler.gml</script>
+      <script>scripts\questScript.gml</script>
+      <script>scripts\questBubble.gml</script>
+      <script>scripts\popBubble.gml</script>
+      <script>scripts\playerIsNear.gml</script>
+      <script>scripts\NpcOptions.gml</script>
+      <script>scripts\NpcDialogue.gml</script>
+      <script>scripts\&lt;undefined&gt;.gml</script>
     </scripts>
     <script>scripts\backpack.gml</script>
     <script>scripts\drawBag.gml</script>
@@ -193,21 +205,33 @@
     <scripts name="Items">
       <scripts name="Head">
         <script>scripts\Hood.gml</script>
+        <script>scripts\Cap.gml</script>
+        <script>scripts\Helm.gml</script>
       </scripts>
       <scripts name="Shoulder">
         <script>scripts\Amice.gml</script>
+        <script>scripts\Pauldrons.gml</script>
+        <script>scripts\Spaulders.gml</script>
       </scripts>
       <scripts name="Chest">
         <script>scripts\Robe.gml</script>
+        <script>scripts\Chestplate.gml</script>
+        <script>scripts\Tunic.gml</script>
       </scripts>
       <scripts name="Hands">
         <script>scripts\Mittens.gml</script>
+        <script>scripts\Gauntlets.gml</script>
+        <script>scripts\Gloves.gml</script>
       </scripts>
       <scripts name="Legs">
         <script>scripts\Leggings.gml</script>
+        <script>scripts\Pants.gml</script>
+        <script>scripts\Greaves.gml</script>
       </scripts>
       <scripts name="Feet">
         <script>scripts\Slippers.gml</script>
+        <script>scripts\Boots.gml</script>
+        <script>scripts\Threads.gml</script>
       </scripts>
     </scripts>
     <scripts name="Skills">
@@ -228,6 +252,7 @@
     <script>scripts\createSkill.gml</script>
   </scripts>
   <objects name="objects">
+    <object>objects\objBarrel</object>
     <object>objects\basLiving</object>
     <object>objects\objEnemy</object>
     <object>objects\objMain</object>
@@ -258,6 +283,7 @@
     <room>rooms\room3</room>
     <room>rooms\room4</room>
     <room>rooms\room5</room>
+    <room>rooms\Starting_Zone</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

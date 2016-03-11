@@ -81,7 +81,6 @@ cSpeed = stats[? "agi"] * 0.3
 //agi(Speed, AttackSpeed)
 //str(Damage, Resistance)
 //int(SpellDamage, ProjectileSpeed)
-//spi(Mana, CooldownReduction)
 //Exempelitem (type, agi, str, int, spi, hp, sta, function)
 ds_grid_add(inventory, 0, 0, global.items.hood1)
 
