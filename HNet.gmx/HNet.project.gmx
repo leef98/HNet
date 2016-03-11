@@ -66,6 +66,7 @@
     <sprite>sprites\sprMain2</sprite>
     <sprite>sprites\sprWall</sprite>
     <sprite>sprites\sprBullet</sprite>
+    <sprite>sprites\sprBag</sprite>
     <sprite>sprites\sprFloor2</sprite>
     <sprite>sprites\sprsword</sprite>
     <sprite>sprites\sprite9</sprite>
@@ -131,6 +132,7 @@
       <script>scripts\removeItem.gml</script>
       <script>scripts\updateModifiers.gml</script>
       <script>scripts\test.gml</script>
+      <script>scripts\drawBag.gml</script>
     </scripts>
     <scripts name="objSwordStab">
       <script>scripts\abilitySwordStab.gml</script>
@@ -267,7 +269,6 @@
     <object>objects\objInit</object>
     <object>objects\treasureClass</object>
     <object>objects\objItem</object>
-    <object>objects\objBackpack</object>
     <object>objects\objPrevRoom</object>
     <object>objects\MainGame</object>
     <object>objects\objLightningStorm</object>
@@ -275,6 +276,7 @@
     <object>objects\objUiAbility</object>
     <object>objects\basSkill</object>
     <object>objects\arrSkills</object>
+    <object>objects\objBag</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>
