@@ -82,7 +82,11 @@ Fixade en sak som gjorde att spelet skalades om på fel sätt
 2016-02-19
 Lyckades rita ut ikonerna för skillsen, även då de är inaktiverade med hjälp av en grå bild som mask.
 Skall lägga till skills objekten i init, likt itemsobjekten.
-
+2016-03-08
+Var många problem med versionshanteringen då daniel inte hade uppdaterat sin kod
+och allting blev ersatt med gammal kod, sen när jag försökte ta tillbaka koden så var det många saker som inte fungerade. Hjälpte william att fixa tillbaka några filer som han hade skapat.
+Jobbade lite på dokumentationen
+Pushproblem. Projektfilen i Gamemaker tjorvar väldigt mycket med versionshantering.
 
 
 
