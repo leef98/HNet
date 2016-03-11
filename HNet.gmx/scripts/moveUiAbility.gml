@@ -5,10 +5,10 @@ y = global.ui.y + offY;
 //offY offset Y
 if (sprite_index != -1) {
     if (visible) {
-        draw_sprite(sprite_index, -1, (view_wview[0] + offX) - global.ui.sprite_width/2, (view_hview[0] + offY) - global.ui.sprite_height/2);
+        draw_sprite(sprite_index, -1, x, y);
         //Ritar en gråmask för de skillsen som är disablade
         if (inactive) {
-            draw_sprite(greyMask, 0,(view_wview[0] + offX) - global.ui.sprite_width/2, (view_hview[0] + offY) - global.ui.sprite_height/2); 
+            draw_sprite(greyMask, 0, x, y); 
         }
     }
 }

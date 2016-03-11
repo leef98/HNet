@@ -29,7 +29,7 @@ cAbility[? "lAbility"] = abilitySwordStab
 //Lägger till abilities på 1 och left button (test)
 
 cAbility[? "ability1"] = createBullet
-cAbility[? "ability2"] = createBullet
+cAbility[? "ability2"] = LightningStorm
 
 //Lägger till inventory som håller alla items (Inte equipade)
 inventory = ds_grid_create(4, 4);

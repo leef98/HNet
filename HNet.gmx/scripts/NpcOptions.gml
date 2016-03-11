@@ -9,7 +9,7 @@
     set variable onOff to 0
 */
 
-if (object_is_ancestor(self.object_index, basNpc)) { 
+if (object_is_ancestor(self.object_index, objBarrel)) { 
 
 if (argument0 =1){
 
