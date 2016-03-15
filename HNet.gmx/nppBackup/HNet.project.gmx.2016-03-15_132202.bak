@@ -59,8 +59,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\SprMessage</sprite>
-    <sprite>sprites\SprMsgBox</sprite>
     <sprite>sprites\bag</sprite>
     <sprite>sprites\sprBarrel</sprite>
     <sprite>sprites\sprEnemy</sprite>
@@ -255,7 +253,6 @@
     <script>scripts\createSkill.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\objMessage</object>
     <object>objects\ObjMsgBox</object>
     <object>objects\objBarrel</object>
     <object>objects\basLiving</object>

@@ -9,6 +9,8 @@
     set variable onOff to 0
 */
 
+
+//obhject_is_ancestor problem
 if (object_is_ancestor(self.object_index, objBarrel)) { 
 
 if (argument0 =1){
@@ -19,7 +21,9 @@ if (argument0 =1){
     y=ystart + cos(timer*pi/45)*5;
   
 }else if (argument0 >=2){
-        
+
+show_message("hej");
+
     if (distance_to_object(objMain)> maxDistance && bubble == false ){
      
         timer++;
@@ -62,6 +66,7 @@ if (argument0 =1){
    }
         
     if keyboard_check_pressed(vk_tab){
+    
     
         if((mouse_x<objBarrel.x+mouseDistance)&&(mouse_x>objBarrel.x-mouseDistance)){
         
