@@ -87,6 +87,12 @@ Var många problem med versionshanteringen då daniel inte hade uppdaterat sin k
 och allting blev ersatt med gammal kod, sen när jag försökte ta tillbaka koden så var det många saker som inte fungerade. Hjälpte william att fixa tillbaka några filer som han hade skapat.
 Jobbade lite på dokumentationen
 Pushproblem. Projektfilen i Gamemaker tjorvar väldigt mycket med versionshantering.
+2016-03-11
+Fixade lite mer problem i versionshanteringen. lyckades få till det rätt så bra nu. Fortsatte på uiskills. Är nästan klar med den, den kan ha inaktiverade skills och den kan sätta skills till en särskilld tangent eller musknapp
+2016-03-15
+Jobbade på dokumentationen och jobbade med william på startområdet
+
+
 
 
 

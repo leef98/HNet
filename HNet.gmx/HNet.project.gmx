@@ -250,6 +250,7 @@
       <script>scripts\remapSkill.gml</script>
     </scripts>
     <script>scripts\createSkill.gml</script>
+    <script>scripts\collide.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\objBarrel</object>
