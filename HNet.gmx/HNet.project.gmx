@@ -148,11 +148,11 @@
       <script>scripts\objEnemyDrop.gml</script>
     </scripts>
     <scripts name="GlobalInits">
-      <script>scripts\Init.gml</script>
       <script>scripts\CreateItems.gml</script>
       <script>scripts\CreateDrop.gml</script>
       <script>scripts\CreateRooms.gml</script>
       <script>scripts\CreateSkills.gml</script>
+      <script>scripts\Init.gml</script>
     </scripts>
     <script>scripts\DropFromTable.gml</script>
     <scripts name="Depricated">
@@ -184,7 +184,6 @@
       <script>scripts\playerIsNear.gml</script>
       <script>scripts\NpcOptions.gml</script>
       <script>scripts\NpcDialogue.gml</script>
-      <script>scripts\&lt;undefined&gt;.gml</script>
     </scripts>
     <script>scripts\backpack.gml</script>
     <script>scripts\drawBag.gml</script>
@@ -249,6 +248,7 @@
       <script>scripts\clickSkill.gml</script>
       <script>scripts\moveUi.gml</script>
       <script>scripts\moveUiAbility.gml</script>
+      <script>scripts\remapSkill.gml</script>
     </scripts>
     <script>scripts\createSkill.gml</script>
   </scripts>
