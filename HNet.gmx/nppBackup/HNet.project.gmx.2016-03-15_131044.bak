@@ -59,7 +59,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\bag</sprite>
     <sprite>sprites\sprBarrel</sprite>
     <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprite3</sprite>
