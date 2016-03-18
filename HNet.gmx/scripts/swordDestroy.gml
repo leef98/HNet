@@ -5,9 +5,10 @@ if(destroyOnRetract = true){
     if other.object_index == objMain {
     
     instance_destroy()
- 
     swordStab = false;
-    
+    with (global.player) {
+        swordStab = false;
+    }
   
  
   
