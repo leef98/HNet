@@ -10,8 +10,10 @@
 */
 
 
-//obhject_is_ancestor problem
+//object_is_ancestor problem
 if (object_is_ancestor(self.object_index, objBarrel)) { 
+
+show_message("object is ancestor");
 
 if (argument0 =1){
 

@@ -256,18 +256,28 @@
     <script>scripts\collide.gml</script>
   </scripts>
   <objects name="objects">
+    <objects name="UI">
+      <object>objects\mainUi</object>
+      <object>objects\ObjMsgBox</object>
+      <object>objects\objUiAbility</object>
+    </objects>
+    <objects name="Entity">
+      <object>objects\objBarrel</object>
+      <object>objects\objEnemy</object>
+      <object>objects\objMain</object>
+    </objects>
+    <objects name="Bas">
+      <object>objects\basItem</object>
+      <object>objects\basNpc</object>
+      <object>objects\basSkill</object>
+      <object>objects\basLiving</object>
+      <object>objects\basEntity</object>
+    </objects>
     <object>objects\objMessage</object>
-    <object>objects\ObjMsgBox</object>
-    <object>objects\objBarrel</object>
-    <object>objects\basLiving</object>
-    <object>objects\objEnemy</object>
-    <object>objects\objMain</object>
     <object>objects\objWall</object>
     <object>objects\objBullet</object>
-    <object>objects\basEntity</object>
     <object>objects\objFloor2</object>
     <object>objects\objSword</object>
-    <object>objects\basItem</object>
     <object>objects\objNextRoom</object>
     <object>objects\objHPBar</object>
     <object>objects\objInit</object>
@@ -277,9 +287,6 @@
     <object>objects\objPrevRoom</object>
     <object>objects\MainGame</object>
     <object>objects\objLightningStorm</object>
-    <object>objects\mainUi</object>
-    <object>objects\objUiAbility</object>
-    <object>objects\basSkill</object>
     <object>objects\arrSkills</object>
   </objects>
   <rooms name="rooms">
