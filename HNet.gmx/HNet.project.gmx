@@ -125,15 +125,17 @@
     </scripts>
     <scripts name="objMain">
       <script>scripts\useAbility.gml</script>
-      <script>scripts\MovePlayer.gml</script>
       <script>scripts\stepPlayer.gml</script>
       <script>scripts\createPlayer.gml</script>
       <script>scripts\equipItemInventory.gml</script>
       <script>scripts\equipItem.gml</script>
       <script>scripts\updateStats.gml</script>
       <script>scripts\removeItem.gml</script>
+      <script>scripts\dead.gml</script>
       <script>scripts\updateModifiers.gml</script>
       <script>scripts\test.gml</script>
+      <script>scripts\MovePlayer.gml</script>
+      <script>scripts\moveplayer2.gml</script>
     </scripts>
     <scripts name="objSwordStab">
       <script>scripts\abilitySwordStab.gml</script>
@@ -192,7 +194,6 @@
     <scripts name="Bar">
       <script>scripts\barVariabel.gml</script>
       <script>scripts\valueChange.gml</script>
-      <script>scripts\dead.gml</script>
     </scripts>
     <script>scripts\pause.gml</script>
     <script>scripts\unpause.gml</script>
@@ -265,6 +266,7 @@
       <object>objects\objBarrel</object>
       <object>objects\objEnemy</object>
       <object>objects\objMain</object>
+      <object>objects\objPlayer</object>
     </objects>
     <objects name="Bas">
       <object>objects\basItem</object>
