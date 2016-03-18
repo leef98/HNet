@@ -14,18 +14,18 @@ with (global.skills) {
     show_message(iLeft)
     for (var i = 0;i<ceil(iLeft/8);i++) {
         //x led
-        var oY = 20+i*100;
+        var oY = -70+i*50;
         var lY = bY+oY;
         for (var j = 0;j<8 && j<iLeft;j++) {
-            var skill;
-            skill = arr[i*8+j];
-            var oX = 20+j*100;
+            var lskill;
+            lskill = arr[i*8+j];
+            var oX = -100+j*50;
             var lX = bX+oX;
             var inst = instance_create(lX, lY ,objUiAbility);
             //Sätter offset
             with (inst) {
-                sprite_index = skill.sprite
-                skill = skill.skill
+                sprite_index = lskill.sprite
+                skill = lskill.skill
                 offX = oX
                 offY = oY
             }

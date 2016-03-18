@@ -10,6 +10,7 @@
         instance_destroy();
          
     }else if (instance_exists(ObjMsgBox)){
-     instance_destroy();
+    
+        instance_destroy();
          
     }
