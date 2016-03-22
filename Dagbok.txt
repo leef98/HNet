@@ -91,7 +91,10 @@ Pushproblem. Projektfilen i Gamemaker tjorvar väldigt mycket med versionshanter
 Fixade lite mer problem i versionshanteringen. lyckades få till det rätt så bra nu. Fortsatte på uiskills. Är nästan klar med den, den kan ha inaktiverade skills och den kan sätta skills till en särskilld tangent eller musknapp
 2016-03-15
 Jobbade på dokumentationen och jobbade med william på startområdet
-
+2016-03-18
+Försökte fixa att inga animationer för playern. gjorde ett nytt object men fungerade inte
+2016-03-22
+Fortsatte på dokumentationen lite, Försökte felsöka animationerna igen. Är förmodligen något i spritsen.
 
 
 

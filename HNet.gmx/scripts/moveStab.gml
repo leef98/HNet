@@ -1,6 +1,6 @@
 
 //max distans
-if(distance_to_object(objMain) > maxDistance){
+if(distance_to_object(objPlayer) > maxDistance){
 
     //svärd ska tillbaka: sant
       follow = true
@@ -11,6 +11,6 @@ if(distance_to_object(objMain) > maxDistance){
 if(follow = true){
 
    destroyOnRetract = true;
-    direction = point_direction(x,y,objMain.x,objMain.y)
+    direction = point_direction(x,y,global.player.x,global.player.y)
 
 }

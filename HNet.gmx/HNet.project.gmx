@@ -267,6 +267,7 @@
       <object>objects\objEnemy</object>
       <object>objects\objMain</object>
       <object>objects\objPlayer</object>
+      <object>objects\testplayer</object>
     </objects>
     <objects name="Bas">
       <object>objects\basItem</object>

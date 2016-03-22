@@ -65,7 +65,7 @@ eStamina = 0
 mStamina = 100
 mana = 0
 stamina = 0
-hp = 0
+hp = 100
 //Definition av stats
 //Cooldown
 cooldown = ds_map_create()
