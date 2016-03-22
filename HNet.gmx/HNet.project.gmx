@@ -135,6 +135,7 @@
       <script>scripts\updateModifiers.gml</script>
       <script>scripts\drawBag.gml</script>
       <script>scripts\test.gml</script>
+      <script>scripts\drawBagOptionbox.gml</script>
     </scripts>
     <scripts name="objSwordStab">
       <script>scripts\abilitySwordStab.gml</script>
