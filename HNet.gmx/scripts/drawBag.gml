@@ -11,9 +11,9 @@ with (global.player) {
 
     var holdItem = false, drawOnMouse = false;
     
-    var global.holdItemXArraySet = floor((mouse_x-view_xview-275)/27);
+    global.holdItemXArraySet = floor((mouse_x-view_xview-275)/27);
     
-    var global.holdItemYArraySet = floor((mouse_y-view_yview-268)/27);
+    global.holdItemYArraySet = floor((mouse_y-view_yview-268)/27);
     
     //var global.holdItemNo = -1;
     
