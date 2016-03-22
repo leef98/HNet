@@ -61,7 +61,6 @@
   <sprites name="sprites">
     <sprite>sprites\SprMessage</sprite>
     <sprite>sprites\SprMsgBox</sprite>
-    <sprite>sprites\bag</sprite>
     <sprite>sprites\sprBarrel</sprite>
     <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprite3</sprite>
@@ -134,8 +133,8 @@
       <script>scripts\updateStats.gml</script>
       <script>scripts\removeItem.gml</script>
       <script>scripts\updateModifiers.gml</script>
-      <script>scripts\test.gml</script>
       <script>scripts\drawBag.gml</script>
+      <script>scripts\test.gml</script>
     </scripts>
     <scripts name="objSwordStab">
       <script>scripts\abilitySwordStab.gml</script>

@@ -1,6 +1,6 @@
-if (global.paused){exit;} //Exitar då spelet är pausat
+if (global.paused){exit;} //Exitar dÃ¥ spelet Ã¤r pausat
 
-//Bestämmer lite mått
+//BestÃ¤mmer lite mÃ¥tt
 var xSlots = 4;
 var ySlots = 4;
 
@@ -19,9 +19,9 @@ with (global.player) {
     
     if (rygga == false){
         
-        //rita ryggsäcken
+        //rita ryggsÃ¤cken
         if keyboard_check_pressed(ord('I')){
-            //Ställer om variabeln
+            //StÃ¤ller om variabeln
             rygga = true;
             
         }
@@ -121,17 +121,35 @@ with (global.player) {
             
             if (mouse_x >= holdItemXMin[| global.holdItemXArraySet] && mouse_y >= holdItemYMin[| global.holdItemYArraySet] && mouse_x <= holdItemXMax[| global.holdItemXArraySet] && mouse_y <= holdItemYMax[| global.holdItemYArraySet] && !is_undefined(inventory[# global.holdItemXArraySet, global.holdItemYArraySet]) && global.holdItemNo > -1){
             
-                ds_list_add(holdItemTemp[| 0], inventory[# global.holdX, global.holdY]);
+                show_message(ryggaHoldPlats[| 0]);
+                
+                show_message(global.holdX);
+                
+                show_message(global.holdY);
+                
+                show_message(inventory[# global.holdX, global.holdY]);
+                
+                show_message(global.holdItemXArraySet);
+                
+                show_message(global.holdItemYArraySet);
+                
+                show_message(inventory[# global.holdItemXArraySet, global.holdItemYArraySet]);
                 
                 var localItem = inventory[# global.holdItemXArraySet, global.holdItemYArraySet];
                              
                 ds_grid_set(inventory, global.holdX, global.holdY, localItem);
                 
-                ds_grid_set(inventory, global.holdItemXArraySet, global.holdItemYArraySet, holdItemTemp[| 0]);
+                ds_grid_set(inventory, global.holdItemXArraySet, global.holdItemYArraySet, RyggaHoldPlats[| 0]);
                 
             }
             
             else{}
+            
+                if(!is_undefined(ryggaHoldPlats[| 0])){
+                
+                    show_message(ryggaHoldPlats[| 0]);
+                
+                }
             
                 ds_list_clear(ryggaHoldPlats);
                 
@@ -149,7 +167,7 @@ with (global.player) {
         
         }
         if keyboard_check_pressed(ord('I')){
-            //Ställer om variabeln
+            //StÃ¤ller om variabeln
             rygga = false;
         }
     }
