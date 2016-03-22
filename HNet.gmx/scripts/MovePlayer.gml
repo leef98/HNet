@@ -1,5 +1,5 @@
 //local speed
-if (global.paused){exit;} //Exitar då spelet är pausat
+if (global.paused){exit;} //Exitar dÃ¥ spelet Ã¤r pausat
 var lSpeed = cSpeed;
 //Sprint
 if keyboard_check(vk_shift){
@@ -13,7 +13,7 @@ image_speed = imgSpeed;
 //MovePlayer()
 cVDir = self.direction;
 if (swordStab == false) {
-//Flytta vänster och up/ner
+//Flytta vÃ¤nster och up/ner
 if keyboard_check(ord('A')) {
     self.speed = lSpeed
     self.direction = 180
@@ -30,7 +30,7 @@ if keyboard_check(ord('A')) {
         sprite_index = sprWalkleft;
         //image_speed = imgSpeed;
     }
-//Flytta höger och up/ner
+//Flytta hÃ¶ger och up/ner
 }else if keyboard_check(ord('D')) {
     self.speed = lSpeed
     self.direction = 0
@@ -44,7 +44,6 @@ if keyboard_check(ord('A')) {
         sprite_index=sprWalkRight;
         //image_speed = imgSpeed;
     }
-    cVDir = 2;
 //Flytta upp
 }else if keyboard_check(ord('W')) {
     self.speed = lSpeed
@@ -66,11 +65,11 @@ if keyboard_check(ord('A')) {
         sprite_index=sprWalkDown;
         //image_speed = imgSpeed;
     }
-//stå Still
+//stÃ¥ Still
 }else{
     self.speed = 0
     if (self.speed == 0){
-        //Stående still håll
+        //StÃ¥ende still hÃ¥ll
         if (cVDir <= 225 && cVDir >= 135){
             sprite_index = sprMainLeft;
         }

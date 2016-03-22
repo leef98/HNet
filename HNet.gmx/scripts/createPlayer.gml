@@ -8,6 +8,7 @@ holdItemYMax = ds_list_create();
 
 //rygga variabel
 rygga = false;
+var global.holdItemNo = -1;
 //Animations variabler
 swordStab = false;
 //Variabler
@@ -82,6 +83,5 @@ cSpeed = stats[? "agi"] * 0.3
 //str(Damage, Resistance)
 //int(SpellDamage, ProjectileSpeed)
 //Exempelitem (type, agi, str, int, spi, hp, sta, function)
-ds_grid_add(inventory, 0, 0, global.items.hood1)
 
 global.player = id;
