@@ -61,7 +61,6 @@
   <sprites name="sprites">
     <sprite>sprites\SprMessage</sprite>
     <sprite>sprites\SprMsgBox</sprite>
-    <sprite>sprites\bag</sprite>
     <sprite>sprites\sprBarrel</sprite>
     <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprite3</sprite>
@@ -69,6 +68,7 @@
     <sprite>sprites\sprMain2</sprite>
     <sprite>sprites\sprWall</sprite>
     <sprite>sprites\sprBullet</sprite>
+    <sprite>sprites\sprBag</sprite>
     <sprite>sprites\sprFloor2</sprite>
     <sprite>sprites\sprsword</sprite>
     <sprite>sprites\sprite9</sprite>
@@ -133,9 +133,11 @@
       <script>scripts\removeItem.gml</script>
       <script>scripts\dead.gml</script>
       <script>scripts\updateModifiers.gml</script>
+      <script>scripts\drawBag.gml</script>
       <script>scripts\test.gml</script>
       <script>scripts\MovePlayer.gml</script>
       <script>scripts\moveplayer2.gml</script>
+      <script>scripts\drawBagOptionbox.gml</script>
     </scripts>
     <scripts name="objSwordStab">
       <script>scripts\abilitySwordStab.gml</script>
@@ -182,15 +184,7 @@
       <script>scripts\quest1.gml</script>
       <script>scripts\quest2.gml</script>
       <script>scripts\traveler.gml</script>
-      <script>scripts\questScript.gml</script>
-      <script>scripts\questBubble.gml</script>
-      <script>scripts\popBubble.gml</script>
-      <script>scripts\playerIsNear.gml</script>
-      <script>scripts\NpcOptions.gml</script>
-      <script>scripts\NpcDialogue.gml</script>
     </scripts>
-    <script>scripts\backpack.gml</script>
-    <script>scripts\drawBag.gml</script>
     <scripts name="Bar">
       <script>scripts\barVariabel.gml</script>
       <script>scripts\valueChange.gml</script>
@@ -255,6 +249,12 @@
     </scripts>
     <script>scripts\createSkill.gml</script>
     <script>scripts\collide.gml</script>
+    <scripts name="Npc">
+      <script>scripts\NpcDialogue.gml</script>
+      <script>scripts\NpcOptions.gml</script>
+      <script>scripts\playerIsNear.gml</script>
+      <script>scripts\popBubble.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="UI">
@@ -286,11 +286,11 @@
     <object>objects\objInit</object>
     <object>objects\treasureClass</object>
     <object>objects\objItem</object>
-    <object>objects\objBackpack</object>
     <object>objects\objPrevRoom</object>
     <object>objects\MainGame</object>
     <object>objects\objLightningStorm</object>
     <object>objects\arrSkills</object>
+    <object>objects\objBag</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>

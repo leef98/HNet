@@ -44,7 +44,6 @@ if keyboard_check(ord('A')) {
         sprite_index=sprWalkRight;
         //image_speed = imgSpeed;
     }
-    cVDir = 2;
 //Flytta upp
 }else if keyboard_check(ord('W')) {
     self.speed = lSpeed

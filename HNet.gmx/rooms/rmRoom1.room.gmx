@@ -201,6 +201,7 @@
     <instance objName="objHPBar" x="0" y="384" name="inst_E4C09175" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBarrel" x="416" y="256" name="inst_BA7A594E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayer" x="32" y="416" name="inst_17C04082" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBag" x="64" y="384" name="inst_5C09A550" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background2" x="0" y="0" w="32" h="32" xo="224" yo="928" id="10000003" name="inst_B553FF86" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
