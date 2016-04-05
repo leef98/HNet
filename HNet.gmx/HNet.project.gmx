@@ -252,7 +252,6 @@
     <scripts name="Npc">
       <script>scripts\NpcDialogue.gml</script>
       <script>scripts\NpcOptions.gml</script>
-      <script>scripts\playerIsNear.gml</script>
       <script>scripts\popBubble.gml</script>
     </scripts>
   </scripts>
@@ -263,7 +262,7 @@
       <object>objects\objUiAbility</object>
     </objects>
     <objects name="Entity">
-      <object>objects\objBarrel</object>
+      <object>objects\objAnders</object>
       <object>objects\objEnemy</object>
       <object>objects\objMain</object>
       <object>objects\objPlayer</object>

@@ -11,6 +11,7 @@
 
 
 //object_is_ancestor problem
+
 if (object_is_ancestor(self.object_index, basNpc)) { 
 
 if (argument0 =1){
@@ -22,7 +23,7 @@ if (argument0 =1){
   
 }else if (argument0 >=2){
 
-    if (distance_to_object(objPlayer)> maxDistance && bubble == false ){
+    if (distance_to_object(objMain)> maxDistance && bubble == false ){
      
         timer++;
         x=xstart + sin(timer*pi/45)*15;
@@ -54,6 +55,25 @@ if (argument0 =1){
             xstart = other.x+11
             ystart = other.y-16
              x = xstart   
+             
+        }
+        
+        if keyboard_check_pressed(vk_tab){
+   
+            if((mouse_x<object_index.x+mouseDistance)&&(mouse_x>object_index.x-mouseDistance)){
+        
+                if((mouse_y<object_index.y+mouseDistance)&&(mouse_y>object_index.y-mouseDistance)){
+       
+                    if(!instance_exists(ObjMsgBox)){
+                
+                        instance_create(-99999999,-9999999,ObjMsgBox);
+                    
+                    }else{
+                   
+                    }
+            
+                }
+            }
         }
    }
 
@@ -61,27 +81,10 @@ if (argument0 =1){
 
         bubble = false;
         
-   }
         
-    if keyboard_check_pressed(vk_tab){
-    
-    
-        if((mouse_x<objBarrel.x+mouseDistance)&&(mouse_x>objBarrel.x-mouseDistance)){
         
-            if((mouse_y<objBarrel.y+mouseDistance)&&(mouse_y>objBarrel.y-mouseDistance)){
-       
-                if(!instance_exists(ObjMsgBox)){
-                
-                    instance_create(-99999999,-9999999,ObjMsgBox);
-                    
-                
-                }else{
-                   
-                }
-            
-            }
-        }
    }
+  
    
 }else{
 //enemy npc
