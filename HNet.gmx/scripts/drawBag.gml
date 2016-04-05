@@ -58,6 +58,28 @@ with (global.player) {
                             
                         break;
                         
+                        case mb_right:
+                        
+                            if (mouse_x >= view_xview+275+27*j && mouse_y >= view_yview+268+27*i && mouse_x <= view_xview+299+27*j && mouse_y <= view_yview+292+27*i && inventory[# j, i] != 0 && is_undefined(ryggaHoldPlats[| 0])){
+                            
+                                
+                                global.holdItemNo = j + ySlots*i;
+                                
+                                global.holdX = j;
+                                
+                                global.holdY = i;                                
+                                
+                                ds_list_add(ryggaHoldPlats, inventory[# j, i]);
+                            
+                            }
+                            else {
+                            
+                                
+                            
+                            }
+                        
+                        break;
+                        
                         default:
                         
                             holdItem = false;
