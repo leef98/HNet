@@ -22,7 +22,7 @@ if (argument0 =1){
   
 }else if (argument0 >=2){
 
-    if (distance_to_object(objMain)> maxDistance && bubble == false ){
+    if (distance_to_object(objPlayer)> maxDistance && bubble == false ){
      
         timer++;
         x=xstart + sin(timer*pi/45)*15;

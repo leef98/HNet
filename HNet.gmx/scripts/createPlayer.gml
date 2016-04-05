@@ -8,7 +8,6 @@ holdItemYMax = ds_list_create();
 
 //rygga variabel
 rygga = false;
-var global.holdItemNo = -1;
 //Animations variabler
 swordStab = false;
 //Variabler
@@ -66,7 +65,7 @@ eStamina = 0
 mStamina = 100
 mana = 0
 stamina = 0
-hp = 0
+hp = 100
 //Definition av stats
 //Cooldown
 cooldown = ds_map_create()
@@ -83,5 +82,6 @@ cSpeed = stats[? "agi"] * 0.3
 //str(Damage, Resistance)
 //int(SpellDamage, ProjectileSpeed)
 //Exempelitem (type, agi, str, int, spi, hp, sta, function)
+ds_grid_add(inventory, 0, 0, global.items.hood1)
 
 global.player = id;
