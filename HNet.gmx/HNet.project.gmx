@@ -261,7 +261,7 @@
       <object>objects\objUiAbility</object>
     </objects>
     <objects name="Entity">
-      <object>objects\objBarrel</object>
+      <object>objects\objAnders</object>
       <object>objects\objEnemy</object>
       <object>objects\objMain</object>
     </objects>
