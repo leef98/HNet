@@ -1,6 +1,6 @@
 
 //max distans
-if(distance_to_object(objPlayer) > maxDistance){
+if(distance_to_object(objMain) > maxDistance){
 
     //svärd ska tillbaka: sant
       follow = true

@@ -2,7 +2,7 @@
     
 if(destroyOnRetract = true){
 
-    if other.object_index == objPlayer {
+    if other.object_index == objMain {
     
     instance_destroy()
     swordStab = false;
