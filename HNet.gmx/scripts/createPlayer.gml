@@ -8,6 +8,10 @@ holdItemYMax = ds_list_create();
 
 //rygga variabel
 rygga = false;
+global.holdItemNo = -1;
+global.downCount = 0;
+//optionbox
+ob = false
 //Animations variabler
 swordStab = false;
 //Variabler
