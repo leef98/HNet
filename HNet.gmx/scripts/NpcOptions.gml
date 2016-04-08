@@ -63,10 +63,10 @@ if (argument0 =1){
             if((mouse_x<object_index.x+mouseDistance)&&(mouse_x>object_index.x-mouseDistance)){
         
                 if((mouse_y<object_index.y+mouseDistance)&&(mouse_y>object_index.y-mouseDistance)){
-       
+                
                     if(!instance_exists(ObjMsgBox)){
                 
-                        instance_create(-99999999,-9999999,ObjMsgBox);
+                        inst = instance_create(-99999999,-9999999,ObjMsgBox);
                     
                     }else{
                    
