@@ -6,7 +6,7 @@ var ySlots = 4;
 
 //Kollar variabeln
 with (global.player) {
-
+    
     //Variabler
 
     var holdItem = false, drawOnMouse = false;
@@ -15,17 +15,21 @@ with (global.player) {
     
     global.holdItemYArraySet = floor((mouse_y-view_yview-268)/27);
     
-    //var global.holdItemNo = -1;
+    //global.holdItemNo = -1;
     
     if (rygga == false){
         
         //rita ryggsÃ¤cken
         if keyboard_check_pressed(ord('I')){
+            global.downCount = 30;
             //StÃ¤ller om variabeln
             rygga = true;
             
         }
      }else {
+        if (global.downCount >= 0){
+            global.downCount--;
+        }
         //ritar ryggan
         draw_sprite(sprBag, -1, view_xview+330, view_yview+330);
         for(var i=0; i < ySlots; i++){
@@ -57,6 +61,8 @@ with (global.player) {
                             }
                             
                         break;
+                        
+                        
                         
                         default:
                         
@@ -146,8 +152,8 @@ with (global.player) {
                 holdY = -1;
         
         }
-        if keyboard_check_pressed(ord('I')){
-            //StÃ¤ller om variabeln
+        if (keyboard_check_pressed(ord('I')) && global.downCount <= 0){
+            //Ställer om variabeln
             rygga = false;
         }
     }
