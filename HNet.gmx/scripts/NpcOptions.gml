@@ -14,6 +14,8 @@
 
 if (object_is_ancestor(self.object_index, basNpc)) { 
 
+    var objName = object_get_name(object_index);
+    
 if (argument0 =1){
 
     //prata med NPC
@@ -67,6 +69,11 @@ if (argument0 =1){
                     if(!instance_exists(ObjMsgBox)){
                 
                         inst = instance_create(-99999999,-9999999,ObjMsgBox);
+                        
+                        with(inst){
+                           name = objName;
+                           dialogue = "start";
+                        }
                     
                     }else{
                    
@@ -80,8 +87,6 @@ if (argument0 =1){
    if (!instance_exists(objMessage)){
 
         bubble = false;
-        
-        
         
    }
   
