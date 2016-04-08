@@ -10,6 +10,7 @@ holdItemYMax = ds_list_create();
 rygga = false;
 global.holdItemNo = -1;
 global.downCount = 0;
+global.countUp = -1;
 //optionbox
 ob = false
 //Animations variabler

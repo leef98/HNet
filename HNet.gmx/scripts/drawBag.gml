@@ -8,6 +8,8 @@ var ySlots = 4;
 with (global.player) {
     
     //Variabler
+    
+    if (global.countUp >= 0){global.countUp--;}
 
     var holdItem = false, drawOnMouse = false;
     
@@ -17,11 +19,11 @@ with (global.player) {
     
     //global.holdItemNo = -1;
     
-    if (rygga == false){
+    if (rygga == false && global.countUp <= 0){
         
         //rita ryggsÃ¤cken
         if keyboard_check_pressed(ord('I')){
-            global.downCount = 30;
+            global.downCount = 2;
             //StÃ¤ller om variabeln
             rygga = true;
             
@@ -154,6 +156,7 @@ with (global.player) {
         }
         if (keyboard_check_pressed(ord('I')) && global.downCount <= 0){
             //Ställer om variabeln
+            global.countUp = 2;
             rygga = false;
         }
     }
