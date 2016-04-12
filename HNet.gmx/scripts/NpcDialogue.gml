@@ -4,7 +4,7 @@ timer++;
 draw_sprite(SprMsgBox,-1,view_wview[0],view_hview[0]/0.625);
 
 //tar bort "obj" från "ObjNamn"
-NpcName = string_delete(name,1,3);
+var NpcName = string_delete(name,1,3);
 
 //namn på object
 draw_text(view_wview[0]/1.08,view_hview[0]/0.86,NpcName); 
@@ -50,6 +50,7 @@ switch(NpcName){
                 break;
             
             case "Talk":
+            
                 text ="What a lovely weather today!";
          
                 input1 = "Yes";
