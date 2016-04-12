@@ -5,11 +5,12 @@
     y = ystart + sin(timer*pi/30)*5;
     timer++;
 
-    if (distance_to_object(objMain) > maxDistance ){
+    if (distance_to_object(objPlayer) > maxDistance ){
         
         instance_destroy();
          
     }else if (instance_exists(ObjMsgBox)){
-     instance_destroy();
+    
+        instance_destroy();
          
     }

@@ -8,6 +8,11 @@ holdItemYMax = ds_list_create();
 
 //rygga variabel
 rygga = false;
+global.holdItemNo = -1;
+global.downCount = 0;
+global.countUp = -1;
+//optionbox
+ob = false
 //Animations variabler
 swordStab = false;
 //Variabler
@@ -29,7 +34,7 @@ cAbility[? "lAbility"] = abilitySwordStab
 //Lägger till abilities på 1 och left button (test)
 
 cAbility[? "ability1"] = createBullet
-cAbility[? "ability2"] = createBullet
+cAbility[? "ability2"] = LightningStorm
 
 //Lägger till inventory som håller alla items (Inte equipade)
 inventory = ds_grid_create(4, 4);
@@ -65,7 +70,7 @@ eStamina = 0
 mStamina = 100
 mana = 0
 stamina = 0
-hp = 0
+hp = 100
 //Definition av stats
 //Cooldown
 cooldown = ds_map_create()

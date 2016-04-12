@@ -59,12 +59,16 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\SprMessage</sprite>
+    <sprite>sprites\SprMsgBox</sprite>
+    <sprite>sprites\sprBarrel</sprite>
     <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprite3</sprite>
     <sprite>sprites\sprMain</sprite>
     <sprite>sprites\sprMain2</sprite>
     <sprite>sprites\sprWall</sprite>
     <sprite>sprites\sprBullet</sprite>
+    <sprite>sprites\sprBag</sprite>
     <sprite>sprites\sprFloor2</sprite>
     <sprite>sprites\sprsword</sprite>
     <sprite>sprites\sprite9</sprite>
@@ -121,15 +125,19 @@
     </scripts>
     <scripts name="objMain">
       <script>scripts\useAbility.gml</script>
-      <script>scripts\MovePlayer.gml</script>
       <script>scripts\stepPlayer.gml</script>
       <script>scripts\createPlayer.gml</script>
       <script>scripts\equipItemInventory.gml</script>
       <script>scripts\equipItem.gml</script>
       <script>scripts\updateStats.gml</script>
       <script>scripts\removeItem.gml</script>
+      <script>scripts\dead.gml</script>
       <script>scripts\updateModifiers.gml</script>
+      <script>scripts\drawBag.gml</script>
       <script>scripts\test.gml</script>
+      <script>scripts\MovePlayer.gml</script>
+      <script>scripts\moveplayer2.gml</script>
+      <script>scripts\drawBagOptionbox.gml</script>
     </scripts>
     <scripts name="objSwordStab">
       <script>scripts\abilitySwordStab.gml</script>
@@ -146,11 +154,11 @@
       <script>scripts\objEnemyDrop.gml</script>
     </scripts>
     <scripts name="GlobalInits">
-      <script>scripts\Init.gml</script>
       <script>scripts\CreateItems.gml</script>
       <script>scripts\CreateDrop.gml</script>
       <script>scripts\CreateRooms.gml</script>
       <script>scripts\CreateSkills.gml</script>
+      <script>scripts\Init.gml</script>
     </scripts>
     <script>scripts\DropFromTable.gml</script>
     <scripts name="Depricated">
@@ -175,13 +183,11 @@
       <script>scripts\questMain.gml</script>
       <script>scripts\quest1.gml</script>
       <script>scripts\quest2.gml</script>
+      <script>scripts\traveler.gml</script>
     </scripts>
-    <script>scripts\backpack.gml</script>
-    <script>scripts\drawBag.gml</script>
     <scripts name="Bar">
       <script>scripts\barVariabel.gml</script>
       <script>scripts\valueChange.gml</script>
-      <script>scripts\dead.gml</script>
     </scripts>
     <script>scripts\pause.gml</script>
     <script>scripts\unpause.gml</script>
@@ -239,32 +245,51 @@
       <script>scripts\clickSkill.gml</script>
       <script>scripts\moveUi.gml</script>
       <script>scripts\moveUiAbility.gml</script>
+      <script>scripts\remapSkill.gml</script>
     </scripts>
     <script>scripts\createSkill.gml</script>
+    <script>scripts\collide.gml</script>
+    <scripts name="Npc">
+      <script>scripts\NpcDialogue.gml</script>
+      <script>scripts\NpcOptions.gml</script>
+      <script>scripts\popBubble.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\basLiving</object>
-    <object>objects\objEnemy</object>
-    <object>objects\objMain</object>
+    <objects name="UI">
+      <object>objects\mainUi</object>
+      <object>objects\ObjMsgBox</object>
+      <object>objects\objUiAbility</object>
+    </objects>
+    <objects name="Entity">
+      <object>objects\objAnders</object>
+      <object>objects\objEnemy</object>
+      <object>objects\objMain</object>
+      <object>objects\objPlayer</object>
+      <object>objects\testplayer</object>
+    </objects>
+    <objects name="Bas">
+      <object>objects\basItem</object>
+      <object>objects\basNpc</object>
+      <object>objects\basSkill</object>
+      <object>objects\basLiving</object>
+      <object>objects\basEntity</object>
+    </objects>
+    <object>objects\objMessage</object>
     <object>objects\objWall</object>
     <object>objects\objBullet</object>
-    <object>objects\basEntity</object>
     <object>objects\objFloor2</object>
     <object>objects\objSword</object>
-    <object>objects\basItem</object>
     <object>objects\objNextRoom</object>
     <object>objects\objHPBar</object>
     <object>objects\objInit</object>
     <object>objects\treasureClass</object>
     <object>objects\objItem</object>
-    <object>objects\objBackpack</object>
     <object>objects\objPrevRoom</object>
     <object>objects\MainGame</object>
     <object>objects\objLightningStorm</object>
-    <object>objects\mainUi</object>
-    <object>objects\objUiAbility</object>
-    <object>objects\basSkill</object>
     <object>objects\arrSkills</object>
+    <object>objects\objBag</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>

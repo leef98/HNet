@@ -1,31 +1,37 @@
-if (global.paused){exit;} //Exitar då spelet är pausat
+if (global.paused){exit;} //Exitar dÃ¥ spelet Ã¤r pausat
 
-//Bestämmer lite mått
+//BestÃ¤mmer lite mÃ¥tt
 var xSlots = 4;
 var ySlots = 4;
 
 //Kollar variabeln
 with (global.player) {
-
+    
     //Variabler
+    
+    if (global.countUp >= 0){global.countUp--;}
 
     var holdItem = false, drawOnMouse = false;
     
-    var global.holdItemXArraySet = floor((mouse_x-view_xview-275)/27);
+    global.holdItemXArraySet = floor((mouse_x-view_xview-275)/27);
     
-    var global.holdItemYArraySet = floor((mouse_y-view_yview-268)/27);
+    global.holdItemYArraySet = floor((mouse_y-view_yview-268)/27);
     
-    //var global.holdItemNo = -1;
+    //global.holdItemNo = -1;
     
-    if (rygga == false){
+    if (rygga == false && global.countUp <= 0){
         
-        //rita ryggsäcken
+        //rita ryggsÃ¤cken
         if keyboard_check_pressed(ord('I')){
-            //Ställer om variabeln
+            global.downCount = 2;
+            //StÃ¤ller om variabeln
             rygga = true;
             
         }
      }else {
+        if (global.downCount >= 0){
+            global.downCount--;
+        }
         //ritar ryggan
         draw_sprite(sprBag, -1, view_xview+330, view_yview+330);
         for(var i=0; i < ySlots; i++){
@@ -57,6 +63,8 @@ with (global.player) {
                             }
                             
                         break;
+                        
+                        
                         
                         default:
                         
@@ -120,14 +128,12 @@ with (global.player) {
         else{
             
             if (mouse_x >= holdItemXMin[| global.holdItemXArraySet] && mouse_y >= holdItemYMin[| global.holdItemYArraySet] && mouse_x <= holdItemXMax[| global.holdItemXArraySet] && mouse_y <= holdItemYMax[| global.holdItemYArraySet] && !is_undefined(inventory[# global.holdItemXArraySet, global.holdItemYArraySet]) && global.holdItemNo > -1){
-            
-                ds_list_add(holdItemTemp[| 0], inventory[# global.holdX, global.holdY]);
                 
                 var localItem = inventory[# global.holdItemXArraySet, global.holdItemYArraySet];
                              
                 ds_grid_set(inventory, global.holdX, global.holdY, localItem);
                 
-                ds_grid_set(inventory, global.holdItemXArraySet, global.holdItemYArraySet, holdItemTemp[| 0]);
+                ds_grid_set(inventory, global.holdItemXArraySet, global.holdItemYArraySet, ryggaHoldPlats[| 0]);
                 
             }
             
@@ -148,8 +154,9 @@ with (global.player) {
                 holdY = -1;
         
         }
-        if keyboard_check_pressed(ord('I')){
+        if (keyboard_check_pressed(ord('I')) && global.downCount <= 0){
             //Ställer om variabeln
+            global.countUp = 2;
             rygga = false;
         }
     }

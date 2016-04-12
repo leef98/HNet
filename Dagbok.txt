@@ -82,6 +82,19 @@ Fixade en sak som gjorde att spelet skalades om på fel sätt
 2016-02-19
 Lyckades rita ut ikonerna för skillsen, även då de är inaktiverade med hjälp av en grå bild som mask.
 Skall lägga till skills objekten i init, likt itemsobjekten.
+2016-03-08
+Var många problem med versionshanteringen då daniel inte hade uppdaterat sin kod
+och allting blev ersatt med gammal kod, sen när jag försökte ta tillbaka koden så var det många saker som inte fungerade. Hjälpte william att fixa tillbaka några filer som han hade skapat.
+Jobbade lite på dokumentationen
+Pushproblem. Projektfilen i Gamemaker tjorvar väldigt mycket med versionshantering.
+2016-03-11
+Fixade lite mer problem i versionshanteringen. lyckades få till det rätt så bra nu. Fortsatte på uiskills. Är nästan klar med den, den kan ha inaktiverade skills och den kan sätta skills till en särskilld tangent eller musknapp
+2016-03-15
+Jobbade på dokumentationen och jobbade med william på startområdet
+2016-03-18
+Försökte fixa att inga animationer för playern. gjorde ett nytt object men fungerade inte
+2016-03-22
+Fortsatte på dokumentationen lite, Försökte felsöka animationerna igen. Är förmodligen något i spritsen.
 
 
 

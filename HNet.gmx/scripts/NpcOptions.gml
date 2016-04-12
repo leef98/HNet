@@ -9,8 +9,13 @@
     set variable onOff to 0
 */
 
+
+//object_is_ancestor problem
+
 if (object_is_ancestor(self.object_index, basNpc)) { 
 
+    var objName = object_get_name(object_index);
+    
 if (argument0 =1){
 
     //prata med NPC
@@ -19,8 +24,8 @@ if (argument0 =1){
     y=ystart + cos(timer*pi/45)*5;
   
 }else if (argument0 >=2){
-        
-    if (distance_to_object(objMain)> maxDistance && bubble == false ){
+
+    if (distance_to_object(objPlayer)> maxDistance && bubble == false ){
      
         timer++;
         x=xstart + sin(timer*pi/45)*15;
@@ -52,6 +57,30 @@ if (argument0 =1){
             xstart = other.x+11
             ystart = other.y-16
              x = xstart   
+             
+        }
+        
+        if keyboard_check_pressed(vk_tab){
+   
+            if((mouse_x<object_index.x+mouseDistance)&&(mouse_x>object_index.x-mouseDistance)){
+        
+                if((mouse_y<object_index.y+mouseDistance)&&(mouse_y>object_index.y-mouseDistance)){
+                
+                    if(!instance_exists(ObjMsgBox)){
+                
+                        inst = instance_create(-99999999,-9999999,ObjMsgBox);
+                        
+                        with(inst){
+                           name = objName;
+                           dialogue = "start";
+                        }
+                    
+                    }else{
+                   
+                    }
+            
+                }
+            }
         }
    }
 
@@ -60,25 +89,7 @@ if (argument0 =1){
         bubble = false;
         
    }
-        
-    if keyboard_check_pressed(vk_tab){
-    
-        if((mouse_x<objBarrel.x+mouseDistance)&&(mouse_x>objBarrel.x-mouseDistance)){
-        
-            if((mouse_y<objBarrel.y+mouseDistance)&&(mouse_y>objBarrel.y-mouseDistance)){
-       
-                if(!instance_exists(ObjMsgBox)){
-                
-                    instance_create(-99999999,-9999999,ObjMsgBox);
-                    
-                
-                }else{
-                   
-                }
-            
-            }
-        }
-   }
+  
    
 }else{
 //enemy npc
