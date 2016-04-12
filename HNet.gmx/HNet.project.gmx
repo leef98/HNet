@@ -109,6 +109,7 @@
     </sprites>
     <sprite>sprites\sprite35</sprite>
     <sprite>sprites\greyMask</sprite>
+    <sprite>sprites\sprWallInvis</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -267,6 +268,7 @@
       <object>objects\objMain</object>
       <object>objects\objPlayer</object>
       <object>objects\testplayer</object>
+      <object>objects\objEnemyFollow</object>
     </objects>
     <objects name="Bas">
       <object>objects\basItem</object>
@@ -290,6 +292,7 @@
     <object>objects\objLightningStorm</object>
     <object>objects\arrSkills</object>
     <object>objects\objBag</object>
+    <object>objects\objWallInvis</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>
