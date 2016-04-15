@@ -53,7 +53,9 @@
   <instances>
     <instance objName="objInit" x="0" y="64" name="inst_EEB91511" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="MainGame" x="0" y="128" name="inst_6BCE9AE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayer" x="32" y="224" name="inst_428C43B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBag" x="96" y="96" name="inst_DD70E1C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objHPBar" x="128" y="224" name="inst_0FBE48C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
