@@ -138,6 +138,7 @@
       <script>scripts\MovePlayer.gml</script>
       <script>scripts\moveplayer2.gml</script>
       <script>scripts\drawBagOptionbox.gml</script>
+      <script>scripts\playerStats.gml</script>
     </scripts>
     <scripts name="objSwordStab">
       <script>scripts\abilitySwordStab.gml</script>
@@ -181,8 +182,7 @@
     <script>scripts\dropItem.gml</script>
     <scripts name="Quests">
       <script>scripts\questMain.gml</script>
-      <script>scripts\quest1.gml</script>
-      <script>scripts\quest2.gml</script>
+      <script>scripts\quest.gml</script>
       <script>scripts\traveler.gml</script>
     </scripts>
     <scripts name="Bar">
@@ -260,6 +260,7 @@
       <object>objects\mainUi</object>
       <object>objects\ObjMsgBox</object>
       <object>objects\objUiAbility</object>
+      <object>objects\objQuest</object>
     </objects>
     <objects name="Entity">
       <object>objects\objAnders</object>

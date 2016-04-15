@@ -41,12 +41,32 @@ switch(NpcName){
             
             case "Quest":
             
-                text = "Yes, i do have a quest for you Hubert!";
+                if(instance_exists(objQuest)){
+                
+                    text = "You have not finished your last quest i gave you!";
+                    
+                   input1 = "Cancel Quest";
+                   input2 = "Leave";
+                   input3 = "";
+                   input4 = "";
+                
+                }else{
+                
+                   text = "Yes, i do have a quest for you Hubert!";
+                   
+                   //namn på npc
+                   questMain(NpcName);
+                   
+                    input1 = "Accept";
+                    input2 = "Decline";
+                    input3 = "Leave";
+                    input4 = "";
+                   
+                   
+                }
+             
             
-                input1 = "Accept";
-                input2 = "Decline";
-                input3 = "Leave";
-                input4 = "";
+             
                 break;
             
             case "Talk":
@@ -57,6 +77,16 @@ switch(NpcName){
                 input2 = "No";
                 input3 = "Maybe";
                 input4 = "Leave";
+                break;
+                
+         case "Accept":
+            
+                text ="Return to me when you have completed the quest!";
+         
+                input1 = "Leave";
+                input2 = "";
+                input3 = "";
+                input4 = "";
                 break;
         }
       
@@ -162,5 +192,9 @@ switch(answer){
     case "Leave":
         instance_destroy();
         break;     
+        
+    case "Cancel Quest":
+        instance_destroy();
+        break;  
         
     }
