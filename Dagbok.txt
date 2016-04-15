@@ -95,6 +95,11 @@ Jobbade på dokumentationen och jobbade med william på startområdet
 Försökte fixa att inga animationer för playern. gjorde ett nytt object men fungerade inte
 2016-03-22
 Fortsatte på dokumentationen lite, Försökte felsöka animationerna igen. Är förmodligen något i spritsen.
+2016-04-12
+Jobbade på många buggfixar. fixade swordstab och vissa buggar med ett nytt objekt. Lade till ett osynligt väggobjekt. Kollade på dokumentationen.
+2016-03-15
+Jobbade på den nya fienden som följer en, lyckades få klart det bra så att det till och med kan följa efter hörn.
+Fixade lightningstorm så att den bara gör skada när det kommer en blixt. Fixade lite saker med objMain som jag tog bort. Fixade förflyttningen mellan rum
 
 
 
