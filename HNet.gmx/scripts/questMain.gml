@@ -10,15 +10,21 @@ switch (Npc){
 
     case "Anders":
     
-        var questText = "kill Five Monsters";
+        var questText = "Get some Gloves!";
         
-        var questType = "kill";
-        var questAmount = 5;
-    
-        draw_text(view_wview[0]/3,view_hview[0]/0.79,questText); 
+        var questType = "gather";
+        var questAmount = 1;
+        var global.questItem = global.items.mittens1;
+        var global.checkItem = "";
+       
+        if(instance_exists(treasureClass)){
+        
+        }
+        
+        
+
         //quest1(active, value, complete);
         
-    
         break;
     
  
@@ -35,6 +41,8 @@ switch (Npc){
        
        
     }
+    
+            draw_text(view_wview[0]/3,view_hview[0]/0.79,questText); 
  
    //copy pasterino from NpcDialogue
         if(mouse_y>=view_yview+327 && mouse_y<=view_yview+336){
@@ -49,6 +57,7 @@ switch (Npc){
                         qText = questText;
                         qType = questType;
                         qA = questAmount;
+                        qI = questItem;
                         
                     }
                     answer = input1;

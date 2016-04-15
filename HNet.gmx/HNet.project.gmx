@@ -266,7 +266,6 @@
     <objects name="Entity">
       <object>objects\objAnders</object>
       <object>objects\objEnemy</object>
-      <object>objects\objMain</object>
       <object>objects\objPlayer</object>
       <object>objects\testplayer</object>
       <object>objects\objEnemyFollow</object>

@@ -18,3 +18,5 @@ CreateRooms();
 CreateSkills();
 
 GotoRoom(rmRoom1);
+
+global.check = false;

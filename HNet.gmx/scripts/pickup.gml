@@ -12,6 +12,28 @@ with (global.player) {
             if(is_undefined(inventory[# j, i]) || inventory[# j, i] == 0){
                 ds_grid_add(inventory, j, i, item);
                 
+                
+                if(instance_exists(objQuest)){
+                    
+                    global.check=true;
+                    
+                    inst = instance_create(-9999999999,-9999999999999,objQuest);
+                    
+                    with(inst){
+                    
+                    }
+                    
+                    
+                }
+                
+                /*
+                if(item = global.items.mittens1){
+                show_message("hej");
+                }
+                */
+                
+                
+                
                 inlagt = true;
                 
                 break;

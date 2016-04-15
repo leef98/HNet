@@ -19,7 +19,7 @@ if (rygga == false){
         
         
         //stab attributes
-        speed = 5
+        speed = 10
         dmg = 10
         follow = false 
         maxDistance = 25
