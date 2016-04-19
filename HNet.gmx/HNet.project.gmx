@@ -136,6 +136,7 @@
       <script>scripts\moveplayer2.gml</script>
       <script>scripts\drawBagOptionbox.gml</script>
       <script>scripts\staminaCooldown.gml</script>
+      <script>scripts\DrainMana.gml</script>
     </scripts>
     <scripts name="basItem">
       <script>scripts\create.gml</script>

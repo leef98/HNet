@@ -1,0 +1,2 @@
+sCooldown = 30;
+
