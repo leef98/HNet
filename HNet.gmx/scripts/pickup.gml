@@ -12,6 +12,25 @@ with (global.player) {
             if(is_undefined(inventory[# j, i]) || inventory[# j, i] == 0){
                 ds_grid_add(inventory, j, i, item);
                 
+                
+                if(instance_exists(objQuest)){
+                
+                    if(global.questItem=item){
+
+                        global.count += 1;
+                        
+                        if(global.count==global.questAmount){
+                            
+                            global.count = 0;
+                            global.check="true";
+
+                        }
+
+                    }
+                    
+                    
+                } 
+                
                 inlagt = true;
                 
                 break;

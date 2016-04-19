@@ -18,3 +18,8 @@ CreateRooms();
 CreateSkills();
 
 GotoRoom(rmRoom1);
+
+//quest relaterade stuff
+global.check = "false";
+global.questAmount = "";
+global.count = 0;

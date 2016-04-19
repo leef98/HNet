@@ -4,7 +4,7 @@ timer++;
 draw_sprite(SprMsgBox,-1,view_wview[0],view_hview[0]/0.625);
 
 //tar bort "obj" från "ObjNamn"
-NpcName = string_delete(name,1,3);
+var NpcName = string_delete(name,1,3);
 
 //namn på object
 draw_text(view_wview[0]/1.08,view_hview[0]/0.86,NpcName); 
@@ -41,21 +41,52 @@ switch(NpcName){
             
             case "Quest":
             
-                text = "Yes, i do have a quest for you Hubert!";
+                if(instance_exists(objQuest)){
+                
+                    text = "You have not finished your last quest i gave you!";
+                    
+                   input1 = "Cancel Quest";
+                   input2 = "Leave";
+                   input3 = "";
+                   input4 = "";
+                
+                }else{
+                
+                   text = "Yes, i do have a quest for you Hubert!";
+                   
+                   //namn på npc
+                   questMain(NpcName);
+                   
+                    input1 = "Accept";
+                    input2 = "Decline";
+                    input3 = "Leave";
+                    input4 = "";
+                   
+                   
+                }
+             
             
-                input1 = "Accept";
-                input2 = "Decline";
-                input3 = "Leave";
-                input4 = "";
+             
                 break;
             
             case "Talk":
+            
                 text ="What a lovely weather today!";
          
                 input1 = "Yes";
                 input2 = "No";
                 input3 = "Maybe";
                 input4 = "Leave";
+                break;
+                
+         case "Accept":
+            
+                text ="Return to me when you have completed the quest!";
+         
+                input1 = "Leave";
+                input2 = "";
+                input3 = "";
+                input4 = "";
                 break;
         }
       
@@ -144,6 +175,7 @@ switch(NpcName){
 switch(answer){
     case "Quests...":
         dialogue = "Quest";
+        global.check=false;
         break;
         
     case "Talk":
@@ -161,5 +193,10 @@ switch(answer){
     case "Leave":
         instance_destroy();
         break;     
+        
+    case "Cancel Quest":
+        instance_destroy();
+        global.check=true;
+        break;  
         
     }
