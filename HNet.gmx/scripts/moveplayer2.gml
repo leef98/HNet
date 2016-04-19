@@ -3,9 +3,22 @@ if (global.paused){exit;} //Exitar dÃ¥ spelet Ã¤r pausat
 var lSpeed = cSpeed;
 //Sprint
 if keyboard_check(vk_shift){
-    lSpeed = cSpeed*2;
+    if (stamina > 0) {
+        lSpeed = cSpeed*2;
+        stamina -= 1;
+        staminaCooldown();
+    }else {
+        lSpeed = cSpeed
+    }
 } else{
+    
     lSpeed = cSpeed;
+    if (sCooldown <= 0) {
+        stamina += 2.5;
+        if (stamina > mStamina) {
+            stamina = mStamina;
+        }
+    }
 }
 //image_speed = imgSpeed;
 var imgSpeed = lSpeed * 0.1;

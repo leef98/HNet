@@ -135,8 +135,11 @@
       <script>scripts\MovePlayer.gml</script>
       <script>scripts\moveplayer2.gml</script>
       <script>scripts\drawBagOptionbox.gml</script>
+<<<<<<< HEAD
       <script>scripts\playerStats.gml</script>
+=======
       <script>scripts\staminaCooldown.gml</script>
+>>>>>>> 0f920621e749a3ae0e093a40609646e3be7795c5
     </scripts>
     <scripts name="basItem">
       <script>scripts\create.gml</script>

@@ -104,6 +104,7 @@ Fixade lightningstorm så att den bara gör skada när det kommer en blixt. Fixa
 
 
 
+
 Versionshantering: Programmet som vi använder för att vi alla skall kunna jobba på samma saker utan att någonting försvinner, typ som Google Drive För programmering.
 Stats: Värden på hur bra man är i spelet, till exempel hur snabb, stark och smart man är i spelet.
 Drops: Saker man får när man dödar fiender.

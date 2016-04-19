@@ -2,8 +2,8 @@
 //Om cooldownen har gått ut: skapa en bullet
 
 
-if (rygga == false){
-    
+if (rygga == false && global.player.stamina > 15){
+    staminaCooldown();//Fixar cooldown på stamina
     var inst;
     //Rikta mot musen
     var dir = point_direction(x, y, mouse_x, mouse_y);
@@ -23,10 +23,13 @@ if (rygga == false){
         dmg = 10
         follow = false 
         maxDistance = 25
-        
+        dmgCooldown = false;
  
         
     }
     //Fixa cooldown
     cooldown[? argument0] = 30;
+    global.player.stamina -= 15;
+    if (global.player.stamina < 0) {global.player.stamina = 0}
+    swordStabAnimation();
 }

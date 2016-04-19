@@ -16,7 +16,7 @@ switch (Npc){
         var questAmount = 1;
         var global.questItem = global.items.mittens1;
         var global.checkItem = "";
-       
+        //show_message(global.items.mittens1);
         if(instance_exists(treasureClass)){
         
         }
@@ -57,7 +57,7 @@ switch (Npc){
                         qText = questText;
                         qType = questType;
                         qA = questAmount;
-                        qI = questItem;
+                        qI = global.questItem;
                         
                     }
                     answer = input1;

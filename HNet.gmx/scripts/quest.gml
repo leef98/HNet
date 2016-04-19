@@ -6,27 +6,12 @@ draw_text(view_wview[0]/0.65,view_hview[0]/9,qA);
 switch(qType){
 
     case "gather":
-    var amount = qA;
-    var item = qI;
-    
-    
-    
-
-    
-    break;
+        global.questAmount = qA;
+        var item = qI;
+        break;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-if(global.check=true){
+if(global.check="true"){
+    global.check="false";
     instance_destroy();
 }

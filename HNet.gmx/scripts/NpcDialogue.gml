@@ -175,6 +175,7 @@ switch(NpcName){
 switch(answer){
     case "Quests...":
         dialogue = "Quest";
+        global.check=false;
         break;
         
     case "Talk":
@@ -195,6 +196,7 @@ switch(answer){
         
     case "Cancel Quest":
         instance_destroy();
+        global.check=true;
         break;  
         
     }
