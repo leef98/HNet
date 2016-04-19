@@ -44,7 +44,7 @@ with (global.player) {
                         
                         
                         
-                            if (inventory[# j, i] != 0 && is_undefined(ryggaHoldPlats[| 0])){
+                            if (inventory[# j, i] != 0 && is_undefined(ryggaHoldPlats[| 0]) && inventory[# global.holdItemXArraySet, global.holdItemYArraySet] != 0 && !is_undefined(inventory[# global.holdItemXArraySet, global.holdItemYArraySet])){
                             
                                 
                                 global.holdItemNo = j + ySlots*i;

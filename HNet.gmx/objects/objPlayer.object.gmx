@@ -265,7 +265,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>test</script>
+            <script>drawBag</script>
           </argument>
           <argument>
             <kind>0</kind>

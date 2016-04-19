@@ -130,11 +130,8 @@
       <script>scripts\removeItem.gml</script>
       <script>scripts\dead.gml</script>
       <script>scripts\updateModifiers.gml</script>
-      <script>scripts\test.gml</script>
       <script>scripts\MovePlayer.gml</script>
       <script>scripts\moveplayer2.gml</script>
-      <script>scripts\drawBagOptionbox.gml</script>
-      <script>scripts\playerStats.gml</script>
       <script>scripts\staminaCooldown.gml</script>
       <script>scripts\DrainMana.gml</script>
     </scripts>
