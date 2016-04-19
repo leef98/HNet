@@ -130,7 +130,6 @@
       <script>scripts\removeItem.gml</script>
       <script>scripts\dead.gml</script>
       <script>scripts\updateModifiers.gml</script>
-      <script>scripts\drawBag.gml</script>
       <script>scripts\test.gml</script>
       <script>scripts\MovePlayer.gml</script>
       <script>scripts\moveplayer2.gml</script>
@@ -261,6 +260,10 @@
       <script>scripts\moveEnemy.gml</script>
       <script>scripts\wallBounce.gml</script>
       <script>scripts\stepEnemy.gml</script>
+    </scripts>
+    <scripts name="inventory">
+      <script>scripts\drawBag.gml</script>
+      <script>scripts\drawBagOptionbox.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">

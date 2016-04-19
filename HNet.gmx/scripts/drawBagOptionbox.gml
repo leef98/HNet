@@ -3,13 +3,5 @@
 
 if (global.paused){exit;} //Exitar dÃ¥ spelet Ã¤r pausat
 
-if(ob==false){
 
-    
-
-}
-else{
-
-
-
-}
+draw_rectangle(global.holdItemXArraySet, global.holdItemYArraySet, global.holdItemXArraySet + 100, global.holdItemYArraySet + 100, true);
