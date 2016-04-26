@@ -16,4 +16,11 @@ switch (keyboard_key) {
     case ord("0"):
         unpause();
     break;
+    case vk_home:
+        if (audio_sound_get_gain(AshesToFire) < 1000) {
+            audio_sound_gain(AshesToFire, 1000, 0)
+        }else {
+            UnmuteSound();
+        }
+    break;
 }

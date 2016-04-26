@@ -22,7 +22,7 @@ if (rygga == false && global.player.stamina > 15){
         speed = 10
         dmg = 10
         follow = false 
-        maxDistance = 25
+        maxDistance = 0.1
         dmgCooldown = false;
  
         

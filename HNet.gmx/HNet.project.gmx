@@ -57,7 +57,11 @@
     </datafile>
   </datafiles>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sound0</sound>
+    <sound>sound\AshesToFire</sound>
+    <sound>sound\AshesToFireLow</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\SprMessage</sprite>
     <sprite>sprites\SprMsgBox</sprite>
@@ -110,6 +114,7 @@
     <sprite>sprites\sprite35</sprite>
     <sprite>sprites\greyMask</sprite>
     <sprite>sprites\sprWallInvis</sprite>
+    <sprite>sprites\sprFireball</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -138,6 +143,7 @@
       <script>scripts\playerStats.gml</script>
       <script>scripts\staminaCooldown.gml</script>
       <script>scripts\DrainMana.gml</script>
+      <script>scripts\CollideWallPlayer.gml</script>
     </scripts>
     <scripts name="basItem">
       <script>scripts\create.gml</script>
@@ -262,6 +268,13 @@
       <script>scripts\wallBounce.gml</script>
       <script>scripts\stepEnemy.gml</script>
     </scripts>
+    <scripts name="Sound">
+      <script>scripts\UnmuteSound.gml</script>
+      <script>scripts\MuteSound.gml</script>
+      <script>scripts\MuteSound2.gml</script>
+    </scripts>
+    <script>scripts\avoid_rectangle.gml</script>
+    <script>scripts\CollisionPlayer.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="UI">
