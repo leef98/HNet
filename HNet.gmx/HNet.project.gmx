@@ -58,7 +58,6 @@
   </datafiles>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\sound0</sound>
     <sound>sound\AshesToFire</sound>
     <sound>sound\AshesToFireLow</sound>
   </sounds>
