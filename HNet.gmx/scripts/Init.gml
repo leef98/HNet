@@ -23,3 +23,4 @@ GotoRoom(rmRoom1);
 global.check = "false";
 global.questAmount = "";
 global.count = 0;
+global.questType = "";

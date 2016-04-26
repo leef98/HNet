@@ -12,7 +12,7 @@ draw_text(view_wview[0]/1.08,view_hview[0]/0.86,NpcName);
 if(timer > 1){
 
     if keyboard_check_pressed(vk_tab){
-    
+    show_message(global.check);
         instance_destroy();     
         
     }
@@ -41,7 +41,7 @@ switch(NpcName){
             
             case "Quest":
             
-                if(instance_exists(objQuest)){
+                if(instance_exists(objQuest)&&(global.check!="return")){
                 
                     text = "You have not finished your last quest i gave you!";
                     
@@ -50,7 +50,16 @@ switch(NpcName){
                    input3 = "";
                    input4 = "";
                 
-                }else{
+                }if(instance_exists(objQuest)&&(global.check=="return")){
+                
+                    text = "You've got the gloves i asked for, you keep em!";
+                    
+                   input1 = "Turn in mission";
+                   input2 = "Leave";
+                   input3 = "";
+                   input4 = "";
+                
+                }else if(!instance_exists(objQuest)&&global.check=="false"){
                 
                    text = "Yes, i do have a quest for you Hubert!";
                    
@@ -175,7 +184,6 @@ switch(NpcName){
 switch(answer){
     case "Quests...":
         dialogue = "Quest";
-        global.check=false;
         break;
         
     case "Talk":
@@ -189,6 +197,15 @@ switch(answer){
     case "Decline":
         dialogue = "Decline";
         break;
+    case "Yes":
+        instance_destroy();
+        break;
+    case "No":
+        instance_destroy();
+        break;
+    case "Maybe":
+        instance_destroy();
+        break;
         
     case "Leave":
         instance_destroy();
@@ -196,7 +213,13 @@ switch(answer){
         
     case "Cancel Quest":
         instance_destroy();
-        global.check=true;
-        break;  
+        global.check="true";
+        break;
+        
+    case "Turn in mission":
+        instance_destroy();
+        global.check="true";
+        break;
+    
         
     }

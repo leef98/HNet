@@ -10,21 +10,13 @@ switch (Npc){
 
     case "Anders":
     
-        var questText = "Get some Gloves!";
+        var questText = "Get some Gloves";
         
-        var questType = "gather";
+        var global.questType = "gather";
         var questAmount = 1;
         var global.questItem = global.items.mittens1;
         var global.checkItem = "";
-        //show_message(global.items.mittens1);
-        if(instance_exists(treasureClass)){
-        
-        }
-        
-        
-
-        //quest1(active, value, complete);
-        
+      
         break;
     
  
@@ -33,11 +25,6 @@ switch (Npc){
         //quest2(questType , active ,complete);
               
         break;
-       
-       
-       
-       
-       
        
        
     }
@@ -55,7 +42,7 @@ switch (Npc){
                     
                     with(inst){
                         qText = questText;
-                        qType = questType;
+                        qType = global.questType;
                         qA = questAmount;
                         qI = global.questItem;
                         
