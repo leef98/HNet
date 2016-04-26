@@ -3,13 +3,10 @@
 
 if (global.paused){exit;} //Exitar dÃ¥ spelet Ã¤r pausat
 
-if(ob==false){
-
+global.holdItemXArraySet = floor((mouse_x-view_xview-275)/27);
     
+    global.holdItemYArraySet = floor((mouse_y-view_yview-268)/27);
 
-}
-else{
-
-
-
+if(mouse_check_button(mb_right)){
+draw_rectangle(global.holdItemXArraySet, global.holdItemYArraySet, global.holdItemXArraySet + 100, global.holdItemYArraySet + 100, true);
 }

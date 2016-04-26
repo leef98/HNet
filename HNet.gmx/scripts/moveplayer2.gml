@@ -1,8 +1,14 @@
 //local speed
 if (global.paused){exit;} //Exitar dÃ¥ spelet Ã¤r pausat
 var lSpeed = cSpeed;
+var stilla = false
 //Sprint
-if keyboard_check(vk_shift){
+if (keyboard_check(ord('A')) || keyboard_check(ord('D')) || keyboard_check(ord('W')) || keyboard_check(ord('S'))) {
+    stilla = false
+}else {
+    stilla = true
+}
+if keyboard_check(vk_shift) && stilla == false {
     if (stamina > 0) {
         lSpeed = cSpeed*2;
         stamina -= 1;
@@ -81,6 +87,7 @@ if keyboard_check(ord('A')) {
     }
 //stÃ¥ Still
 }else{
+    
     self.speed = 0
     if (self.speed == 0){
         //StÃ¥ende still hÃ¥ll

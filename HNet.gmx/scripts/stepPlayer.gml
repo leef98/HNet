@@ -6,4 +6,4 @@ if cooldown[? "ability4"] > 0 { cooldown[? "ability4"] -= 1}
 if cooldown[? "lAbility"] > 0 { cooldown[? "lAbility"] -= 1}
 if cooldown[? "rAbility"] > 0 { cooldown[? "rAbility"] -= 1}
 if sCooldown > 0 {sCooldown -=1}//Stamina cooldown
-if (mana < mMana) {mana += 0.5}
+if (mana < mMana) {mana += 0.05}

@@ -1,4 +1,4 @@
-
+    if (global.paused) {exit;}
     maxDistance = 60;
 
     // sin(timer*pi/speed)*distans
