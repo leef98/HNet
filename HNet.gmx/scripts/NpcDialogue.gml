@@ -130,7 +130,8 @@ switch(NpcName){
 
 
   if(mouse_x>=view_xview+310 && mouse_x<=view_xview+360){
-        
+            
+            dialogOn = true;
             //input 1
             if(mouse_y>=view_yview+327 && mouse_y<=view_yview+336){
         
@@ -180,6 +181,7 @@ switch(NpcName){
                 }
             }
         }
+        else{dialogOn = false;}
 
 switch(answer){
     case "Quests...":

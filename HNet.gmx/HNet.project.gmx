@@ -134,11 +134,9 @@
       <script>scripts\removeItem.gml</script>
       <script>scripts\dead.gml</script>
       <script>scripts\updateModifiers.gml</script>
-      <script>scripts\drawBag.gml</script>
       <script>scripts\test.gml</script>
       <script>scripts\MovePlayer.gml</script>
       <script>scripts\moveplayer2.gml</script>
-      <script>scripts\drawBagOptionbox.gml</script>
       <script>scripts\playerStats.gml</script>
       <script>scripts\staminaCooldown.gml</script>
       <script>scripts\DrainMana.gml</script>
@@ -274,6 +272,10 @@
     </scripts>
     <script>scripts\avoid_rectangle.gml</script>
     <script>scripts\CollisionPlayer.gml</script>
+    <scripts name="Inventory">
+      <script>scripts\drawBagOptionbox.gml</script>
+      <script>scripts\drawBag.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="UI">
