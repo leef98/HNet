@@ -17,4 +17,4 @@ CreateRooms();
 //Skapar alla skills
 CreateSkills();
 
-GotoRoom(rmRoom1);
+GotoRoom(StartingZone);

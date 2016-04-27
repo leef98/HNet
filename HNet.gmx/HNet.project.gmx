@@ -301,7 +301,7 @@
     <room>rooms\room3</room>
     <room>rooms\room4</room>
     <room>rooms\room5</room>
-    <room>rooms\Starting_Zone</room>
+    <room>rooms\StartingZone</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
