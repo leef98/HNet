@@ -1,13 +1,14 @@
 timer++;
 
+
 //texture
-draw_sprite(SprMsgBox,-1,view_wview[0],view_hview[0]/0.625);
+draw_sprite(SprMsgBox,-1,lWView,view_hview[0]/0.625);
 
 //tar bort "obj" från "ObjNamn"
 var NpcName = string_delete(name,1,3);
 
 //namn på object
-draw_text(view_wview[0]/1.08,view_hview[0]/0.86,NpcName); 
+draw_text(lWView/1.08,view_hview[0]/0.86,NpcName); 
 
 if(timer > 1){
 
@@ -111,21 +112,26 @@ switch(NpcName){
     //interactions
     
     //meddelande
-    draw_text(view_wview[0]/3,view_hview[0]/0.82,text); 
+    draw_text(lWView/3,view_hview[0]/0.82,text); 
     
     //svarsfält
-    draw_text(view_wview[0]/0.63,view_hview[0]/0.82,input1); 
-    draw_text(view_wview[0]/0.63,view_hview[0]/0.79,input2); 
-    draw_text(view_wview[0]/0.63,view_hview[0]/0.76,input3); 
-    draw_text(view_wview[0]/0.63,view_hview[0]/0.73,input4);
-
-
-  if(mouse_x>=view_xview+310 && mouse_x<=view_xview+360){
+    draw_text(lWView/0.63,view_hview[0]/0.82,input1); 
+    draw_text(lWView/0.63,view_hview[0]/0.79,input2); 
+    draw_text(lWView/0.63,view_hview[0]/0.76,input3); 
+    draw_text(lWView/0.63,view_hview[0]/0.73,input4);
+//50 px
+    //show_message(mouse_x - view_xview[0])
+    //show_message(lWView/0.63)
+    //show_debug_message(view_wview[0])
+//    show_debug_message(mouse_x-view_xview[0])
+    show_debug_message(mouse_y-view_yview[0])
+    if (mouse_x-view_xview[0] >= 395 && mouse_x-view_xview[0] <= 395+50) {//Hårdkodat
+    //if (true){
+  //if(mouse_x>=view_xview[0]+lWView/0.63 && mouse_x<=view_xview[0]+50+(lWView/0.63)){
         
             //input 1
-            if(mouse_y>=view_yview+327 && mouse_y<=view_yview+336){
-        
-                 draw_text_colour(view_wview[0]/0.63,view_hview[0]/0.82,input1,c_lime, c_lime, c_green, c_green, 1); 
+            if(mouse_y>=view_yview+327-41 && mouse_y<=view_yview+336-41){
+                 draw_text_colour(lWView/0.63,view_hview[0]/0.82,input1,c_lime, c_lime, c_green, c_green, 1); 
                 
                  if(mouse_check_button_pressed(mb_left)){
                  
@@ -136,9 +142,9 @@ switch(NpcName){
             }
             
             //input 2
-            if(mouse_y>=view_yview+336 && mouse_y<=view_yview+345){
+            if(mouse_y>=view_yview+336-41 && mouse_y<=view_yview+345-41){
         
-                draw_text_colour(view_wview[0]/0.63,view_hview[0]/0.79,input2,c_lime, c_lime, c_green, c_green, 1); 
+                draw_text_colour(lWView/0.63,view_hview[0]/0.79,input2,c_lime, c_lime, c_green, c_green, 1); 
                 
                 if(mouse_check_button_pressed(mb_left)){
                  
@@ -148,9 +154,9 @@ switch(NpcName){
             }
             
             //input 3
-            if(mouse_y>=view_yview+345 && mouse_y<=view_yview+367){
+            if(mouse_y>=view_yview+345-41 && mouse_y<=view_yview+367-41){
         
-                draw_text_colour(view_wview[0]/0.63,view_hview[0]/0.76,input3,c_lime, c_lime, c_green, c_green, 1); 
+                draw_text_colour(lWView/0.63,view_hview[0]/0.76,input3,c_lime, c_lime, c_green, c_green, 1); 
         
                 if(mouse_check_button_pressed(mb_left)){
                  
@@ -160,9 +166,9 @@ switch(NpcName){
             }
             
             //input 4
-            if(mouse_y>=view_yview+367 && mouse_y<=view_yview+379){
+            if(mouse_y>=view_yview+367-41 && mouse_y<=view_yview+379-41){
         
-                draw_text_colour(view_wview[0]/0.63,view_hview[0]/0.73,input4,c_lime, c_lime, c_green, c_green, 1); 
+                draw_text_colour(lWView/0.63,view_hview[0]/0.73,input4,c_lime, c_lime, c_green, c_green, 1); 
         
                 if(mouse_check_button_pressed(mb_left)){
                  

@@ -100,6 +100,8 @@ Jobbade på många buggfixar. fixade swordstab och vissa buggar med ett nytt obj
 2016-03-15
 Jobbade på den nya fienden som följer en, lyckades få klart det bra så att det till och med kan följa efter hörn.
 Fixade lightningstorm så att den bara gör skada när det kommer en blixt. Fixade lite saker med objMain som jag tog bort. Fixade förflyttningen mellan rum
+2016-03-26
+Jobbade på många fixar, fixade ljud, en krash, kollisionskoden, huvudvyn så att allt syns i rätt storlek.
 
 
 

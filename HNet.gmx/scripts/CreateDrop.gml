@@ -17,8 +17,8 @@ with (inst) {
     prob[0] = 20;
     prob[1] = 20;
     prob[2] = 20;
-    prob[3] = 10;
-    prob[4] = 10;
+    prob[3] = 20;
+    prob[4] = 20;
     vTest = 1;
     
 }
