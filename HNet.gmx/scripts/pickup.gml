@@ -15,21 +15,23 @@ with (global.player) {
                 
                 if(instance_exists(objQuest)){
                 
-                    if(global.questItem=item){
+                    if(global.questType=="gather"){
+                    
+                        if(global.questItem=item){
 
-                        global.count += 1;
+                            global.count += 1;
                         
-                        if(global.count==global.questAmount){
+                            if(global.count==global.questAmount){
                             
-                            global.count = 0;
-                            global.check="true";
+                                global.count = 0;
+                                global.check="return";
+                            }
+                    
+                  
 
+                            }
                         }
-
-                    }
-                    
-                    
-                } 
+                    } 
                 
                 inlagt = true;
                 

@@ -15,6 +15,7 @@ global.countUp = -1;
 ob = false
 //Animations variabler
 swordStab = false;
+dialogOn = false;
 //Variabler
 /*
 Stats (Strength, Agility, Inteligence) - map
@@ -88,6 +89,5 @@ cSpeed = stats[? "agi"] * 0.3
 //str(Damage, Resistance)
 //int(SpellDamage, ProjectileSpeed)
 //Exempelitem (type, agi, str, int, spi, hp, sta, function)
-ds_grid_add(inventory, 0, 0, global.items.hood1)
 
 global.player = id;

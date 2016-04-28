@@ -2,7 +2,7 @@
 //Om cooldownen har gått ut: skapa en bullet
 
 
-if (rygga == false && global.player.stamina > 15){
+if (rygga == false && global.player.stamina > 15 && dialogOn == false){
     staminaCooldown();//Fixar cooldown på stamina
     var inst;
     //Rikta mot musen

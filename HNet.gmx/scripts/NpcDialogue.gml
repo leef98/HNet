@@ -13,7 +13,7 @@ draw_text(lWView/1.08,view_hview[0]/0.86,NpcName);
 if(timer > 1){
 
     if keyboard_check_pressed(vk_tab){
-    
+    show_message(global.check);
         instance_destroy();     
         
     }
@@ -42,7 +42,7 @@ switch(NpcName){
             
             case "Quest":
             
-                if(instance_exists(objQuest)){
+                if(instance_exists(objQuest)&&(global.check!="return")){
                 
                     text = "You have not finished your last quest i gave you!";
                     
@@ -51,7 +51,16 @@ switch(NpcName){
                    input3 = "";
                    input4 = "";
                 
-                }else{
+                }if(instance_exists(objQuest)&&(global.check=="return")){
+                
+                    text = "You've got the gloves i asked for, you keep em!";
+                    
+                   input1 = "Turn in mission";
+                   input2 = "Leave";
+                   input3 = "";
+                   input4 = "";
+                
+                }else if(!instance_exists(objQuest)&&global.check=="false"){
                 
                    text = "Yes, i do have a quest for you Hubert!";
                    
@@ -129,6 +138,7 @@ switch(NpcName){
     //if (true){
   //if(mouse_x>=view_xview[0]+lWView/0.63 && mouse_x<=view_xview[0]+50+(lWView/0.63)){
         
+            dialogOn = true;
             //input 1
             if(mouse_y>=view_yview+327-41 && mouse_y<=view_yview+336-41){
                  draw_text_colour(lWView/0.63,view_hview[0]/0.82,input1,c_lime, c_lime, c_green, c_green, 1); 
@@ -177,11 +187,11 @@ switch(NpcName){
                 }
             }
         }
+        else{dialogOn = false;}
 
 switch(answer){
     case "Quests...":
         dialogue = "Quest";
-        global.check=false;
         break;
         
     case "Talk":
@@ -195,6 +205,15 @@ switch(answer){
     case "Decline":
         dialogue = "Decline";
         break;
+    case "Yes":
+        instance_destroy();
+        break;
+    case "No":
+        instance_destroy();
+        break;
+    case "Maybe":
+        instance_destroy();
+        break;
         
     case "Leave":
         instance_destroy();
@@ -202,7 +221,13 @@ switch(answer){
         
     case "Cancel Quest":
         instance_destroy();
-        global.check=true;
-        break;  
+        global.check="true";
+        break;
+        
+    case "Turn in mission":
+        instance_destroy();
+        global.check="true";
+        break;
+    
         
     }
