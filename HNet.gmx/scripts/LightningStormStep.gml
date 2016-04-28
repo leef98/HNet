@@ -20,6 +20,7 @@ if (lightCool <= 0 && irandom(19) == 1 && cStep >= sStep && cStep < (stepsFinish
     sprite_index = sprLightningStrike;
     lightCool = 15;
     image_speed = 0.5;
+    dmgCool = false;
 }
 //Förstör objektet
 if (cStep >= stepsFinish) {

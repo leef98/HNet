@@ -1,10 +1,10 @@
 if (global.paused){exit;} //Exitar då spelet är pausat
-var imgSpeed = cSpeed * 0.1;
+var imgSpeed = cSpeed * 2;
 image_speed = imgSpeed;
 
 //Rikta mot musen
 var dir = point_direction(x, y, mouse_x, mouse_y);
-if (swordStab == false && rygga == false){
+if (swordStab == false && rygga == false && dialogOn == false){
 //Kollar om det är rätt funktion
 if (is_real(cAbility[? "lAbility"])) {
     

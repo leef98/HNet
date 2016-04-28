@@ -57,7 +57,10 @@
     </datafile>
   </datafiles>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\AshesToFire</sound>
+    <sound>sound\AshesToFireLow</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\SprMessage</sprite>
     <sprite>sprites\SprMsgBox</sprite>
@@ -110,6 +113,7 @@
     <sprite>sprites\sprite35</sprite>
     <sprite>sprites\greyMask</sprite>
     <sprite>sprites\sprWallInvis</sprite>
+    <sprite>sprites\sprFireball</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -120,10 +124,6 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\entityCollision.gml</script>
-    <scripts name="objBullet">
-      <script>scripts\bulletColliding.gml</script>
-      <script>scripts\createBullet.gml</script>
-    </scripts>
     <scripts name="objMain">
       <script>scripts\useAbility.gml</script>
       <script>scripts\stepPlayer.gml</script>
@@ -134,19 +134,13 @@
       <script>scripts\removeItem.gml</script>
       <script>scripts\dead.gml</script>
       <script>scripts\updateModifiers.gml</script>
-      <script>scripts\drawBag.gml</script>
       <script>scripts\test.gml</script>
       <script>scripts\MovePlayer.gml</script>
       <script>scripts\moveplayer2.gml</script>
-      <script>scripts\drawBagOptionbox.gml</script>
-    </scripts>
-    <scripts name="objSwordStab">
-      <script>scripts\abilitySwordStab.gml</script>
-      <script>scripts\swordColliding.gml</script>
-      <script>scripts\moveStab.gml</script>
-      <script>scripts\swordDestroy.gml</script>
-      <script>scripts\swordStabAnimation.gml</script>
-      <script>scripts\swordStabAnimationEnd.gml</script>
+      <script>scripts\playerStats.gml</script>
+      <script>scripts\staminaCooldown.gml</script>
+      <script>scripts\DrainMana.gml</script>
+      <script>scripts\CollideWallPlayer.gml</script>
     </scripts>
     <scripts name="basItem">
       <script>scripts\create.gml</script>
@@ -182,8 +176,7 @@
     <script>scripts\dropItem.gml</script>
     <scripts name="Quests">
       <script>scripts\questMain.gml</script>
-      <script>scripts\quest1.gml</script>
-      <script>scripts\quest2.gml</script>
+      <script>scripts\quest.gml</script>
       <script>scripts\traveler.gml</script>
     </scripts>
     <scripts name="Bar">
@@ -239,6 +232,18 @@
         <script>scripts\LightningStormCollision.gml</script>
         <script>scripts\LightningStormCreate.gml</script>
       </scripts>
+      <scripts name="objBullet">
+        <script>scripts\bulletColliding.gml</script>
+        <script>scripts\createBullet.gml</script>
+      </scripts>
+      <scripts name="objSwordStab">
+        <script>scripts\abilitySwordStab.gml</script>
+        <script>scripts\swordColliding.gml</script>
+        <script>scripts\moveStab.gml</script>
+        <script>scripts\swordDestroy.gml</script>
+        <script>scripts\swordStabAnimation.gml</script>
+        <script>scripts\swordStabAnimationEnd.gml</script>
+      </scripts>
     </scripts>
     <scripts name="UI">
       <script>scripts\openSkills.gml</script>
@@ -255,17 +260,33 @@
       <script>scripts\NpcOptions.gml</script>
       <script>scripts\popBubble.gml</script>
     </scripts>
+    <scripts name="objEnemyFollow">
+      <script>scripts\moveEnemy.gml</script>
+      <script>scripts\wallBounce.gml</script>
+      <script>scripts\stepEnemy.gml</script>
+    </scripts>
+    <scripts name="Sound">
+      <script>scripts\UnmuteSound.gml</script>
+      <script>scripts\MuteSound.gml</script>
+      <script>scripts\MuteSound2.gml</script>
+    </scripts>
+    <script>scripts\avoid_rectangle.gml</script>
+    <script>scripts\CollisionPlayer.gml</script>
+    <scripts name="Inventory">
+      <script>scripts\drawBagOptionbox.gml</script>
+      <script>scripts\drawBag.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="UI">
       <object>objects\mainUi</object>
       <object>objects\ObjMsgBox</object>
       <object>objects\objUiAbility</object>
+      <object>objects\objQuest</object>
     </objects>
     <objects name="Entity">
       <object>objects\objAnders</object>
       <object>objects\objEnemy</object>
-      <object>objects\objMain</object>
       <object>objects\objPlayer</object>
       <object>objects\testplayer</object>
       <object>objects\objEnemyFollow</object>

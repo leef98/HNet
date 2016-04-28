@@ -44,7 +44,7 @@ with (global.player) {
                         
                         
                         
-                            if (mouse_x >= view_xview+275+27*j && mouse_y >= view_yview+268+27*i && mouse_x <= view_xview+299+27*j && mouse_y <= view_yview+292+27*i && inventory[# j, i] != 0 && is_undefined(ryggaHoldPlats[| 0])){
+                            if (inventory[# j, i] != 0 && is_undefined(ryggaHoldPlats[| 0]) && inventory[# global.holdItemXArraySet, global.holdItemYArraySet] != 0 && !is_undefined(inventory[# global.holdItemXArraySet, global.holdItemYArraySet])){
                             
                                 
                                 global.holdItemNo = j + ySlots*i;
@@ -63,7 +63,6 @@ with (global.player) {
                             }
                             
                         break;
-                        
                         
                         
                         default:

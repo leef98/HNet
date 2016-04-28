@@ -4,7 +4,7 @@ timer++;
 draw_sprite(SprMsgBox,-1,view_wview[0],view_hview[0]/0.625);
 
 //tar bort "obj" från "ObjNamn"
-NpcName = string_delete(name,1,3);
+var NpcName = string_delete(name,1,3);
 
 //namn på object
 draw_text(view_wview[0]/1.08,view_hview[0]/0.86,NpcName); 
@@ -12,7 +12,7 @@ draw_text(view_wview[0]/1.08,view_hview[0]/0.86,NpcName);
 if(timer > 1){
 
     if keyboard_check_pressed(vk_tab){
-    
+    show_message(global.check);
         instance_destroy();     
         
     }
@@ -41,21 +41,61 @@ switch(NpcName){
             
             case "Quest":
             
-                text = "Yes, i do have a quest for you Hubert!";
+                if(instance_exists(objQuest)&&(global.check!="return")){
+                
+                    text = "You have not finished your last quest i gave you!";
+                    
+                   input1 = "Cancel Quest";
+                   input2 = "Leave";
+                   input3 = "";
+                   input4 = "";
+                
+                }if(instance_exists(objQuest)&&(global.check=="return")){
+                
+                    text = "You've got the gloves i asked for, you keep em!";
+                    
+                   input1 = "Turn in mission";
+                   input2 = "Leave";
+                   input3 = "";
+                   input4 = "";
+                
+                }else if(!instance_exists(objQuest)&&global.check=="false"){
+                
+                   text = "Yes, i do have a quest for you Hubert!";
+                   
+                   //namn på npc
+                   questMain(NpcName);
+                   
+                    input1 = "Accept";
+                    input2 = "Decline";
+                    input3 = "Leave";
+                    input4 = "";
+                   
+                   
+                }
+             
             
-                input1 = "Accept";
-                input2 = "Decline";
-                input3 = "Leave";
-                input4 = "";
+             
                 break;
             
             case "Talk":
+            
                 text ="What a lovely weather today!";
          
                 input1 = "Yes";
                 input2 = "No";
                 input3 = "Maybe";
                 input4 = "Leave";
+                break;
+                
+         case "Accept":
+            
+                text ="Return to me when you have completed the quest!";
+         
+                input1 = "Leave";
+                input2 = "";
+                input3 = "";
+                input4 = "";
                 break;
         }
       
@@ -90,7 +130,8 @@ switch(NpcName){
 
 
   if(mouse_x>=view_xview+310 && mouse_x<=view_xview+360){
-        
+            
+            dialogOn = true;
             //input 1
             if(mouse_y>=view_yview+327 && mouse_y<=view_yview+336){
         
@@ -140,6 +181,7 @@ switch(NpcName){
                 }
             }
         }
+        else{dialogOn = false;}
 
 switch(answer){
     case "Quests...":
@@ -157,9 +199,29 @@ switch(answer){
     case "Decline":
         dialogue = "Decline";
         break;
+    case "Yes":
+        instance_destroy();
+        break;
+    case "No":
+        instance_destroy();
+        break;
+    case "Maybe":
+        instance_destroy();
+        break;
         
     case "Leave":
         instance_destroy();
         break;     
+        
+    case "Cancel Quest":
+        instance_destroy();
+        global.check="true";
+        break;
+        
+    case "Turn in mission":
+        instance_destroy();
+        global.check="true";
+        break;
+    
         
     }
