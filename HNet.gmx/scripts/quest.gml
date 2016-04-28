@@ -1,14 +1,7 @@
 action = argument0;
-<<<<<<< HEAD
 draw_text(lWView/0.65,view_hview[0]/40,"Quests:"); 
 draw_text(lWView/0.65,view_hview[0]/15,qText);
 draw_text(lWView/0.65,view_hview[0]/9,qA);
-=======
-draw_text(view_wview[0]/0.65,view_hview[0]/40,"Quests:"); 
-draw_text(view_wview[0]/0.78,view_hview[0]/15,qText);
-draw_text(view_wview[0]/0.65,view_hview[0]/9,qA);
->>>>>>> 52f947a6986b9257dfc62f8bb92483146ab26d75
-
 switch(qType){
 
     case "gather":

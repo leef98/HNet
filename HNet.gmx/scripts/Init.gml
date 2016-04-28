@@ -1,4 +1,4 @@
-﻿///Init()
+///Init()
 //Globala variabler
 global.items = instance_create(0, 0, treasureClass);
 global.ui = instance_create(0, 0, mainUi);
